@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Studentpark.pk - Teach, Learn, Earn.</title>
+    <!-- Bootstrap CDN (Starts) -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap CDN (Ends) -->
+
+    <!-- FontAwesome CDN (Starts)-->
+    <script
+      src="https://kit.fontawesome.com/b881fc956a.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- FontAwesome CDN (Ends)-->
+
+    <!-- Style.css => Sass -->
+    <link rel="stylesheet" href="/CSS/style.css" />
+
+    <!-- JQuery Google CDN-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"
+      integrity="sha256-JtQPj/3xub8oapVMaIijPNoM0DHoAtgh/gwFYuN5rik="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
+      integrity="sha256-jDnOKIOq2KNsQZTcBTEnsp76FnfMEttF6AV2DF2fFNE="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/CSS/owl.carousel.min.css" />
+    <link rel="stylesheet" href="/CSS/owl.theme.default.min.css" />
+  </head>
+  <body>
+    <!-- Navigationbar (Starts) -->
+    <nav class="navbar navbar-expand-lg navbar navbar-dark bg-primary p-3">
+      <img src="/images/green.png" class="img-fluid-one" alt="" />
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <div class="conatiner">
+          <span class="fas fa-bars"></span>
+        </div>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link text-white" href="#"
+              ><i class="fas fa-user-friends p-1"></i>Tutors</a
+            >
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link text-white" href="#"
+              ><i class="fas fa-graduation-cap p-1"></i>Tuitions</a
+            >
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link text-white" href="#"
+              ><i class="fas fa-business-time p-1"></i>Courses<sup>Beta</sup></a
+            >
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0 mr-1">
+          <button class="btn btn-outline-success mr-3 button">
+            <i class="fas fa-sign-in-alt"></i>
+            Log in
+          </button>
+        </form>
+        <button class="btn btn-outline-success button">
+          <i class="fas fa-user-plus"></i>
+          Sign up
+        </button>
+      </div>
+    </nav>
+    <!-- Navigationbar (Ends) -->
+
+    <!-- Section Title for finding Tutor (Starts) -->
+    <section class="container-home">
+      <div class="container-info">
+        <h1 class="title-text">Find a tutor near you</h1>
+        <div class="labels">
+          <label>
+            <input
+              list="browsers"
+              name="myBrowser"
+              class="input-field-one"
+              placeholder="Select your object"
+            />
+            <datalist id="browsers">
+              <option value="Chrome"> </option>
+              <option value="Firefox"> </option>
+              <option value="Internet Explorer"> </option>
+              <option value="Opera"> </option>
+              <option value="Safari"> </option>
+              <option value="Microsoft Edge"> </option>
+            </datalist>
+          </label>
+          <label>
+            <input
+              class="input-field-two"
+              list="browsers"
+              name="myBrowser"
+              placeholder="Select your object"
+            />
+            <datalist id="browsers">
+              <option value="Chrome"> </option>
+              <option value="Firefox"> </option>
+              <option value="Internet Explorer"> </option>
+              <option value="Opera"> </option>
+              <option value="Safari"> </option>
+              <option value="Microsoft Edge"> </option>
+            </datalist>
+          </label>
+          <label>
+            <button type="button" class="btn btn-outline-primary button-field">
+              Find Tutors
+            </button>
+          </label>
+        </div>
+      </div>
+      <div class="scroll-down">
+        JOIN AS TUTOR<i class="fas fa-arrow-down"></i>
+      </div>
+    </section>
+    <!-- Section Title for finding Tutor (Ends) -->
+
+    <!-- Section for finding a tutor (starts)-->
+    <section id="banner">
+      <div class="container text-white">
+        <div class="row py-5">
+          <div class="col-lg-6 col-sm-6">
+            <img
+              src="/images/Workplace.png"
+              class="img-fluid image-two"
+              alt=""
+            />
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-6">
+            <div class="section-title-text">
+              <h1 class="pb-3">Join as a Tutor</h1>
+              <p>
+                Studentpark® allows you to connect with students in your
+                vicinity.
+              </p>
+              <p>
+                Present in more than 11 cities across Pakistan, Studentpark®
+                provides you with exeptional tools in an extremely simple and
+                user-friendly manner.
+              </p>
+              <p>
+                It is free to use for a year, which means you can teach as many
+                students as you can for 1 year.
+              </p>
+              <button class="btn button-green">
+                Join now
+                <i class="fas fa-angle-double-right pl-3"></i>
+                <div class="line-join"></div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="line"></div>
+      <!-- Section for finding a tutor (end)-->
+
+      <!-- Container for services tips (start)-->
+      <div class="container carousel py-5 text-white">
+        <div class="d-flex">
+          <div class="row">
+            <div class="col-lg-4 col-md-12 client-img">
+              <img
+                src="/images/Green-icon-one.png"
+                width="100px"
+                alt="img1"
+                class="img-fluid"
+              />
+            </div>
+            <div class="col-lg-8 col-md-12 about-client">
+              <h4 class="text-uppercase">FREE for 1 year</h4>
+              <p class="para">
+                Studentpark® gives you a tutor account and lets you use all of
+                its services completely free of charge for a year. Yep, a year!
+              </p>
+            </div>
+          </div>
+          <div class="row ml-2">
+            <div class="col-lg-4 col-md-12 client-img">
+              <img
+                src="/images/Green-icon-two.png"
+                width="100px"
+                alt="img1"
+                class="img-fluid"
+              />
+            </div>
+            <div class="col-lg-8 col-md-12 about-client">
+              <h4 class="text-uppercase">You Keep 100%</h4>
+              <p class="para">
+                We charge no commission from you when you start teaching
+                someone. Teach without worrying about someone taking a cut from
+                your paycheck.
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 col-md-12 client-img">
+              <img
+                src="/images/Green-icon-three.png"
+                width="100px"
+                alt="img1"
+                class="img-fluid ml-3"
+              />
+            </div>
+            <div class="col-lg-8 col-md-12 about-client">
+              <h4 class="text-uppercase">Nationwide Reach</h4>
+              <p class="para">
+                We charge no commission from you when you start teaching
+                someone. Teach without worrying about someone taking a cut from
+                your paycheck.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Container for services tips (end)-->
+
+      <!-- Just a line (start)-->
+      <div class="line"></div>
+      <!-- Just a line (end)-->
+
+      <!-- Container for sign up as a tutor & Sign up with Facebook (start) -->
+      <div class="conatainer py-5">
+        <h4 class="text-white text-center">
+          Get listed as a private tutor on Studentpark® and start teaching right
+          away.
+        </h4>
+        <div class="buttons d-flex justify-content-center mt-3">
+          <button type="button" class="btn button-one">
+            <i class="fas fa-graduation-cap"></i> Sign up as a Tutor
+          </button>
+
+          <button type="button" class="btn button-two">
+            <i class="fab fa-facebook-f pr-3"></i>Sign up with Facebook
+          </button>
+        </div>
+      </div>
+      <!-- Container for sign up as a tutor & Sign up with Facebook (end) -->
+    </section>
+    <!-- Section for finding a tutor (end)-->
+
+    <!-- Section for top tutors & skills (start)-->
+    <section id="tutors">
+      <div class="headline py-3">
+        <h1 class="text-center">Top tutors</h1>
+        <p class="text-center">Meet the highest rated tutors on Studentpark®</p>
+      </div>
+      <div class="line-tutors-section"></div>
+      <div class="container py-5">
+        <div class="row">
+          <!-- Tutor number one (start)-->
+          <div class="col-lg-3 col-sm-6 col-md-6 col-xs-3">
+            <div class="Tutor">
+              <div class="circle circle-one"></div>
+              <h5>Ghulam Sarwar Shaikh</h5>
+              <div class="paragraph-tutor">
+                <i class="fas fa-graduation-cap d-flex">
+                  <p>University of Karachi - M.Phil (20</p>
+                </i>
+              </div>
+              <div class="line-tutors"></div>
+
+              <div class="skills">
+                <div class="items">
+                  <p>Physics</p>
+                </div>
+
+                <div class="items">
+                  <p>Chemistry</p>
+                </div>
+
+                <div class="items">
+                  <p>Maths</p>
+                </div>
+                <div class="items">
+                  <p>Natgenatics - Additional</p>
+                </div>
+                <div class="items">
+                  <p>Mathematics D</p>
+                </div>
+
+                <div class="items">
+                  <p>Mathematics - Further</p>
+                </div>
+                <div class="items">
+                  <p>Statistics</p>
+                </div>
+              </div>
+
+              <button type="button" class="btn text-center button-profile">
+                View Profile
+              </button>
+            </div>
+          </div>
+          <!-- Tutor number one (end)-->
+
+          <!-- Tutor number two (start)-->
+          <div class="col-lg-3 col-sm-6 col-md-6 col-xs-3">
+            <div class="Tutor">
+              <div class="circle circle-two"></div>
+              <h5>Zoha Junaid</h5>
+              <div class="paragraph-tutor">
+                <i class="fas fa-graduation-cap d-flex">
+                  <p>Forman Christian College (F.C.C)</p>
+                </i>
+              </div>
+              <div class="line-tutors"></div>
+
+              <div class="skills">
+                <div class="items">
+                  <p>Chemistry</p>
+                </div>
+
+                <div class="items">
+                  <p>Islamiyat</p>
+                </div>
+
+                <div class="items">
+                  <p>History</p>
+                </div>
+                <div class="items">
+                  <p>Islamic Religion and Culture</p>
+                </div>
+                <div class="items">
+                  <p>Pakistan Studies</p>
+                </div>
+
+                <div class="items">
+                  <p>Religious Studies</p>
+                </div>
+                <div class="items">
+                  <p>History - American</p>
+                </div>
+                <div class="items">
+                  <p>Geography</p>
+                </div>
+                <div class="items">
+                  <p>Geography</p>
+                </div>
+              </div>
+
+              <button type="button" class="btn text-center button-profile">
+                View Profile
+              </button>
+            </div>
+          </div>
+          <!-- Tutor number two (end)-->
+
+          <!-- Tutor number three (start)-->
+          <div class="col-lg-3 col-sm-6 col-md-6 col-xs-3">
+            <div class="Tutor">
+              <div class="circle circle-three"></div>
+              <h5>Hira Ahmed</h5>
+              <div class="paragraph-tutor">
+                <i class="fas fa-graduation-cap d-flex">
+                  <p>Nixor College - A levels (2022)</p>
+                </i>
+              </div>
+              <div class="line-tutors"></div>
+
+              <div class="skills">
+                <div class="items">
+                  <p>Physics</p>
+                </div>
+
+                <div class="items">
+                  <p>Chemistry</p>
+                </div>
+
+                <div class="items">
+                  <p>Islamiyat</p>
+                </div>
+                <div class="items">
+                  <p>History</p>
+                </div>
+                <div class="items">
+                  <p>Islamic Religion and Culture</p>
+                </div>
+
+                <div class="items">
+                  <p>Pakistan Studies</p>
+                </div>
+                <div class="items">
+                  <p>Religious Studies</p>
+                </div>
+              </div>
+
+              <button type="button" class="btn text-center button-profile">
+                View Profile
+              </button>
+            </div>
+          </div>
+          <!-- Tutor number three (end)-->
+
+          <!-- Tutor number four (start)-->
+          <div class="col-lg-3 col-sm-6 col-md-6 col-xs-3">
+            <div class="Tutor">
+              <div class="circle circle-four"></div>
+              <h5>Reebal A Qadeer</h5>
+              <div class="paragraph-tutor">
+                <i class="fas fa-graduation-cap d-flex">
+                  <p>University of Strathclyde, UK - M</p>
+                </i>
+              </div>
+              <div class="line-tutors"></div>
+
+              <div class="skills">
+                <div class="items">
+                  <p>Physics</p>
+                </div>
+
+                <div class="items">
+                  <p>Chemistry</p>
+                </div>
+
+                <div class="items">
+                  <p>Maths</p>
+                </div>
+                <div class="items">
+                  <p>Natgenatics - Additional</p>
+                </div>
+                <div class="items">
+                  <p>Mathematics D</p>
+                </div>
+
+                <div class="items">
+                  <p>Mathematics - Further</p>
+                </div>
+                <div class="items">
+                  <p>Statistics</p>
+                </div>
+              </div>
+
+              <button type="button" class="btn text-center button-profile">
+                View Profile
+              </button>
+            </div>
+          </div>
+          <!-- Tutor number four (end)-->
+        </div>
+      </div>
+    </section>
+    <!-- Section for top tutors & skills (end)-->
+
+    <!-- Section for User Testimonial -> OWL Carousel JS (Start) -->
+    <section id="carousel">
+      <h1 class="text-center text-white">Tutors testimonials</h1>
+      <!-- Owl carousel (start) -->
+      <div class="owl-carousel owl-theme py-4">
+        <!-- Tutor owl carousel testimonial (start) -->
+        <div class="testimonial-item text-center">
+          <img src="/images/Profile1.jfif" class="img-fluid" alt="" />
+          <h3>Ghulam Sarwar Shaikh</h3>
+          <h6>Web designer, Backend developer, Frontend developer</h6>
+          <p>
+            <i class="fas fa-quote-left pr-2"></i>Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Incidunt voluptatum amet autem
+            aspernatur sunt eligendi et nesciunt molestias iusto ipsam.
+            Similique numquam, qui quasi molestiae quam deleniti distinctio
+            dolores tenetur?<i class="fas fa-quote-right pl-2"></i>
+          </p>
+        </div>
+        <!-- Tutor owl carousel testimonial (end) -->
+
+        <!-- Tutor two owl carousel testimonial (start) -->
+        <div class="testimonial-item text-center">
+          <img src="/images/Profile2.jfif" class="img-fluid" alt="" />
+          <h3>Zoha Junaid</h3>
+          <h6>Graphic designer, Geography teacher</h6>
+          <p>
+            <i class="fas fa-quote-left pr-2"></i>Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Incidunt voluptatum amet autem
+            aspernatur sunt eligendi et nesciunt molestias iusto ipsam.
+            Similique numquam, qui quasi molestiae quam deleniti distinctio
+            dolores tenetur?<i class="fas fa-quote-right pl-2"></i>
+          </p>
+        </div>
+        <!-- Tutor two owl carousel testimonial (end) -->
+
+        <!-- Tutor three owl carousel testimonial (start) -->
+        <div class="testimonial-item text-center">
+          <img src="/images/Profile3.jfif" class="img-fluid" alt="" />
+          <h3>Reebal A Qadeer</h3>
+          <h6>Fullstack JavaScript Developer</h6>
+          <p>
+            <i class="fas fa-quote-left pr-2"></i>Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Incidunt voluptatum amet autem
+            aspernatur sunt eligendi et nesciunt molestias iusto ipsam.
+            Similique numquam, qui quasi molestiae quam deleniti distinctio
+            dolores tenetur?<i class="fas fa-quote-right pl-2"></i>
+          </p>
+        </div>
+        <!-- Tutor three owl carousel testimonial (end) -->
+      </div>
+      <!-- Owl carousel (end) -->
+    </section>
+    <!-- Section for User Testimonial -> OWL Carousel JS (End) -->
+
+    <!-- Section for Tutors, Subjects and Cities -> number count up JQuery (start) -->
+    <section id="counter">
+      <!-- Container (start)-->
+      <div class="container">
+        <div class="row py-5">
+          <!-- Tutors text & Number count (start) -->
+          <div class="col-lg-4 col-md-4 col-sm-4 text-center">
+            <img
+              src="/images/People-green.png"
+              class="img-fluid image"
+              alt=""
+            />
+            <div class="text">
+              <h1 class="counter">5768</h1>
+              <h4>Tutors</h4>
+            </div>
+          </div>
+          <!-- Tutors text & Number count (end) -->
+          <!-- Subjects text & Number count (start) -->
+          <div class="col-lg-4 col-md-4 col-sm-4 text-center">
+            <img src="/images/Book-green.png" class="img-fluid image" alt="" />
+            <div class="text">
+              <h1 class="counter">219</h1>
+              <h4>Subject</h4>
+            </div>
+          </div>
+          <!-- Subjects text & Number count (end) -->
+          <!-- Cities text & Number count (start) -->
+          <div class="col-lg-4 col-md-4 col-sm-4 text-center">
+            <img src="/images/City-green.png" class="img-fluid image" alt="" />
+            <div class="text">
+              <h1 class="counter">13</h1>
+              <h4>Cities</h4>
+            </div>
+          </div>
+          <!-- Cities text & Number count (end) -->
+        </div>
+      </div>
+      <!-- Container (end)-->
+    </section>
+
+    <!-- Section for Tutors, Subjects and Cities -> number count up JQuery (start) -->
+    <!-- Footer information (start)-->
+    <section id="footer" class="text-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-sm-3">
+            <div class="text d-flex row-topics">
+              <i class="fas fa-user-friends"> </i>
+              <h5>Tutors</h5>
+            </div>
+
+            <!-- Container pop up for City (start)-->
+            <ul class="list-item">
+              <li class="Subjects">
+                <i class="fas fa-caret-right" id="arrow-right"></i
+                ><i class="fas fa-caret-down" id="arrow-down"></i
+                ><a id="buttonClick">By City</a>
+              </li>
+              <div class="City-pop-up" id="city">
+                <ul id="firstItems">
+                  <li>Lahore<sup>(2560)</sup></li>
+                  <li>Karachi<sup>(769)</sup></li>
+                  <li>Islamabad<sup>(321)</sup></li>
+                  <li>Lahore<sup>(156)</sup></li>
+                  <li>Lahore<sup>(356)</sup></li>
+                </ul>
+              </div>
+              <!-- Container pop up for City (end)-->
+
+              <!-- Container pop up for Subjects (start)-->
+              <li class="Subjects">
+                <i class="fas fa-caret-right" id="arrow-right-subject"></i
+                ><i class="fas fa-caret-down" id="arrow-down-subject"></i
+                ><a id="buttonClickSubject">By Subjects</a>
+              </li>
+              <div class="CitySubjectPop" id="SubjectContainer">
+                <ul id="SubjectItems">
+                  <li>Maths<sup>(3255)</sup></li>
+                  <li>Physics<sup>(2522)</sup></li>
+                  <li>Chemistry<sup>(2053)</sup></li>
+                  <li>Urdu<sup>(1373)</sup></li>
+                  <li>Biology<sup>(356)</sup></li>
+                </ul>
+              </div>
+              <!-- Container pop up for Subjects (end)-->
+
+              <!-- Container pop up for Institute (start)-->
+              <li class="Subjects">
+                <i class="fas fa-caret-right" id="arrow-right-institute"></i
+                ><i class="fas fa-caret-down" id="arrow-down-institute"></i
+                ><a id="buttonClickInstitute">By Institute</a>
+              </li>
+              <div class="CitySubjectPop" id="InstituteContainer">
+                <ul id="SubjectItems">
+                  <li>Lums<sup>(346)</sup></li>
+                  <li>Sciences<sup>(769)</sup></li>
+                  <li>School Systems<sup>(321)</sup></li>
+                  <li>Pakistan<sup>(156)</sup></li>
+                  <li>College<sup>(356)</sup></li>
+                </ul>
+              </div>
+              <!-- Container pop up for Institute (end)-->
+
+              <!-- Container pop up for Discipline (start)-->
+              <li class="Subjects">
+                <i class="fas fa-caret-right" id="arrow-right-discipline"></i
+                ><i class="fas fa-caret-down" id="arrow-down-discipline"></i
+                ><a id="buttonClickDiscipline">By Discipline</a>
+              </li>
+              <div class="CitySubjectPop" id="DisciplineContainer">
+                <ul id="SubjectItems">
+                  <li>Mathematics<sup>(243)</sup></li>
+                  <li>Science<sup>(169)</sup></li>
+                  <li>Gym<sup>(21)</sup></li>
+                  <li>ICT<sup>(1345)</sup></li>
+                  <li>Languages<sup>(356)</sup></li>
+                </ul>
+              </div>
+              <!-- Container pop up for Discipline (end)-->
+
+              <!-- Container pop up for Discipline (start)-->
+              <li class="Subjects">
+                <i class="fas fa-caret-right" id="arrow-right-grades"></i
+                ><i class="fas fa-caret-down" id="arrow-down-grades"></i
+                ><a id="buttonClickGrades">By Grades</a>
+              </li>
+              <div class="CitySubjectPop" id="GradesContainer">
+                <ul id="SubjectItems">
+                  <li>Class A<sup>(2560)</sup></li>
+                  <li>Matric<sup>(769)</sup></li>
+                  <li>Class 1 to 6<sup>(321)</sup></li>
+                  <li>Classs B<sup>(156)</sup></li>
+                  <li>CSS<sup>(356)</sup></li>
+                </ul>
+              </div>
+              <!-- Container pop up for Discipline (end)-->
+            </ul>
+          </div>
+
+          <!-- Container Tuitions text (start) -->
+          <div class="col-lg-3 col-sm-3 d-flex row-topics">
+            <i class="fas fa-graduation-cap"> </i>
+            <h5>Tuitions</h5>
+          </div>
+          <!-- Container Tuitions text (end) -->
+          <!-- Container Courses Beta text (start) -->
+          <div class="col-lg-3 col-sm-3 d-flex row-topics">
+            <i class="fas fa-business-time"> </i>
+            <h5>Courses<sup>Beta</sup></h5>
+          </div>
+          <!-- Container Courses Beta text (end) -->
+          <!-- Container Discussions (start) -->
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 d-flex row-topics">
+            <i class="fas fa-comment"> </i>
+            <h5>Discussions</h5>
+          </div>
+          <!-- Container Discussions (end) -->
+        </div>
+      </div>
+      <!-- Footer section inforation (start) -->
+      <div class="container privacy-section">
+        <div class="row d-flex justify-content-end">
+          <!-- Footers list items (start) -->
+          <ul class="unlistItem d-flex">
+            <li>About</li>
+            <li>Blog</li>
+            <li>Terms</li>
+            <li>Privacy</li>
+          </ul>
+          <!-- Footers list items (end) -->
+          <!-- Like, Share and follow twitter section (start)-->
+          <div class="button-socials">
+            <button type="button" class="btn button-two">
+              <i class="fas fa-thumbs-up pr-1"></i> Like
+            </button>
+            <button type="button" class="btn button-two">
+              <i class="fas fa-share-alt pr-2"></i>Share
+            </button>
+            <button type="button" class="btn button-two">
+              <i class="fab fa-twitter pr-1"></i> Follow
+              <strong>@thestudentpark</strong>
+            </button>
+          </div>
+          <!-- Like, Share and follow twitter section (end)-->
+        </div>
+      </div>
+      <!-- Footer section inforation (end) -->
+      <!-- Just a line (start) -->
+      <div class="line-section"></div>
+      <!-- Just a line (end) -->
+    </section>
+    <!-- Footer information (start)-->
+    <!-- Last section all the way down below the page (start) -->
+    <section id="last">
+      <div class="container text-white">
+        <div class="row d-flex justify-content-between">
+          <div
+            class="ending-text d-flex align-items-center justify-content-between"
+          >
+            <img src="/images/Logo.png" class="img-fluid logo" alt="" />
+            <h6>Teach. Learn. Earn.™</h6>
+          </div>
+          <div
+            class="copyright-paragraph d-flex align-items-center justify-content-between"
+          >
+            <p>Magomed Khamidov &copy; 2020</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Last section all the way down below the page (end) -->
+
+    <!-- JavaScript / JQuery Scripts (Starts)-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"
+      integrity="sha256-JtQPj/3xub8oapVMaIijPNoM0DHoAtgh/gwFYuN5rik="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
+      integrity="sha256-jDnOKIOq2KNsQZTcBTEnsp76FnfMEttF6AV2DF2fFNE="
+      crossorigin="anonymous"
+    ></script>
+    <script src="jquery.min.js"></script>
+    <script src="/JavaScript/owl.carousel.min.js"></script>
+    <script src="/JavaScript/JQuery.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <!-- JavaScript / JQuery Scripts (Ends)-->
+  </body>
+</html>

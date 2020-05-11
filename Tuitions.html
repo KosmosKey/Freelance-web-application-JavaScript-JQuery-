@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/CSS/Tuitions.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/b881fc956a.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Navigationbar (Starts) -->
+    <nav class="navbar navbar-expand-lg navbar navbar-dark p-3">
+      <img src="/images/green.png" class="img-fluid-one" alt="" />
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <div class="conatiner">
+          <span class="fas fa-bars"></span>
+        </div>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link text-white" href="#"
+              ><i class="fas fa-user-friends p-1"></i>Tutors</a
+            >
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link text-white" href="#"
+              ><i class="fas fa-graduation-cap p-1"></i>Tuitions</a
+            >
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link text-white" href="#"
+              ><i class="fas fa-business-time p-1"></i>Courses<sup>Beta</sup></a
+            >
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0 mr-1">
+          <button class="btn btn-outline-success mr-3 button">
+            <i class="fas fa-sign-in-alt"></i>
+            Log in
+          </button>
+        </form>
+        <button class="btn btn-outline-success button">
+          <i class="fas fa-user-plus"></i>
+          Sign up
+        </button>
+      </div>
+    </nav>
+    <!-- Navigationbar (Ends) -->
+
+    <header class="p-3">
+      <div class="container text-center">
+        <h1>Tuitions</h1>
+        <p>Find, post or apply to teaching jobs</p>
+      </div>
+    </header>
+
+    <section class="Tuitions" id="Tuitions">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="Filters p-3 mt-4">
+              <div class="filterHeader">
+                <p><i class="fas fa-search mr-3"></i>Filter</p>
+              </div>
+              <div class="SubjectsAndGrades">
+                <div class="subjects">
+                  <p class="m-0 mb-2">Subject</p>
+                  <input
+                    list="browsers"
+                    class="p-2"
+                    placeholder="Select subject"
+                  />
+
+                  <datalist id="browsers">
+                    <option value="Math"> </option>
+                    <option value="Science"> </option>
+                    <option value="Java"> </option>
+                    <option value="Programming"> </option>
+                  </datalist>
+                </div>
+                <div class="grades mt-3">
+                  <div class="grades">
+                    <p class="m-0 mb-2">Grade</p>
+                    <input
+                      list="browsersTwo"
+                      class="p-2"
+                      placeholder="Select grade"
+                    />
+
+                    <datalist id="browsersTwo">
+                      <option value="Class 1"> </option>
+                      <option value="Class 1 to 6"> </option>
+                      <option value="Class 8"> </option>
+                      <option value="Class 7"> </option>
+                    </datalist>
+                  </div>
+                </div>
+              </div>
+
+              <div class="teachingContainer mt-4">
+                <p class="m-0 mb-2">Teaching Medium</p>
+                <div class="inputFields d-flex align-items-center m-0">
+                  <div class="inputs">
+                    <div class="fieldOne d-flex align-items-center">
+                      <input
+                        id="toggle"
+                        class="toggle-control"
+                        type="checkbox"
+                        checked
+                      />
+                      <label for="toggle" class="lableChecked"></label>
+                      <p class="ml-2 mt-2 onlineParagraph">Online</p>
+                    </div>
+                    <div class="inputsTwo d-flex align-items-center">
+                      <input
+                        id="toggleOne"
+                        class="toggle-controlTwo"
+                        type="checkbox"
+                        checked
+                      />
+                      <label for="toggleOne" class="lableCheckedTwo"></label>
+                      <p class="ml-2 mt-2 personParagraph">In person</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="cityContainer">
+                  <p class="m-0">City</p>
+                  <input
+                    list="browsersThree"
+                    class="p-2"
+                    placeholder="Select city"
+                  />
+
+                  <datalist id="browsersThree">
+                    <option value="Kabul"> </option>
+                    <option value="Jalabad"> </option>
+                    <option value="Kandahar"> </option>
+                    <option value="Herat"> </option>
+                  </datalist>
+                </div>
+                <div class="moreOptions mt-3 mb-3">
+                  <button class="btn clickBtn p-1">
+                    More options<i
+                      class="fas fa-caret-right ml-2"
+                      id="caret-right"
+                    ></i
+                    ><i class="fas fa-caret-down ml-2" id="caret-down"></i>
+                  </button>
+                </div>
+
+                <div class="hideClosed mb-3">
+                  <input
+                    id="toggleFour"
+                    class="toggle-controlTwo"
+                    type="checkbox"
+                  />
+                  <label
+                    for="toggleFour"
+                    id="lableFour"
+                    class="lableCheckedTwo"
+                  ></label>
+                  <p class="ml-2 mt-2 personParagraphTwo">
+                    Hide closed tuitions
+                  </p>
+                </div>
+
+                <div class="lineButtons">
+                  <button class="btn searchBtn">Search</button>
+                  <button class="btn resetBtn ml-2">Reset</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-8">
+            <div class="containerTutions mt-4">
+              <div class="containerHeader p-3">
+                <div class="profilePicture"></div>
+                <div class="nameAndProfile pl-3 mt-2">
+                  <h5 class="m-0">Muddar Arab</h5>
+                  <p>Posted 13 hours ago</p>
+                </div>
+              </div>
+              <div class="paragraphTutions pl-3 pt-3">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
+                  veritatis, quasi culpa, harum optio adipisci maiores ex
+                  voluptates est tempore ipsa. Sequi perspiciatis non quae
+                  quisquam soluta quidem tempore veniam!
+                </p>
+              </div>
+              <div class="iconsGrades">
+                <div class="Subjects p-3">
+                  <p class="m-0">
+                    Subjects: <strong class="ml-1">Spoken English</strong>
+                  </p>
+                  <p class="m-0 mt-2">
+                    Grade: <strong class="ml-1">A Levels</strong>
+                  </p>
+                  <p class="m-0 mt-2">
+                    Location:
+                    <strong class="ml-1"
+                      ><i class="fas fa-desktop"></i> Online</strong
+                    >
+                  </p>
+                </div>
+              </div>
+
+              <div class="buttonsApply p-3">
+                <button class="btn applyBtn">Apply</button>
+              </div>
+            </div>
+
+            <div class="containerTutions mt-4">
+              <div class="containerHeader p-3">
+                <div class="profilePicture"></div>
+                <div class="nameAndProfile pl-3 mt-2">
+                  <h5 class="m-0">Muddar Arab</h5>
+                  <p>Posted 13 hours ago</p>
+                </div>
+              </div>
+              <div class="paragraphTutions pl-3 pt-3">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
+                  veritatis, quasi culpa, harum optio adipisci maiores ex
+                  voluptates est tempore ipsa. Sequi perspiciatis non quae
+                  quisquam soluta quidem tempore veniam!
+                </p>
+              </div>
+              <div class="iconsGrades">
+                <div class="Subjects p-3">
+                  <p class="m-0">
+                    Subjects: <strong class="ml-1">Spoken English</strong>
+                  </p>
+                  <p class="m-0 mt-2">
+                    Grade: <strong class="ml-1">A Levels</strong>
+                  </p>
+                  <p class="m-0 mt-2">
+                    Location:
+                    <strong class="ml-1"
+                      ><i class="fas fa-desktop"></i> Online</strong
+                    >
+                  </p>
+                </div>
+              </div>
+
+              <div class="buttonsApply p-3">
+                <button class="btn applyBtn">Apply</button>
+              </div>
+            </div>
+
+            <div class="containerTutions mt-4">
+              <div class="containerHeader p-3">
+                <div class="profilePicture"></div>
+                <div class="nameAndProfile pl-3 mt-2">
+                  <h5 class="m-0">Muddar Arab</h5>
+                  <p>Posted 13 hours ago</p>
+                </div>
+              </div>
+              <div class="paragraphTutions pl-3 pt-3">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
+                  veritatis, quasi culpa, harum optio adipisci maiores ex
+                  voluptates est tempore ipsa. Sequi perspiciatis non quae
+                  quisquam soluta quidem tempore veniam!
+                </p>
+              </div>
+              <div class="iconsGrades">
+                <div class="Subjects p-3">
+                  <p class="m-0">
+                    Subjects: <strong class="ml-1">Spoken English</strong>
+                  </p>
+                  <p class="m-0 mt-2">
+                    Grade: <strong class="ml-1">A Levels</strong>
+                  </p>
+                  <p class="m-0 mt-2">
+                    Location:
+                    <strong class="ml-1"
+                      ><i class="fas fa-desktop"></i> Online</strong
+                    >
+                  </p>
+                </div>
+              </div>
+
+              <div class="buttonsApply p-3">
+                <button class="btn applyBtn">Apply</button>
+              </div>
+            </div>
+
+            <div class="containerTutions mt-4">
+              <div class="containerHeader p-3">
+                <div class="profilePicture"></div>
+                <div class="nameAndProfile pl-3 mt-2">
+                  <h5 class="m-0">Muddar Arab</h5>
+                  <p>Posted 13 hours ago</p>
+                </div>
+              </div>
+              <div class="paragraphTutions pl-3 pt-3">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
+                  veritatis, quasi culpa, harum optio adipisci maiores ex
+                  voluptates est tempore ipsa. Sequi perspiciatis non quae
+                  quisquam soluta quidem tempore veniam!
+                </p>
+              </div>
+              <div class="iconsGrades">
+                <div class="Subjects p-3">
+                  <p class="m-0">
+                    Subjects: <strong class="ml-1">Spoken English</strong>
+                  </p>
+                  <p class="m-0 mt-2">
+                    Grade: <strong class="ml-1">A Levels</strong>
+                  </p>
+                  <p class="m-0 mt-2">
+                    Location:
+                    <strong class="ml-1"
+                      ><i class="fas fa-desktop"></i> Online</strong
+                    >
+                  </p>
+                </div>
+              </div>
+
+              <div class="buttonsApply p-3">
+                <button class="btn applyBtn">Apply</button>
+              </div>
+            </div>
+
+            <div class="paginationDiv mt-3 mb-3">
+              <nav class="paginationNavBar">
+                <ul class="pagiantion">
+                  <li class="firstChild">
+                    < Previous
+                  </li>
+                  <li><a href="#" class="active">1</a></li>
+                  <li><a href="#">2</a></li>
+                  <li><a href="#">3</a></li>
+                  <li><a href="#">4</a></li>
+                  <li><a href="#">5</a></li>
+                  <li><a href="#">6</a></li>
+                  <li><a href="#">7</a></li>
+                  <li><a href="#">8</a></li>
+                  <li class="disabled"><span>...</span></li>
+                  <li class="lastChild">Next ></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer information (start)-->
+    <section id="footer" class="text-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-sm-3">
+            <div class="text d-flex row-topics">
+              <i class="fas fa-user-friends"> </i>
+              <h5>Tutors</h5>
+            </div>
+
+            <!-- Container pop up for City (start)-->
+            <ul class="list-item">
+              <li class="Subjects">
+                <i class="fas fa-caret-right" id="arrow-right"></i
+                ><i class="fas fa-caret-down" id="arrow-down"></i
+                ><a id="buttonClick">By City</a>
+              </li>
+              <div class="City-pop-up" id="city">
+                <ul id="firstItems">
+                  <li>Lahore<sup>(2560)</sup></li>
+                  <li>Karachi<sup>(769)</sup></li>
+                  <li>Islamabad<sup>(321)</sup></li>
+                  <li>Lahore<sup>(156)</sup></li>
+                  <li>Lahore<sup>(356)</sup></li>
+                </ul>
+              </div>
+              <!-- Container pop up for City (end)-->
+
+              <!-- Container pop up for Subjects (start)-->
+              <li class="Subjects">
+                <i class="fas fa-caret-right" id="arrow-right-subject"></i
+                ><i class="fas fa-caret-down" id="arrow-down-subject"></i
+                ><a id="buttonClickSubject">By Subjects</a>
+              </li>
+              <div class="CitySubjectPop" id="SubjectContainer">
+                <ul id="SubjectItems">
+                  <li>Maths<sup>(3255)</sup></li>
+                  <li>Physics<sup>(2522)</sup></li>
+                  <li>Chemistry<sup>(2053)</sup></li>
+                  <li>Urdu<sup>(1373)</sup></li>
+                  <li>Biology<sup>(356)</sup></li>
+                </ul>
+              </div>
+              <!-- Container pop up for Subjects (end)-->
+
+              <!-- Container pop up for Institute (start)-->
+              <li class="Subjects">
+                <i class="fas fa-caret-right" id="arrow-right-institute"></i
+                ><i class="fas fa-caret-down" id="arrow-down-institute"></i
+                ><a id="buttonClickInstitute">By Institute</a>
+              </li>
+              <div class="CitySubjectPop" id="InstituteContainer">
+                <ul id="SubjectItems">
+                  <li>Lums<sup>(346)</sup></li>
+                  <li>Sciences<sup>(769)</sup></li>
+                  <li>School Systems<sup>(321)</sup></li>
+                  <li>Pakistan<sup>(156)</sup></li>
+                  <li>College<sup>(356)</sup></li>
+                </ul>
+              </div>
+              <!-- Container pop up for Institute (end)-->
+
+              <!-- Container pop up for Discipline (start)-->
+              <li class="Subjects">
+                <i class="fas fa-caret-right" id="arrow-right-discipline"></i
+                ><i class="fas fa-caret-down" id="arrow-down-discipline"></i
+                ><a id="buttonClickDiscipline">By Discipline</a>
+              </li>
+              <div class="CitySubjectPop" id="DisciplineContainer">
+                <ul id="SubjectItems">
+                  <li>Mathematics<sup>(243)</sup></li>
+                  <li>Science<sup>(169)</sup></li>
+                  <li>Gym<sup>(21)</sup></li>
+                  <li>ICT<sup>(1345)</sup></li>
+                  <li>Languages<sup>(356)</sup></li>
+                </ul>
+              </div>
+              <!-- Container pop up for Discipline (end)-->
+
+              <!-- Container pop up for Discipline (start)-->
+              <li class="Subjects">
+                <i class="fas fa-caret-right" id="arrow-right-grades"></i
+                ><i class="fas fa-caret-down" id="arrow-down-grades"></i
+                ><a id="buttonClickGrades">By Grades</a>
+              </li>
+              <div class="CitySubjectPop" id="GradesContainer">
+                <ul id="SubjectItems">
+                  <li>Class A<sup>(2560)</sup></li>
+                  <li>Matric<sup>(769)</sup></li>
+                  <li>Class 1 to 6<sup>(321)</sup></li>
+                  <li>Classs B<sup>(156)</sup></li>
+                  <li>CSS<sup>(356)</sup></li>
+                </ul>
+              </div>
+              <!-- Container pop up for Discipline (end)-->
+            </ul>
+          </div>
+
+          <!-- Container Tuitions text (start) -->
+          <div class="col-lg-3 col-sm-3 d-flex row-topics">
+            <i class="fas fa-graduation-cap"> </i>
+            <h5>Tuitions</h5>
+          </div>
+          <!-- Container Tuitions text (end) -->
+          <!-- Container Courses Beta text (start) -->
+          <div class="col-lg-3 col-sm-3 d-flex row-topics">
+            <i class="fas fa-business-time"> </i>
+            <h5>Courses<sup>Beta</sup></h5>
+          </div>
+          <!-- Container Courses Beta text (end) -->
+          <!-- Container Discussions (start) -->
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 d-flex row-topics">
+            <i class="fas fa-comment"> </i>
+            <h5>Discussions</h5>
+          </div>
+          <!-- Container Discussions (end) -->
+        </div>
+      </div>
+      <!-- Footer section inforation (start) -->
+      <div class="container privacy-section">
+        <div class="row d-flex justify-content-end">
+          <!-- Footers list items (start) -->
+          <ul class="unlistItem d-flex">
+            <li>About</li>
+            <li>Blog</li>
+            <li>Terms</li>
+            <li>Privacy</li>
+          </ul>
+          <!-- Footers list items (end) -->
+          <!-- Like, Share and follow twitter section (start)-->
+          <div class="button-socials">
+            <button type="button" class="btn button-two">
+              <i class="fas fa-thumbs-up pr-1"></i> Like
+            </button>
+            <button type="button" class="btn button-two">
+              <i class="fas fa-share-alt pr-2"></i>Share
+            </button>
+            <button type="button" class="btn button-two">
+              <i class="fab fa-twitter pr-1"></i> Follow
+              <strong>@thestudentpark</strong>
+            </button>
+          </div>
+          <!-- Like, Share and follow twitter section (end)-->
+        </div>
+      </div>
+      <!-- Footer section inforation (end) -->
+      <!-- Just a line (start) -->
+      <div class="line"></div>
+      <!-- Just a line (end) -->
+    </section>
+
+    <!-- Last section all the way down below the page (start) -->
+    <section id="last">
+      <div class="container text-white">
+        <div class="row d-flex justify-content-between pt-2">
+          <div
+            class="ending-text d-flex align-items-center justify-content-between"
+          >
+            <img src="/images/Logo.png" class="img-fluid logo" alt="" />
+            <h6>Teach. Learn. Earn.™</h6>
+          </div>
+          <div
+            class="copyright-paragraph d-flex align-items-center justify-content-between"
+          >
+            <p>Magomed Khamidov &copy; 2020</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- JavaScript / JQuery Scripts (Starts)-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="/JavaScript/tuitions.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

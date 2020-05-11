@@ -1,0 +1,807 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+}
+
+body {
+  background: #E6E6E6 !important;
+}
+
+.nav-link {
+  font-family: 'Nunito', sans-serif;
+}
+
+.navbar {
+  background: white !important;
+}
+
+.button {
+  border-radius: 5px !important;
+  border: 2px solid white !important;
+  background: #439272 !important;
+  color: white !important;
+  -webkit-transition: .3s ease-in;
+  transition: .3s ease-in;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 5px 15px;
+}
+
+.button:hover {
+  background: black !important;
+  border: 2px solid white !important;
+}
+
+.navbar-nav li a {
+  color: black !important;
+  font-size: 1.2rem;
+}
+
+.img-fluid-one {
+  margin-right: 2rem;
+  width: 15rem;
+}
+
+.fa-bars {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.navbar-toggler {
+  padding: .5rem 1rem;
+  border: 3px solid white;
+  background: #439272 !important;
+  border: none;
+}
+
+sup {
+  padding-left: 5px;
+}
+
+.profileSection {
+  width: 100%;
+  background: #439272;
+}
+
+.profileSection .tuitioProfile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.profileSection .picture {
+  padding-left: 50px !important;
+  margin: 0 auto;
+  width: 250px;
+  height: 250px;
+  background: url(/images/thumb.jpeg);
+  background-size: cover;
+  border-radius: 50%;
+  border: 5px solid white;
+}
+
+.profileSection .addressLink {
+  font-size: 20px;
+}
+
+.profileSection .fa-map-marker-alt {
+  font-size: 25px;
+}
+
+.topics {
+  max-width: 400px;
+  max-height: 125px;
+  overflow: hidden;
+}
+
+.topic_div {
+  display: inline-block;
+  text-align: center;
+  border-radius: 5px;
+  max-width: 250px;
+  padding: .50em .6em;
+  padding-top: 0px;
+  overflow: hidden;
+  font-size: 15px !important;
+  height: 25px;
+  margin-top: 5px;
+  background: white;
+  max-height: 150px;
+  color: #39986F;
+  border: 1px solid #5f5f5f;
+}
+
+.containerSimilarTutors .universitySimilar {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 250px;
+}
+
+.containerSimilarTutors .student {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 250px;
+}
+
+.containerSimilarTutors .nameTutorSimilar {
+  font-size: 20px;
+  -webkit-transition: .5s ease !important;
+  transition: .5s ease !important;
+  cursor: pointer;
+}
+
+.containerSimilarTutors .nameTutorSimilar:hover {
+  border-bottom: 1px solid black;
+}
+
+.ratingStars p {
+  margin-left: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 500px;
+}
+
+.summary .summaryContainer {
+  background: #fff;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+.educationContainer {
+  width: 100%;
+  background: #fff;
+  border: 1px solid #ddd;
+}
+
+.titleEducation {
+  height: 55px;
+  border-bottom: 1px solid black !important;
+  border: 1px solid #ddd;
+}
+
+.titleEducation .fa-graduation-cap {
+  font-size: 20px;
+}
+
+.titleReview {
+  border-bottom: 1px solid black;
+  height: 95px;
+  margin-bottom: 5px;
+}
+
+.titleReview .fa-star {
+  font-size: 13px;
+  padding-right: 5px;
+  margin-top: 5px;
+  color: #FF9900;
+}
+
+.fa-star {
+  color: #FF9900;
+}
+
+.reviewContainer {
+  width: 100%;
+  background: #fff;
+  border: 1px solid #ddd;
+}
+
+.veryPoor {
+  font-size: 20px;
+  margin-left: 5px;
+}
+
+.leaveReviewContainer {
+  background: #F6F7F9;
+  border: 1px solid #ddd;
+}
+
+.inputAdd {
+  cursor: pointer;
+}
+
+.inputAdd .fa-plus-circle {
+  margin-right: 5px;
+  font-size: 12px;
+}
+
+.inputAdd p {
+  color: #4989ff;
+  font-size: 14px;
+}
+
+.inputAdd p:hover {
+  color: #003494;
+  text-decoration: underline;
+}
+
+.starsSimilar {
+  pointer-events: none !important;
+  cursor: pointer;
+}
+
+.starsSimilar .fa-star-o {
+  color: #9e9e9e;
+  cursor: pointer;
+}
+
+.submitReviewBtn {
+  background: #80D651 !important;
+  color: white !important;
+  border: 1px solid rgba(71, 71, 71, 0.192) !important;
+  -webkit-box-shadow: 0px 0px 2px rgba(71, 71, 71, 0.37);
+          box-shadow: 0px 0px 2px rgba(71, 71, 71, 0.37);
+}
+
+.inputRemove {
+  display: none;
+}
+
+.reviewsProfiles .profilePictureReview {
+  width: 65px;
+  height: 65px;
+  background: url("/images/Profile1.jfif");
+  background-size: cover;
+  border-radius: 5px;
+  border: 2px solid #39986F;
+  padding-right: 5px;
+}
+
+.reviewsProfiles .fa-star {
+  padding-right: 5px;
+}
+
+.titleOfReview strong {
+  color: #4989ff;
+  cursor: pointer;
+}
+
+.titleOfReview strong:hover {
+  color: #003494;
+  text-decoration: underline;
+}
+
+.titleLeaveReview {
+  font-size: 12px;
+  width: 100%;
+}
+
+.titleLeaveReview p {
+  color: #707070;
+}
+
+.rateExperience .fa-star-o {
+  font-size: 20px;
+  margin-right: 5px;
+  color: #FF9900;
+  cursor: pointer;
+}
+
+.fa-star {
+  font-size: 20px;
+  margin-right: 5px;
+  color: #FF9900;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 830px) {
+  .tuitioProfile {
+    display: block !important;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .profilePicture {
+    margin-left: 35px;
+  }
+  .topics {
+    max-width: 400px;
+    max-height: 200px;
+    overflow: hidden;
+  }
+  .profileSection {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .topics {
+    margin: 0 auto;
+  }
+  .information {
+    width: 75%;
+    margin: 0 auto;
+  }
+}
+
+input[type=title] {
+  width: 100%;
+  border-radius: 5px;
+  border: 2px solid #adadad;
+  padding: 6px 12px;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+textarea {
+  width: 90%;
+  padding: 5px;
+  border-radius: 5px;
+  height: 125px;
+  border: 2px solid #adadad;
+  padding: 6px 12px;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+.locationContainer {
+  width: 100%;
+  background: #fff;
+  border: 1px solid #ddd;
+}
+
+.socialMediaContainer {
+  width: 100%;
+  background: #fff;
+  border: 1px solid #ddd;
+}
+
+.buttonFacebook button {
+  background: #4989ff;
+  color: white;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.buttonFacebook button:hover {
+  background: white;
+  color: #4989ff;
+  border: 2px solid #4989ff;
+}
+
+.saveFacebook {
+  background: white !important;
+  color: #4989ff !important;
+  border: 2px solid #4989ff !important;
+  -webkit-transition: .3s ease !important;
+  transition: .3s ease !important;
+}
+
+.saveFacebook:hover {
+  background: #4989ff !important;
+  color: white !important;
+  border: none !important;
+}
+
+.socialIcons {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  border-bottom: 1px solid black;
+  padding-bottom: 15px;
+}
+
+.socialIcons .twitterIcon,
+.socialIcons .googleIcon,
+.socialIcons .emailIcon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 20px;
+  color: white;
+}
+
+.socialIcons .twitterIcon {
+  background: #00ACED;
+}
+
+.socialIcons .googleIcon {
+  background: #DD4B39;
+}
+
+.socialIcons .emailIcon {
+  background: #9e9e9e;
+}
+
+.profilePictureSimilar {
+  padding: 25px;
+  width: 50px;
+  height: 50px;
+  background: url("/images/Profile3.jfif");
+  background-size: cover;
+  border: 1px solid #9e9e9e;
+}
+
+ul {
+  color: #555555;
+}
+
+ul li {
+  padding-top: 3px;
+  color: #505050;
+}
+
+.titleContainer {
+  border-bottom: 1px solid black;
+}
+
+.privacy-section {
+  width: 100%;
+  height: 90px;
+  margin-top: 50px;
+}
+
+.privacy-section ul li {
+  padding: 15px 10px;
+}
+
+.button-socials button {
+  background: white !important;
+  color: #56A978 !important;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.button-socials button:hover {
+  background: #56A978 !important;
+  color: white !important;
+  border: 1px solid white;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+#footer {
+  border-top: 2px solid;
+  width: 100%;
+  height: 100%;
+  background: #39986F;
+  position: static;
+}
+
+#footer .container {
+  padding-top: 40px;
+}
+
+#footer .container #GradesContainer {
+  margin-left: 30px;
+  max-width: 100px;
+  display: none;
+}
+
+#footer .container #GradesContainer ul {
+  list-style: none;
+  font-size: 12px;
+  display: inline-block;
+  width: 120px;
+}
+
+#footer .container #GradesContainer ul li {
+  padding: 2.5px 0px;
+}
+
+#footer .container #arrow-down-grades {
+  display: none;
+}
+
+#footer .container #DisciplineContainer {
+  margin-left: 30px;
+  max-width: 100px;
+  display: none;
+}
+
+#footer .container #DisciplineContainer ul {
+  list-style: none;
+  font-size: 12px;
+  display: inline-block;
+  width: 120px;
+}
+
+#footer .container #DisciplineContainer ul li {
+  padding: 2.5px 0px;
+}
+
+#footer .container #arrow-down-discipline {
+  display: none;
+}
+
+#footer .container #arrow-down-institute {
+  display: none;
+}
+
+#footer .container #InstituteContainer {
+  margin-left: 30px;
+  max-width: 100px;
+  display: none;
+}
+
+#footer .container #InstituteContainer ul {
+  list-style: none;
+  font-size: 12px;
+  display: inline-block;
+  width: 120px;
+}
+
+#footer .container #InstituteContainer ul li {
+  padding: 2.5px 0px;
+}
+
+#footer .container #arrow-down-subject {
+  display: none;
+}
+
+#footer .container .Subjects {
+  color: white;
+}
+
+#footer .container .row #arrow-down {
+  display: none;
+}
+
+#footer .container .row #SubjectContainer {
+  margin-left: 30px;
+  max-width: 100px;
+  display: none;
+}
+
+#footer .container .row #SubjectContainer ul {
+  list-style: none;
+  font-size: 12px;
+  display: inline-block;
+  width: 120px;
+}
+
+#footer .container .row #SubjectContainer ul li {
+  padding: 2.5px 0px;
+}
+
+#footer .container .row .City-pop-up #firstItems {
+  display: none;
+  margin-left: 32px;
+  max-width: 100px;
+}
+
+#footer .container .row .City-pop-up ul {
+  list-style: none;
+  font-size: 12px;
+  display: inline-block;
+  width: 120px;
+}
+
+#footer .container .row .City-pop-up ul li {
+  color: white;
+  padding: 2.5px 0px;
+}
+
+#footer .container .row .unlistItem li {
+  color: white;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+#footer .container .row .unlistItem li:hover {
+  cursor: pointer;
+  color: #426858;
+  text-decoration: underline;
+}
+
+#footer .container .row .row-topics {
+  height: 30px;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+#footer .container .row .row-topics:hover {
+  cursor: pointer;
+  color: #426858;
+}
+
+#footer .container .row #buttonClick,
+#footer .container .row #buttonClickSubject,
+#footer .container .row #buttonClickInstitute,
+#footer .container .row #buttonClickDiscipline,
+#footer .container .row #buttonClickGrades {
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+#footer .container .row #buttonClick:hover,
+#footer .container .row #buttonClickSubject:hover,
+#footer .container .row #buttonClickInstitute:hover,
+#footer .container .row #buttonClickDiscipline:hover,
+#footer .container .row #buttonClickGrades:hover {
+  cursor: pointer;
+  color: #426858;
+  text-decoration: underline;
+}
+
+#footer .container .row .list-item {
+  width: 155px;
+}
+
+#footer .container .row .list-item .City {
+  margin-right: 4px;
+}
+
+#footer .container .row .list-item .Subjects {
+  padding-right: 7px;
+}
+
+#footer .container .row .list-item .Institute {
+  padding-right: 8px;
+}
+
+#footer .container .row .list-item .Grade {
+  padding-right: 20px;
+}
+
+#footer .container .row .list-item ul li {
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+#footer .container .row .list-item ul li:hover {
+  cursor: pointer;
+  color: #426858;
+  text-decoration: underline;
+}
+
+#footer .container .row ul {
+  list-style: none;
+  width: 125px;
+  padding-left: 0px;
+  font-size: 15px;
+  margin-right: auto;
+}
+
+#footer .container .row .fa-caret-right,
+#footer .container .row .fa-caret-down {
+  font-size: 10px;
+  padding: 5px 10px;
+}
+
+#footer .container .row .fa-business-time,
+#footer .container .row .fa-user-friends,
+#footer .container .row .fa-comment,
+#footer .container .row .fa-graduation-cap {
+  font-size: 20px;
+  padding: 0px 15px;
+}
+
+#footer .container .row .button-socials button {
+  text-decoration: none;
+  margin-top: 10px;
+  font-size: 13px;
+}
+
+#SubjectItems li {
+  color: white;
+}
+
+.line {
+  width: 75%;
+  height: 1px;
+  margin: 0 auto;
+  background: white;
+}
+
+#last {
+  background: #39986F;
+}
+
+#last .ending-text .logo {
+  width: 50px;
+}
+
+@media screen and (max-width: 767px) {
+  .socialIcons {
+    display: block !important;
+  }
+  .buttonFacebook .btn {
+    margin-top: 5px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .universitySimilar {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 150px !important;
+  }
+  .student {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 150px !important;
+  }
+}
+
+@media screen and (max-width: 995px) {
+  .similarTutors {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .universitySimilar {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 250px !important;
+  }
+  .student {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 250px !important;
+  }
+  .col-sm-4 {
+    margin-top: 20px;
+  }
+  .socialIcons {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+  .similarTutors {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .ending-text h6 {
+    font-size: 13px;
+  }
+  .copyright-paragraph {
+    font-size: 13px;
+    margin-right: 5px;
+    margin-top: 5px;
+  }
+  .privacy-section br {
+    display: none;
+  }
+  .privacy-section ul li {
+    margin-top: 12.5px;
+    padding-top: 2px !important;
+    font-size: 12px !important;
+    padding: 0px 5px;
+  }
+  .button-socials button {
+    font-size: 8px !important;
+  }
+  .ending-text .logo {
+    width: 10px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .stars p {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .button-socials strong {
+    display: none !important;
+  }
+  .button-two {
+    font-size: 10px !important;
+  }
+}
+/*# sourceMappingURL=Tuition.css.map */

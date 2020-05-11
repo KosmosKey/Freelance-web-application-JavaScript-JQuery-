@@ -1,0 +1,692 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+}
+
+body {
+  background: #F5F5F5 !important;
+}
+
+.nav-link {
+  font-family: 'Nunito', sans-serif;
+}
+
+.navbar {
+  background: white !important;
+}
+
+.button {
+  border-radius: 5px !important;
+  border: 2px solid white !important;
+  background: #439272 !important;
+  color: white !important;
+  -webkit-transition: .3s ease-in;
+  transition: .3s ease-in;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 5px 15px;
+}
+
+.button:hover {
+  background: black !important;
+  border: 2px solid white !important;
+}
+
+.navbar-nav li a {
+  color: black !important;
+  font-size: 1.2rem;
+}
+
+.img-fluid-one {
+  margin-right: 2rem;
+  width: 15rem;
+}
+
+.fa-bars {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.navbar-toggler {
+  padding: .5rem 1rem;
+  border: 3px solid white;
+  background: #439272 !important;
+  border: none;
+}
+
+sup {
+  padding-left: 5px;
+}
+
+header {
+  background: #439272;
+  color: white;
+}
+
+header h1 {
+  font-size: 50px !important;
+}
+
+.containerTutions {
+  -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.075), 0 0 0 1px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 2px 3px rgba(0, 0, 0, 0.075), 0 0 0 1px rgba(0, 0, 0, 0.1);
+}
+
+.containerTutions .paragraphTutions {
+  border-bottom: 1px solid #ccc;
+}
+
+.containerTutions .Subjects {
+  border-bottom: 1px solid #ccc;
+}
+
+.containerHeader {
+  width: 100%;
+  background: #e9e9e9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px solid #ccc;
+}
+
+.profilePicture {
+  width: 75px;
+  height: 75px;
+  background: url("/images/Anonymous.jpg");
+  background-size: cover;
+  border-radius: 50px;
+  border: 2px solid #ccc;
+}
+
+.fa-desktop {
+  color: #80D651;
+}
+
+.buttonsApply button {
+  background: #4989ff;
+  color: white;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.buttonsApply button:hover {
+  background: white;
+  color: #4989ff;
+  border: 2px solid #4989ff;
+}
+
+.privacy-section {
+  width: 100%;
+  height: 90px;
+  margin-top: 50px;
+}
+
+.privacy-section ul li {
+  padding: 15px 10px;
+}
+
+.button-socials button {
+  background: white !important;
+  color: #56A978 !important;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.button-socials button:hover {
+  background: #56A978 !important;
+  color: white !important;
+  border: 1px solid white;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+#footer {
+  border-top: 2px solid;
+  width: 100%;
+  height: 100%;
+  background: #39986F;
+  position: static;
+}
+
+#footer .container {
+  padding-top: 40px;
+}
+
+#footer .container #GradesContainer {
+  margin-left: 30px;
+  max-width: 100px;
+  display: none;
+}
+
+#footer .container #GradesContainer ul {
+  list-style: none;
+  font-size: 12px;
+  display: inline-block;
+  width: 120px;
+}
+
+#footer .container #GradesContainer ul li {
+  padding: 2.5px 0px;
+}
+
+#footer .container #arrow-down-grades {
+  display: none;
+}
+
+#footer .container #DisciplineContainer {
+  margin-left: 30px;
+  max-width: 100px;
+  display: none;
+}
+
+#footer .container #DisciplineContainer ul {
+  list-style: none;
+  font-size: 12px;
+  display: inline-block;
+  width: 120px;
+}
+
+#footer .container #DisciplineContainer ul li {
+  padding: 2.5px 0px;
+}
+
+#footer .container #arrow-down-discipline {
+  display: none;
+}
+
+#footer .container #arrow-down-institute {
+  display: none;
+}
+
+#footer .container #InstituteContainer {
+  margin-left: 30px;
+  max-width: 100px;
+  display: none;
+}
+
+#footer .container #InstituteContainer ul {
+  list-style: none;
+  font-size: 12px;
+  display: inline-block;
+  width: 120px;
+}
+
+#footer .container #InstituteContainer ul li {
+  padding: 2.5px 0px;
+}
+
+#footer .container #arrow-down-subject {
+  display: none;
+}
+
+#footer .container .Subjects {
+  color: white;
+}
+
+#footer .container .row #arrow-down {
+  display: none;
+}
+
+#footer .container .row #SubjectContainer {
+  margin-left: 30px;
+  max-width: 100px;
+  display: none;
+}
+
+#footer .container .row #SubjectContainer ul {
+  list-style: none;
+  font-size: 12px;
+  display: inline-block;
+  width: 120px;
+}
+
+#footer .container .row #SubjectContainer ul li {
+  padding: 2.5px 0px;
+}
+
+#footer .container .row .City-pop-up #firstItems {
+  display: none;
+  margin-left: 32px;
+  max-width: 100px;
+}
+
+#footer .container .row .City-pop-up ul {
+  list-style: none;
+  font-size: 12px;
+  display: inline-block;
+  width: 120px;
+}
+
+#footer .container .row .City-pop-up ul li {
+  color: white;
+  padding: 2.5px 0px;
+}
+
+#footer .container .row .unlistItem li {
+  color: white;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+#footer .container .row .unlistItem li:hover {
+  cursor: pointer;
+  color: #426858;
+  text-decoration: underline;
+}
+
+#footer .container .row .row-topics {
+  height: 30px;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+#footer .container .row .row-topics:hover {
+  cursor: pointer;
+  color: #426858;
+}
+
+#footer .container .row #buttonClick,
+#footer .container .row #buttonClickSubject,
+#footer .container .row #buttonClickInstitute,
+#footer .container .row #buttonClickDiscipline,
+#footer .container .row #buttonClickGrades {
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+#footer .container .row #buttonClick:hover,
+#footer .container .row #buttonClickSubject:hover,
+#footer .container .row #buttonClickInstitute:hover,
+#footer .container .row #buttonClickDiscipline:hover,
+#footer .container .row #buttonClickGrades:hover {
+  cursor: pointer;
+  color: #426858;
+  text-decoration: underline;
+}
+
+#footer .container .row .list-item {
+  width: 155px;
+}
+
+#footer .container .row .list-item .City {
+  margin-right: 4px;
+}
+
+#footer .container .row .list-item .Subjects {
+  padding-right: 7px;
+}
+
+#footer .container .row .list-item .Institute {
+  padding-right: 8px;
+}
+
+#footer .container .row .list-item .Grade {
+  padding-right: 20px;
+}
+
+#footer .container .row .list-item ul li {
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+#footer .container .row .list-item ul li:hover {
+  cursor: pointer;
+  color: #426858;
+  text-decoration: underline;
+}
+
+#footer .container .row ul {
+  list-style: none;
+  width: 125px;
+  padding-left: 0px;
+  font-size: 15px;
+  margin-right: auto;
+}
+
+#footer .container .row .fa-caret-right,
+#footer .container .row .fa-caret-down {
+  font-size: 10px;
+  padding: 5px 10px;
+}
+
+#footer .container .row .fa-business-time,
+#footer .container .row .fa-user-friends,
+#footer .container .row .fa-comment,
+#footer .container .row .fa-graduation-cap {
+  font-size: 20px;
+  padding: 0px 15px;
+}
+
+#footer .container .row .button-socials button {
+  text-decoration: none;
+  margin-top: 10px;
+  font-size: 13px;
+}
+
+#SubjectItems li {
+  color: white;
+}
+
+.line {
+  width: 75%;
+  height: 1px;
+  margin: 0 auto;
+  background: white;
+}
+
+#last {
+  background: #39986F;
+}
+
+#last .ending-text .logo {
+  width: 50px;
+}
+
+.paginationDiv {
+  width: 100% !important;
+  text-align: center;
+}
+
+.paginationDiv ul {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding-left: 0;
+  margin: 22px 0;
+  border-radius: 4px;
+  list-style: none;
+  font-size: 20px;
+}
+
+.paginationDiv ul .firstChild,
+.paginationDiv ul .lastChild {
+  border: none !important;
+  background: rgba(0, 0, 0, 0) !important;
+  position: relative;
+  float: left;
+  padding: 6px 12px;
+  margin-left: -1px;
+  line-height: 1.42857;
+  color: #337ab7;
+  text-decoration: none;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  margin-left: 5px;
+  margin-right: 5px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.paginationDiv ul .lastChild.active {
+  border: none !important;
+  background: rgba(0, 0, 0, 0) !important;
+}
+
+.paginationDiv ul .disabled span {
+  position: relative;
+  float: left;
+  padding: 6px 12px;
+  margin-left: -1px;
+  line-height: 1.42857;
+  color: #337ab7;
+  text-decoration: none;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+.paginationDiv a {
+  position: relative;
+  float: left;
+  padding: 6px 12px;
+  margin-left: -1px;
+  line-height: 1.42857;
+  color: #337ab7;
+  text-decoration: none;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+.paginationDiv a:hover {
+  text-decoration: none;
+  color: #337ab7;
+}
+
+.paginationDiv a.active {
+  background: #337ab7;
+  color: white;
+}
+
+.Filters {
+  width: 100%;
+  background: #fff;
+}
+
+input::-webkit-calendar-picker-indicator {
+  opacity: 100;
+}
+
+input {
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+.toggle-control {
+  display: none;
+}
+
+input.toggle-control + label {
+  position: relative;
+  display: block;
+  width: 37px;
+  height: 20px;
+  background: #ddd;
+  border-radius: 60px;
+  cursor: pointer;
+  outline: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+input.toggle-control + label::before,
+input.toggle-control + label::after {
+  display: block;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  bottom: 1px;
+  right: 1px;
+  content: '';
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+input.toggle-control + label::before {
+  background: #ccc;
+  border-radius: 60px;
+}
+
+input.toggle-control + label::after {
+  width: 18px;
+  background: #fff;
+  border-radius: 100%;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+input.toggle-control:checked + label::before {
+  background: #4989ff;
+}
+
+input.toggle-control:checked + label::after {
+  margin-left: 18px;
+}
+
+.toggle-controlTwo {
+  display: none;
+}
+
+.lineButtons .searchBtn {
+  background: #4989ff;
+  color: white;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.lineButtons .searchBtn:hover {
+  background: white;
+  color: #4989ff;
+  border: 2px solid #4989ff;
+}
+
+.lineButtons .resetBtn {
+  border: 2px solid #202020;
+  color: #202020;
+}
+
+.lineButtons .resetBtn:hover {
+  background: #202020;
+  color: white;
+}
+
+.toggle-controlTwo + .lableCheckedTwo {
+  position: relative;
+  display: block;
+  width: 37px;
+  height: 20px;
+  background: #ddd;
+  border-radius: 60px;
+  cursor: pointer;
+  outline: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.toggle-controlTwo + .lableCheckedTwo::before,
+.toggle-controlTwo + .lableCheckedTwo::after {
+  display: block;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  bottom: 1px;
+  right: 1px;
+  content: '';
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.toggle-controlTwo + .lableCheckedTwo::before {
+  background: #ccc;
+  border-radius: 60px;
+}
+
+.toggle-controlTwo + .lableCheckedTwo::after {
+  width: 18px;
+  background: #fff;
+  border-radius: 100%;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.toggle-controlTwo:checked + .lableCheckedTwo::before {
+  background: #4989ff;
+}
+
+.toggle-controlTwo:checked + .lableCheckedTwo::after {
+  margin-left: 18px;
+}
+
+.personParagraphTwo,
+#lableFour {
+  display: none;
+}
+
+#caret-down {
+  display: none;
+}
+
+.hideClosed {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.clickBtn {
+  background: #4989ff !important;
+  color: white !important;
+}
+
+@media screen and (max-width: 575px) {
+  .hideClosed {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+  .resetBtn {
+    margin-top: 0px !important;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .hideClosed {
+    display: block;
+  }
+  .resetBtn {
+    margin-top: 10px;
+  }
+  .paginationDiv ul {
+    display: inline-block;
+  }
+  .similarTutors {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .ending-text h6 {
+    font-size: 13px;
+  }
+  .copyright-paragraph {
+    font-size: 13px;
+    margin-right: 5px;
+    margin-top: 5px;
+  }
+  .privacy-section br {
+    display: none;
+  }
+  .privacy-section ul li {
+    margin-top: 12.5px;
+    padding-top: 2px !important;
+    font-size: 12px !important;
+    padding: 0px 5px;
+  }
+  .button-socials button {
+    font-size: 8px !important;
+  }
+  .ending-text .logo {
+    width: 10px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .button-socials strong {
+    display: none !important;
+  }
+  .button-two {
+    font-size: 10px !important;
+  }
+}
+/*# sourceMappingURL=Tuitions.css.map */

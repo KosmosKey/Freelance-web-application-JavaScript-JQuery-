@@ -1,0 +1,850 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+
+
+body {
+    background: #F5F5F5 !important;
+}
+
+// .nav-link is class for the a tag in the navbar
+.nav-link {
+    font-family: 'Nunito', sans-serif;
+}
+
+.navbar {
+    background: white !important;
+}
+
+// Style for the button (Log in) and (Sign up) 
+
+.button {
+    border-radius: 5px !important;
+    border: 2px solid white !important;
+    background: #439272 !important;
+    color: white !important;
+    transition: .3s ease-in;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 5px 15px;
+}
+
+// Hover on the button for Log in and Sign up
+.button:hover {
+    background: black !important;
+    border: 2px solid white !important;
+}
+
+// List items and <a> style
+.navbar-nav {
+
+    li {
+        a {
+            color: black !important;
+            font-size: 1.2rem;
+        }
+    }
+}
+
+// .img-fluid is the logo in the navbar
+.img-fluid-one {
+    margin-right: 2rem;
+    width: 15rem;
+}
+
+
+// Bars in the hambuger toggler
+.fa-bars {
+    color: white;
+    font-size: 1.5rem;
+}
+
+// Responsive hamburger toggler style
+.navbar-toggler {
+    padding: .5rem 1rem;
+    border: 3px solid white;
+    background: #439272 !important;
+    border: none;
+}
+
+// The small sentence for (Courses BETA)
+sup {
+    padding-left: 5px;
+}
+
+
+#overlay {
+    background: transparent;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    pointer-events: none;
+}
+
+#overlay.active {
+    pointer-events: all;
+    opacity: 1;
+
+}
+
+.exploreTutorField {
+    width: 100%;
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 6px, rgba(0, 0, 0, 0.12) 0px 1px 4px;
+    text-align: center;
+
+
+    h5 {
+        margin-top: 25px !important;
+        text-align: left;
+    }
+
+    p {
+        font-size: 13px;
+    }
+}
+
+
+
+.TutorField {
+    color: black;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.paragraphSort {
+    margin-top: 1px;
+}
+
+.datalist {
+    width: 100%;
+
+    input {
+        margin-top: 20px;
+        border: 1px solid #c0bebe;
+        box-shadow: 0 2px 1px rgba(0, 0, 0, .3), 0 0 1px rgba(0, 0, 0, .75);
+    }
+
+    input::-webkit-calendar-picker-indicator {
+        opacity: 100;
+    }
+}
+
+.buttonTutor {
+    position: relative;
+    z-index: 3;
+
+    .listItemContainer {
+        transform: scale(0);
+        position: absolute;
+        right: 0;
+        width: 150px;
+        height: 130px;
+        background: white;
+        z-index: 100;
+        box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 6px, rgba(0, 0, 0, 0.12) 0px 1px 4px;
+        border: 1px solid #c0bebe;
+        transition: .3s ease;
+    }
+
+    li {
+        list-style: none;
+        cursor: pointer;
+    }
+
+    li:hover {
+        background: rgb(241, 240, 240);
+    }
+
+    .listItemContainer.active {
+        transform: scale(1);
+    }
+}
+
+.listItemContainer {
+    ul {
+        li.active {
+            background: rgb(241, 240, 240);
+            color: #439272;
+        }
+    }
+}
+
+
+.profileTutorsContainer {
+
+    .degree {
+        p {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 200px;
+        }
+    }
+
+    .paragraphInformation {
+        border-left: 1px solid #c0bebe;
+
+        p {
+
+            text-overflow: ellipsis;
+            max-width: 800px;
+        }
+    }
+
+    .skillSet {
+        border-left: 1px solid #c0bebe;
+        max-width: 200px;
+        max-height: 160px;
+        overflow: hidden;
+
+        // Items skills small div containers inside .skills (For example maths and geography)
+        .items {
+            margin-left: 5px;
+            display: inline-block;
+            vertical-align: baseline;
+            text-align: center;
+            border-radius: 5px;
+            max-width: 250px;
+            padding: .25em .6em;
+            padding-top: 0px;
+            overflow: hidden;
+            font-size: 11px !important;
+            height: 19px;
+            margin-top: 5px;
+            background: white;
+            max-height: 150px;
+            color: #39986F;
+            border: 1px solid rgb(95, 95, 95);
+            box-shadow: 3px 1px 3px 0px rgb(119, 119, 119);
+        }
+    }
+
+    .profile_div {
+        width: 100%;
+        background: #fff;
+        display: flex;
+        box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 6px, rgba(0, 0, 0, 0.12) 0px 1px 4px;
+
+        .profilePicture_div {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background: url("/images/Profile3.jfif");
+            background-size: cover;
+            padding: 75px;
+            border: 3px solid #c0bebe;
+        }
+    }
+}
+
+.degree,
+.location {
+    i {
+        color: rgb(112, 152, 216);
+    }
+}
+
+.teach {
+    i {
+        color: #80D651 !important;
+
+    }
+}
+
+
+
+.paginationDiv {
+    width: 100% !important;
+    text-align: center;
+
+    ul {
+        display: inline-flex;
+        padding-left: 0;
+        margin: 22px 0;
+        border-radius: 4px;
+        list-style: none;
+        font-size: 20px;
+
+        .firstChild,
+        .lastChild {
+            border: none !important;
+            background: rgba(0, 0, 0, 0) !important;
+            position: relative;
+            float: left;
+            padding: 6px 12px;
+            margin-left: -1px;
+            line-height: 1.42857;
+            color: #337ab7;
+            text-decoration: none;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            margin-left: 5px;
+            margin-right: 5px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        .lastChild.active {
+            border: none !important;
+            background: rgba(0, 0, 0, 0) !important;
+        }
+
+        .disabled {
+            span {
+                position: relative;
+                float: left;
+                padding: 6px 12px;
+                margin-left: -1px;
+                line-height: 1.42857;
+                color: #337ab7;
+                text-decoration: none;
+                background-color: #fff;
+                border: 1px solid #ddd;
+            }
+        }
+    }
+
+    a {
+        position: relative;
+        float: left;
+        padding: 6px 12px;
+        margin-left: -1px;
+        line-height: 1.42857;
+        color: #337ab7;
+        text-decoration: none;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        margin-left: 5px;
+        margin-right: 5px;
+        border-radius: 3px;
+    }
+
+    a.active {
+        background: #337ab7;
+        color: white;
+    }
+}
+
+
+// Id for the topics (Tutors, Tuitions, Courses and Discussions) In footer all the way down in the page
+#footer {
+    border-top: 2px solid;
+    width: 100%;
+    height: 100%;
+    background: #39986F;
+    position: static;
+
+    // Container
+    .container {
+        padding-top: 40px;
+
+        // Container for Grade <a>
+        #GradesContainer {
+            margin-left: 30px;
+            max-width: 100px;
+            display: none;
+
+            // ul
+            ul {
+                list-style: none;
+                font-size: 12px;
+                display: inline-block;
+                width: 120px;
+
+                // li 
+                li {
+                    padding: 2.5px 0px;
+                }
+            }
+        }
+
+        // The arrow that toggles down dissapear
+        #arrow-down-grades {
+            display: none;
+        }
+
+        // Discipline container
+        #DisciplineContainer {
+            margin-left: 30px;
+            max-width: 100px;
+            display: none;
+
+            // ul
+            ul {
+                list-style: none;
+                font-size: 12px;
+                display: inline-block;
+                width: 120px;
+
+                // li
+                li {
+                    padding: 2.5px 0px;
+                }
+            }
+        }
+
+        // Arrow down for the discipline <a>
+        #arrow-down-discipline {
+            display: none;
+        }
+
+        // Arrow down for the institute part <a>
+        #arrow-down-institute {
+            display: none;
+        }
+
+        // Institute Container
+        #InstituteContainer {
+            margin-left: 30px;
+            max-width: 100px;
+            display: none;
+
+            // ul
+            ul {
+                list-style: none;
+                font-size: 12px;
+                display: inline-block;
+                width: 120px;
+
+                // li
+                li {
+                    padding: 2.5px 0px;
+                }
+            }
+        }
+
+        // Arrow down for subject
+        #arrow-down-subject {
+            display: none;
+        }
+
+        .Subjects {
+            color: white;
+        }
+
+        // Row
+
+        .row {
+
+            // Arrow down
+            #arrow-down {
+                display: none;
+            }
+
+            // Subject container
+            #SubjectContainer {
+                margin-left: 30px;
+                max-width: 100px;
+                display: none;
+
+                // ul
+                ul {
+                    list-style: none;
+                    font-size: 12px;
+                    display: inline-block;
+                    width: 120px;
+
+                    // li
+                    li {
+                        padding: 2.5px 0px;
+                    }
+                }
+            }
+
+
+            // Pop up when you click on the topics (By city , By Subjects and ect.)
+            .City-pop-up {
+
+                // FirstItems the pop up container 
+                #firstItems {
+                    display: none;
+                    margin-left: 32px;
+                    max-width: 100px;
+                }
+
+                // Ul
+
+                ul {
+                    list-style: none;
+                    font-size: 12px;
+                    display: inline-block;
+                    width: 120px;
+
+                    // li
+                    li {
+                        color: white;
+                        padding: 2.5px 0px;
+                    }
+                }
+            }
+
+            // About, Blog, Terms and Privacy
+            .unlistItem {
+                li {
+                    color: white;
+                    transition: .3s ease;
+                }
+            }
+
+            // Hover li 
+            .unlistItem {
+                li:hover {
+                    cursor: pointer;
+                    color: #426858;
+                    text-decoration: underline;
+                }
+            }
+
+            // .row-topics
+            .row-topics {
+                height: 30px;
+                transition: .3s ease;
+            }
+
+            // .row-topics hover
+            .row-topics:hover {
+                cursor: pointer;
+                color: #426858;
+            }
+
+            // Transition to the <a> that has been clicked 
+            #buttonClick,
+            #buttonClickSubject,
+            #buttonClickInstitute,
+            #buttonClickDiscipline,
+            #buttonClickGrades {
+                transition: .3s ease;
+            }
+
+            // Style to the <a> that has been clicked 
+
+            #buttonClick:hover,
+            #buttonClickSubject:hover,
+            #buttonClickInstitute:hover,
+            #buttonClickDiscipline:hover,
+            #buttonClickGrades:hover {
+                cursor: pointer;
+                color: #426858;
+                text-decoration: underline;
+            }
+
+            // List item and the subjects
+            .list-item {
+                width: 155px;
+
+                .City {
+                    margin-right: 4px;
+                }
+
+                .Subjects {
+                    padding-right: 7px;
+                }
+
+                .Institute {
+                    padding-right: 8px;
+                }
+
+                .Grade {
+                    padding-right: 20px;
+                }
+            }
+
+            .list-item {
+                ul {
+                    li {
+                        transition: .3s ease;
+                    }
+                }
+            }
+
+            // List item hover
+            .list-item {
+                ul {
+                    li:hover {
+                        cursor: pointer;
+                        color: #426858;
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+            // ul
+            ul {
+                list-style: none;
+                width: 125px;
+                padding-left: 0px;
+                font-size: 15px;
+                margin-right: auto;
+            }
+
+            // Line down and line right 
+            .fa-caret-right,
+            .fa-caret-down {
+                font-size: 10px;
+                padding: 5px 10px;
+            }
+
+            // FontAwesome icons
+            .fa-business-time,
+            .fa-user-friends,
+            .fa-comment,
+            .fa-graduation-cap {
+                font-size: 20px;
+                padding: 0px 15px;
+            }
+
+            // Button socials
+            .button-socials {
+                button {
+                    text-decoration: none;
+                    margin-top: 10px;
+                    font-size: 13px;
+                }
+
+            }
+        }
+    }
+}
+
+.button-socials {
+    button {
+        background: white !important;
+        color: #56A978 !important;
+        border: none;
+        box-shadow: none;
+    }
+
+    button:hover {
+        background: #56A978 !important;
+        color: white !important;
+        border: 1px solid white;
+        box-shadow: none;
+    }
+}
+
+#SubjectItems {
+    li {
+        color: white;
+    }
+}
+
+// Width of the image for (Find tutor section)
+
+.line {
+    width: 75%;
+    height: 1px;
+    margin: 0 auto;
+    background: white;
+}
+
+// Footer which is all the way down below the page
+#last {
+    background: #39986F;
+
+    // On the last footer of the page to the left side
+    .ending-text {
+
+        // Logo beside the ending text
+        .logo {
+            width: 50px;
+        }
+    }
+}
+
+// About, Blog, Terms and Privacy
+.unlistItem {
+    li {
+        color: white;
+        transition: .3s ease;
+        // Padding for li
+        margin-top: 10px;
+        padding: 0px 10px;
+    }
+}
+
+// Hover li 
+.unlistItem {
+    li:hover {
+        cursor: pointer;
+        color: #426858;
+        text-decoration: underline;
+    }
+}
+
+// Footer for About, Blog, Terms and Privacy
+.privacy-section {
+    width: 100%;
+    margin-top: 50px;
+}
+
+
+
+@media screen and (max-width:991px) {
+    .profile_div {
+        display: block !important;
+    }
+
+    .paginationDiv {
+        ul {
+            display: inline-block;
+        }
+    }
+
+    .degree {
+        margin-bottom: 15px;
+    }
+
+    .paragraphInformation {
+        padding-top: 15px;
+        border-left: none !important;
+        border-top: 1px solid #c0bebe;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    .socialIcons {
+        display: block !important;
+    }
+
+    .buttonFacebook {
+        .btn {
+            margin-top: 5px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+    .universitySimilar {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 150px !important;
+    }
+
+    .student {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 150px !important;
+    }
+}
+
+@media screen and (max-width: 995px) {
+
+    .similarTutors {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .universitySimilar {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 250px !important;
+    }
+
+    .student {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 250px !important;
+    }
+
+    .col-sm-4 {
+        margin-top: 20px;
+    }
+
+    .socialIcons {
+        display: flex !important;
+    }
+
+    .similarTutors {
+        display: block;
+    }
+}
+
+
+// Meia queries for the 400px
+
+@media screen and (max-width: 400px) {
+
+    .ending-text {
+        h6 {
+            font-size: 13px;
+        }
+    }
+
+    .copyright-paragraph {
+        font-size: 13px;
+        margin-right: 5px;
+        margin-top: 5px;
+    }
+
+
+    .privacy-section {
+        br {
+            display: none;
+        }
+
+        ul {
+            li {
+                margin-top: 12.5px;
+                padding-top: 2px !important;
+                font-size: 12px !important;
+                padding: 0px 5px;
+            }
+        }
+    }
+
+    .button-socials {
+        button {
+            font-size: 8px !important;
+        }
+    }
+
+    .ending-text {
+
+        // Logo beside the ending text
+        .logo {
+            width: 10px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 1000px) {
+    .stars {
+        p {
+            display: none;
+        }
+    }
+}
+
+
+
+// Meia queries for the 767px
+@media screen and (max-width: 900px) {
+    .button-socials {
+        strong {
+            display: none !important;
+        }
+    }
+
+    .button-two {
+        font-size: 10px !important;
+    }
+}

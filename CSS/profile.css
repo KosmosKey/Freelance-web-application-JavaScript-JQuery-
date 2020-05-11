@@ -1,0 +1,3002 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+}
+
+body {
+  background: #439272;
+  min-height: 100% !important;
+  height: 100%;
+}
+
+.nav-link {
+  font-family: 'Nunito', sans-serif;
+}
+
+.navbar {
+  background: white !important;
+  border-bottom: 1px solid #ccc;
+}
+
+.tutor button {
+  border-radius: 50px;
+  background: #439272;
+  color: white;
+  -webkit-transition: .3s ease-in;
+  transition: .3s ease-in;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 5px 15px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.tutor button:hover {
+  border: 2px solid #439272;
+  background: white;
+  color: #439272;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.navbar-nav li a {
+  color: black !important;
+  font-size: 1.2rem;
+}
+
+.img-fluid-one {
+  margin-right: 2rem;
+  width: 15rem;
+}
+
+.fa-bars {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.chatButtonResponsive {
+  display: none;
+}
+
+.chatButtonResponsive .chatBTN {
+  background: #4989ff;
+  color: white;
+  padding: 5px !important;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.chatBTN:hover {
+  background: white;
+  color: #4989ff;
+  border: 2px solid #4989ff;
+}
+
+.navbar-toggler {
+  padding: .5rem 1rem;
+  border: 3px solid white;
+  background: #439272;
+  border: none;
+}
+
+sup {
+  padding-left: 5px;
+}
+
+.dashBoard {
+  display: none;
+  width: 170px;
+  height: 35px;
+  cursor: pointer;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.dashBoard .fa-bars {
+  display: none;
+  font-size: 20px;
+}
+
+.dashBoard h3 {
+  display: none;
+}
+
+.dashBoard p {
+  display: none;
+  font-size: 23px;
+  color: white;
+  margin-top: 1px;
+}
+
+.dashBoard:hover {
+  color: #ebebeb;
+}
+
+.dashBoard:hover p {
+  color: #ebebeb;
+}
+
+.dashBoard:hover h3 {
+  text-decoration: underline;
+  color: #ebebeb;
+}
+
+.dashBoard:hover .fa-bars {
+  color: #ebebeb;
+}
+
+.firstName,
+.lastName {
+  color: white;
+}
+
+.firstName:hover,
+.lastName:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.profilePicture {
+  width: 35px;
+  height: 35px;
+  border-radius: 50px;
+}
+
+.dropdown {
+  background: white !important;
+}
+
+.profile {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.inboxContainer {
+  padding: 0px 30px;
+  text-align: center;
+  width: 230px;
+  max-width: 255px;
+  background: #fff;
+  border-right: 1px solid #ccc;
+  border-left: 1px solid #686868;
+  border-top: 1px solid #686868;
+  border-bottom: 1px solid #686868;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.inboxContainer .profileInformation h3 {
+  font-size: 22px;
+}
+
+.inboxContainer .profileInformation p {
+  font-size: 15px;
+}
+
+.inboxContainer .profileCircle {
+  margin: 0 auto;
+  margin-top: 15px;
+  border-radius: 50%;
+  width: 140px;
+  height: 140px;
+  border: 3px solid #439272;
+  background: url("/images/Profile1.jfif");
+  background-size: cover;
+}
+
+.inboxContainer .listItems {
+  text-align: left;
+}
+
+.inputValueThree,
+.inputValueFour,
+.inputValueFive {
+  border-radius: 5px;
+}
+
+.wrapper {
+  background: white;
+  width: 100%;
+}
+
+.wrapper nav {
+  background: white;
+  width: 100%;
+  padding: 2px 0px;
+  position: relative;
+  z-index: 1;
+  -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ccc;
+  border-left: 0px;
+}
+
+.messageContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: white;
+  height: 100%;
+}
+
+.inboxContainerMessages {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100% !important;
+  background: white;
+  min-height: 50rem;
+  max-height: 150rem;
+}
+
+.chats {
+  width: 400px;
+  margin-left: auto;
+  background: white;
+  border-left: 1px solid #ccc;
+}
+
+.inboxMessagesText {
+  color: #6d6c6c;
+}
+
+.inboxMessagesText .fa-comment-alt {
+  color: #6d6c6c !important;
+  font-size: 5rem;
+  padding-bottom: 25px;
+}
+
+.title-chat {
+  width: 100%;
+  background: white;
+  padding: 5px;
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+
+.title-chat h4 {
+  padding: 5px 10px;
+  margin-top: 10px;
+}
+
+.chat-boxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: white;
+  padding: 10px 8px;
+  margin-top: 0px;
+  border-top: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.chat-boxes .circleProfileChat {
+  position: relative;
+  width: 46px;
+  height: 46px;
+  background: url("/images/Profile1.jfif");
+  background-size: cover;
+  border-bottom-right-radius: 5px;
+  border: 2px solid #DEDEDE;
+}
+
+.chat-boxes .paragraph {
+  margin-left: 5px;
+}
+
+.chat-boxes .paragraph h5 {
+  font-size: 20px;
+}
+
+.chat-boxes .paragraph p {
+  margin-left: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 200px;
+  font-size: 13px;
+}
+
+.chat-boxes .newMessageActiveCircle {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  margin-left: auto;
+  background: #69dd79;
+  border: 1px solid white;
+}
+
+.chat-boxes .newMessageInactiveCircle {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  margin-left: auto;
+  background: #868686;
+  border: 1px solid white;
+}
+
+.chat-boxes:hover {
+  background: #e4e4e4;
+}
+
+.notVerifiedEmail {
+  background: #FCF8E3;
+  width: 100%;
+  height: 40px;
+}
+
+.notVerifiedEmail h1 {
+  font-size: 20px !important;
+}
+
+.tuitions {
+  width: 100%;
+  min-height: 55rem;
+  max-height: 150rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tuitions .example {
+  width: 100%;
+  min-height: 50rem;
+  max-height: 150rem;
+  background: white;
+  position: relative;
+}
+
+.courseNavBar nav {
+  background: #FFC0CB;
+}
+
+.courseDiv {
+  width: 100%;
+  min-height: 50rem;
+  max-height: 150rem;
+  background: white;
+}
+
+.settingsDiv {
+  width: 100%;
+  min-height: 50rem;
+  max-height: 150rem;
+  background: white;
+}
+
+.AccountSettings {
+  background: white;
+  min-height: 50rem;
+  max-height: 150rem;
+  width: 225px;
+}
+
+.changeSettings {
+  background: white;
+  width: 100%;
+  min-height: 50rem;
+  max-height: 150rem;
+}
+
+.listItems button {
+  text-align: left;
+  background: #439272;
+  color: white;
+  font-size: 15px;
+  width: 100%;
+  border-radius: 5px;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.listItems button:hover {
+  background: white;
+  border: 2px solid #439272;
+  color: #439272;
+}
+
+.tuitions nav {
+  border: 1px solid #ccc;
+  border-left: 0;
+}
+
+.noTuitionContainer button {
+  background: #439272;
+  color: white;
+  font-size: 15px;
+  border-radius: 5px;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.noTuitionContainer button:hover {
+  background: white;
+  border: 2px solid #439272;
+  color: #439272;
+}
+
+.courseNavBar nav {
+  background: white;
+  border: 1px solid #ccc;
+  border-left: 0;
+}
+
+.noCourseContainer button {
+  background: #439272;
+  color: white;
+  font-size: 15px;
+  border-radius: 5px;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.noCourseContainer button:hover {
+  background: white;
+  border: 2px solid #439272;
+  color: #439272;
+}
+
+.containerThree {
+  width: 100%;
+  background: white;
+}
+
+.AccountSettings .accountSettingsButton {
+  width: 100%;
+}
+
+.AccountSettings button {
+  background: #439272;
+  color: white;
+  font-size: 15px;
+  border-radius: 5px;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.AccountSettings button:hover {
+  background: white;
+  border: 2px solid #439272;
+  color: #439272;
+}
+
+.AccountSettings .blockedUsersButtonDiv {
+  width: 100%;
+}
+
+.AccountSettings .blockedUsersButtonDiv button {
+  background: #439272;
+  color: white;
+  font-size: 15px;
+  border-radius: 5px;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.AccountSettings .blockedUsersButtonDiv button:hover {
+  background: white;
+  border: 2px solid #439272;
+  color: #439272;
+}
+
+.AccountSettings {
+  position: relative;
+}
+
+.AccountSettings .lineUp {
+  width: 1px;
+  height: 25rem;
+  background: #ccc;
+  position: absolute;
+  top: 10px;
+  right: 0;
+}
+
+.containerOne button {
+  background: #439272;
+  color: white;
+  font-size: 15px;
+  border-radius: 5px;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.containerOne button:hover {
+  background: white;
+  border: 2px solid #439272;
+  color: #439272;
+}
+
+.containerTwo .fatalText {
+  color: #da2c3e;
+}
+
+.containerTwo button {
+  background: #f0394b;
+  color: white;
+}
+
+.containerTwo button:hover {
+  background: white;
+  color: #f0394b;
+  border: 2px solid #f0394b;
+}
+
+.lineBlocked {
+  height: 1px;
+  width: 97%;
+  margin: 0 auto;
+  background: #ccc;
+}
+
+.blockedUserContainer {
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.blockedUserContainer .leftSide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.blockedUserContainer .circleProfilePicture {
+  width: 55px;
+  height: 55px;
+  border-radius: 50px;
+  background: url("/images/Profile2.jfif");
+  background-size: cover;
+  border: 2px solid #439272;
+}
+
+.blockedUserContainer .unblockButton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.blockedUserContainer .unblockButton button {
+  background: #439272;
+  color: white;
+  border-radius: 50px;
+}
+
+.blockedUserContainer .unblockButton button:hover {
+  background: white;
+  color: #f0394b;
+  border: 2px solid #f0394b;
+}
+
+.editButton::after {
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity .3s, visibility .3s;
+  transition: opacity .3s, visibility .3s;
+  content: attr(data-tooltip);
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 40px;
+  height: 25px;
+  background: #212529;
+  font-size: 14px;
+  color: white;
+  bottom: -35px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.editButton::before {
+  -webkit-transition: opacity .3s, visibility .3s;
+  transition: opacity .3s, visibility .3s;
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  border: 8px solid transparent;
+  border-bottom-color: #212529;
+  top: 30px;
+}
+
+.unblockButton::after {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  content: "Unblock";
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 65px;
+  height: 25px;
+  background: #212529;
+  font-size: 14px;
+  color: white;
+  bottom: -35px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.unblockButton::before {
+  content: "";
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  position: absolute;
+  bottom: -11px;
+  width: 0;
+  height: 0;
+  border: 8px solid transparent;
+  border-bottom-color: #212529;
+  bottom: -10px;
+}
+
+.unblockButton:hover::before,
+.unblockButton:hover::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+.dropdown:hover .dropdown-menu,
+.btn-group:hover .dropdown-menu {
+  display: block;
+}
+
+.buttonPostTuition {
+  position: absolute;
+  top: 30px;
+  right: 35px;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+.buttonPostTuition.active {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.tuitionSuccess {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 35px;
+  line-height: 3px;
+  background: #439272;
+  color: white;
+  -webkit-transition: .2s ease;
+  transition: .2s ease;
+}
+
+.tuitionSuccess .fa-plus {
+  display: none;
+}
+
+.tuitionSuccess:hover {
+  color: #439272;
+  background: white;
+  border: 2px solid #439272;
+}
+
+.modalDeleteAccount {
+  position: fixed;
+  display: block;
+  text-align: center;
+  z-index: 5;
+  background-color: #fff;
+  color: black !important;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.7);
+          box-shadow: 0 5px 20px rgba(0, 0, 0, 0.7);
+  max-height: 900px;
+  border: 3px solid #F8665E;
+  width: 700px;
+  top: 50%;
+  left: 50%;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  -webkit-transform: translate(-50%, -50%) scale(0);
+          transform: translate(-50%, -50%) scale(0);
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+.modalDeleteAccount input {
+  border-radius: 5px;
+  border: 2px solid #ccc;
+  -webkit-box-shadow: 0 0px 2px rgba(0, 0, 0, 0.7);
+          box-shadow: 0 0px 2px rgba(0, 0, 0, 0.7);
+}
+
+.modalDeleteAccount .buttonCancel {
+  background: #4989ff;
+  color: #fff;
+}
+
+.modalDeleteAccount .deleteButtonAccount {
+  background: #F8665E;
+  color: #fff;
+}
+
+.modalDeleteAccount .deleteButtonAccount:hover {
+  background: white;
+  color: #F8665E;
+  border: 2px solid #F8665E;
+}
+
+.modalDeleteAccount .buttonCancel:hover {
+  background: white;
+  color: #4989ff;
+  border: 2px solid #4989ff;
+}
+
+.modalDeleteAccount.active {
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
+}
+
+.modalTuitionHasDeleted {
+  position: fixed;
+  display: block;
+  text-align: center;
+  z-index: 5;
+  background-color: #fff;
+  color: black !important;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.7);
+          box-shadow: 0 5px 20px rgba(0, 0, 0, 0.7);
+  max-height: 900px;
+  border: 3px solid #80D651;
+  width: 700px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(0);
+          transform: translate(-50%, -50%) scale(0);
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+.modalTuitionHasDeleted .fa-check {
+  font-size: 75px;
+  color: #80D651;
+}
+
+.modalTuitionHasDeleted.active {
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
+}
+
+.ChangeButton {
+  display: none;
+}
+
+.postTution {
+  display: none;
+}
+
+.modalDeleteTuitionContainer {
+  position: fixed;
+  display: block;
+  text-align: center;
+  z-index: 5;
+  background-color: #fff;
+  color: black !important;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.7);
+          box-shadow: 0 5px 20px rgba(0, 0, 0, 0.7);
+  max-height: 900px;
+  border: 3px solid #F8665E;
+  width: 700px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(0);
+          transform: translate(-50%, -50%) scale(0);
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+.modalDeleteTuitionContainer .buttons .keepItButton {
+  background: #74c747;
+  color: white;
+  border: 2px solid white;
+}
+
+.modalDeleteTuitionContainer .buttons .keepItButton:hover {
+  background: #fff;
+  color: #74c747;
+  border: 2px solid #74c747;
+}
+
+.modalDeleteTuitionContainer .buttons .deleteThisButton {
+  background: #F8665E;
+  color: white;
+  border: 1px solid white;
+}
+
+.modalDeleteTuitionContainer .buttons .deleteThisButton:hover {
+  color: #F8665E;
+  background: #fff;
+  border: 2px solid #F8665E;
+}
+
+.modalDeleteTuitionContainer .fa-exclamation-circle {
+  font-size: 75px;
+}
+
+.modalDeleteTuitionContainer.active {
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
+}
+
+.modalContainerChanges {
+  position: fixed;
+  display: block;
+  text-align: center;
+  z-index: 5;
+  background: #e7fcdb;
+  color: black !important;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.7);
+          box-shadow: 0 5px 20px rgba(0, 0, 0, 0.7);
+  max-height: 900px;
+  border: 3px solid #80D651;
+  width: 700px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(0);
+          transform: translate(-50%, -50%) scale(0);
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+.modalContainerChanges .fa-check {
+  color: white;
+  font-size: 50px;
+  border: 2px solid white;
+  -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.7);
+          box-shadow: 0 5px 5px rgba(0, 0, 0, 0.7);
+  background: #80D651;
+  border-radius: 50px;
+}
+
+.modalContainerChanges.active {
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
+}
+
+.modalContainerSuccess {
+  position: fixed;
+  z-index: 5;
+  background-color: white;
+  color: black !important;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.7);
+          box-shadow: 0 5px 20px rgba(0, 0, 0, 0.7);
+  max-height: 900px;
+  border: 3px solid #80D651;
+  width: 700px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(0);
+          transform: translate(-50%, -50%) scale(0);
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+.modalContainerSuccess .continueButton {
+  font-size: 15px;
+  background: #4989ff;
+  cursor: pointer;
+  -webkit-transition: .2s ease;
+  transition: .2s ease;
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+.modalContainerSuccess .continueButton:hover {
+  color: #4989ff;
+  border: 2px solid #4989ff;
+  background: white;
+}
+
+.modalContainerSuccess .fa-save {
+  font-size: 15px;
+  width: 30px;
+  height: 30px;
+  background: #80D651;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+}
+
+.modalContainerSuccess .fa-check-circle {
+  font-size: 23px;
+  color: #80D651;
+}
+
+.successYellow {
+  border-radius: 5px;
+  border-top: 1px solid #80D651;
+  border-bottom: 1px solid #80D651;
+  border-right: 1px solid #80D651;
+  border-left: 10px solid #80D651;
+  width: 100%;
+  background: #dcf8cd;
+}
+
+.modalContainerSuccess.active {
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
+}
+
+.modalContainer {
+  position: fixed;
+  z-index: 5;
+  background-color: white;
+  color: black !important;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  max-height: 900px;
+  width: 700px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(0);
+          transform: translate(-50%, -50%) scale(0);
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+.modalContainer.active {
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
+}
+
+#overlay {
+  opacity: 0;
+  z-index: 3;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+.overlayChat {
+  opacity: 0;
+  z-index: 3;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+.overlayChat.active {
+  pointer-events: all;
+  opacity: 1;
+}
+
+#overlay.active {
+  pointer-events: all;
+  opacity: 1;
+}
+
+.overlayNavBar {
+  opacity: 0;
+  z-index: 3;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+.overlayNavBar.active {
+  pointer-events: all;
+  opacity: 1;
+}
+
+.modal-header {
+  border-bottom: 1px solid #ccc;
+  padding: 20px;
+}
+
+.modal-header button {
+  background: transparent;
+  border: 0em;
+  color: #9c9c9c;
+  font-size: 20px;
+}
+
+button.active {
+  color: #4989ff;
+}
+
+button:hover {
+  color: #4989ff;
+}
+
+#overlay.active {
+  pointer-events: all;
+  opacity: 1;
+}
+
+.numbersContainer {
+  padding: 14px;
+  border-bottom: 1px solid #ccc;
+}
+
+.numbersContainer .horizontalLine {
+  width: 25px;
+  height: 1px;
+  background: #ccc;
+}
+
+.numbersContainer .numberText {
+  background: transparent;
+  border: 0;
+  padding: 5px;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.numberText:hover {
+  background: #e4e4e4;
+}
+
+.numberText.active {
+  background: #e4e4e4;
+  border-radius: 5px;
+  background-image: radial-gradient(circle, transparent 1%, #e4e4e4);
+  background-position: center;
+  -webkit-transition: background 0.8s;
+  transition: background 0.8s;
+  background-size: 1600%;
+}
+
+.numberText:active {
+  -webkit-transition: background 0s;
+  transition: background 0s;
+  background-color: #dbdbdb;
+  background-size: 100%;
+}
+
+.circleNumber {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 10px;
+  border-radius: 50%;
+  text-align: center;
+  width: 25px;
+  height: 25px;
+  background: #439272;
+  color: white;
+  pointer-events: none;
+}
+
+.circleNumber.active {
+  border: 2px solid white;
+  background: #00bcd4;
+}
+
+.inputValue {
+  border-radius: 5px;
+  width: 100%;
+}
+
+.inputValueTwo {
+  border-radius: 5px;
+  width: 80%;
+}
+
+.button .nextButtonOne {
+  background: #439272;
+  color: white;
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.nextButtonOne:hover {
+  background: white;
+  color: #439272;
+  border: 2px solid #439272;
+}
+
+.Grade {
+  padding-top: 20px;
+}
+
+.lineGrades {
+  margin-top: 20px;
+  width: 100%;
+  height: 1px;
+  background: #ccc;
+}
+
+.inputValueTwo {
+  width: 100%;
+}
+
+.button .nextButtonTwo {
+  background: #439272;
+  color: white;
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.nextButtonTwo:hover {
+  background: white;
+  color: #439272;
+  border: 2px solid #439272;
+}
+
+.inputValueThree,
+.inputValueFour {
+  width: 100%;
+}
+
+.toggle-control {
+  display: none;
+}
+
+input.toggle-control + label {
+  position: relative;
+  display: block;
+  width: 50px;
+  height: 25px;
+  background: #ddd;
+  border-radius: 60px;
+  cursor: pointer;
+  outline: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+input.toggle-control + label::before,
+input.toggle-control + label::after {
+  display: block;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  bottom: 1px;
+  right: 1px;
+  content: '';
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+input.toggle-control + label::before {
+  background: #ccc;
+  border-radius: 60px;
+}
+
+input.toggle-control + label::after {
+  width: 23px;
+  background: #fff;
+  border-radius: 100%;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+input.toggle-control:checked + label::before {
+  background: #4989ff;
+}
+
+input.toggle-control:checked + label::after {
+  margin-left: 25px;
+}
+
+.inputs .toggle-verifed {
+  display: none;
+}
+
+.inputs input.toggle-verifed + label {
+  position: relative;
+  display: block;
+  width: 50px;
+  height: 25px;
+  background: #ddd;
+  border-radius: 60px;
+  cursor: pointer;
+  outline: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.inputs input.toggle-verifed + label::before,
+.inputs input.toggle-verifed + label::after {
+  display: block;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  bottom: 1px;
+  right: 1px;
+  content: '';
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.inputs input.toggle-verifed + label::before {
+  background: #ccc;
+  border-radius: 60px;
+}
+
+.inputs input.toggle-verifed + label::after {
+  width: 23px;
+  background: #fff;
+  border-radius: 100%;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.inputs input.toggle-verifed:checked + label::before {
+  background: #4989ff;
+}
+
+.inputs input.toggle-verifed:checked + label::after {
+  margin-left: 25px;
+}
+
+.checkbox {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.checkbox__input {
+  display: none;
+}
+
+.checkbox__box {
+  width: 25px;
+  height: 25px;
+  border: 2px solid black;
+  border-radius: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 10px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-transition: .2s ease;
+  transition: .2s ease;
+}
+
+.checkbox {
+  font-size: 18px;
+}
+
+.checkbox__box::after {
+  content: "";
+  height: 11px;
+  width: 11px;
+  border-radius: 50%;
+  background: #4989ff;
+  opacity: 0;
+}
+
+.checkbox__input:checked + .checkbox__box {
+  background: #fff;
+  border: 2px solid #4989ff;
+}
+
+.checkbox__input:checked + .checkbox__box::after {
+  opacity: 1;
+}
+
+.checkboxFemale {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.checkbox__inputFemale {
+  display: none;
+}
+
+.checkbox__boxFemale {
+  width: 25px;
+  height: 25px;
+  border: 2px solid black;
+  border-radius: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 10px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-transition: .2s ease;
+  transition: .2s ease;
+}
+
+.checkbox__boxFemale::after {
+  content: "";
+  height: 11px;
+  width: 11px;
+  border-radius: 50%;
+  background: #4989ff;
+  opacity: 0;
+}
+
+.checkbox__inputFemale:checked + .checkbox__boxFemale {
+  background: #fff;
+  border: 2px solid #4989ff;
+}
+
+.checkbox__inputFemale:checked + .checkbox__boxFemale::after {
+  opacity: 1;
+}
+
+.checkboxMatter {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.checkbox__inputMatter {
+  display: none;
+}
+
+.checkbox__boxMatter {
+  width: 25px;
+  height: 25px;
+  border: 2px solid black;
+  border-radius: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 10px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-transition: .2s ease;
+  transition: .2s ease;
+}
+
+.checkbox__boxMatter::after {
+  content: "";
+  height: 11px;
+  width: 11px;
+  border-radius: 50%;
+  background: #4989ff;
+  opacity: 0;
+}
+
+.checkbox__inputMatter:checked + .checkbox__boxMatter {
+  background: #fff;
+  border: 2px solid #4989ff;
+}
+
+.checkbox__inputMatter:checked + .checkbox__boxMatter::after {
+  opacity: 1;
+}
+
+textarea {
+  border-radius: 5px;
+  width: 100%;
+  height: 100px;
+}
+
+.buttonYellow .nextButtonTwo {
+  background: #06B41C;
+  color: white;
+}
+
+.buttonYellow .nextButtonTwo:hover {
+  border: 2px solid #06B41C;
+  background: #fff;
+  color: #06B41C;
+}
+
+.errorMessageContainer {
+  display: none;
+}
+
+.errorMessageContainer .redContainer {
+  border-radius: 5px;
+  border-left: 10px solid #da4142;
+  border-right: 2px solid #da4142;
+  border-bottom: 2px solid #da4142;
+  border-top: 2px solid #da4142;
+  width: 100%;
+  height: 50px;
+  background: #ece5d8;
+}
+
+.errorMessageContainer .redContainer .textExclamation {
+  margin-top: 1px;
+}
+
+.errorMessageContainer .redContainer .fa-exclamation-circle {
+  margin-top: 5px;
+}
+
+.errorField {
+  display: none;
+}
+
+.errorField p {
+  margin-top: 5px;
+  color: #ff3333;
+  font-size: 17px;
+}
+
+.errorFieldTwo {
+  display: none;
+}
+
+.errorFieldTwo p {
+  margin-top: 5px;
+  color: #ff3333;
+  font-size: 17px;
+}
+
+.errorFieldThree {
+  display: none;
+}
+
+.errorFieldThree p {
+  margin-top: 5px;
+  color: #ff3333;
+  font-size: 17px;
+}
+
+.errorFieldFour {
+  display: none;
+}
+
+.errorFieldFour p {
+  margin-top: 5px;
+  color: #ff3333;
+  font-size: 17px;
+}
+
+.errorFieldFifth {
+  display: none;
+}
+
+.errorFieldFifth p {
+  margin-top: 5px;
+  color: #ff3333;
+  font-size: 17px;
+}
+
+.errorFieldSix {
+  display: none;
+}
+
+.errorFieldSix p {
+  margin-top: 5px;
+  color: #ff3333;
+  font-size: 17px;
+}
+
+.example {
+  position: relative;
+}
+
+.noTuitionContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.red {
+  width: 300px;
+  height: 220px;
+  background: red;
+}
+
+.blue {
+  width: 300px;
+  height: 220px;
+  background: pink;
+}
+
+.resultTuition {
+  background: white;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+.purple {
+  margin-bottom: 1em;
+  margin-right: 15px;
+  width: 400px;
+  background: white;
+  border-radius: 5px;
+  border: 2px solid #ccc;
+  -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.purple .textMessage p {
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 350px;
+}
+
+.degree {
+  font-size: 11px;
+  width: 150px;
+  background: red;
+}
+
+.locationDiv h5 {
+  text-decoration: underline;
+  font-size: 17px;
+}
+
+.locationDiv p {
+  font-size: 14px;
+}
+
+.example .fa-hourglass-half {
+  font-size: 35px;
+}
+
+.example .lineExample {
+  width: 100%;
+  height: 1px;
+  background: #ccc;
+}
+
+.example .time {
+  height: 55px;
+}
+
+.example .pendingApproval .timeClock p {
+  font-size: 14px;
+}
+
+.example .pendingApproval .timeClock h5 {
+  font-size: 18px;
+}
+
+.example .subjectDiv h5 {
+  font-size: 17px;
+  text-decoration: underline;
+}
+
+.example .subjectDiv p {
+  font-size: 14px;
+}
+
+.example .subjectDiv .college {
+  font-size: 11.5px;
+}
+
+.example .inboxProfileMesssages {
+  padding: 7px;
+}
+
+.example .inboxProfileMesssages h5 {
+  font-size: 17px;
+  text-decoration: underline;
+}
+
+.example .inboxProfileMesssages .textMessage p {
+  font-size: 14px;
+  margin-left: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 350px;
+}
+
+.example .ED {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.example .ED .editButton {
+  border-radius: 5px;
+  font-size: 18px;
+  width: 35px;
+  height: 35px;
+  background: #439272;
+  position: relative;
+  -webkit-transition: 300ms ease;
+  transition: 300ms ease;
+}
+
+.example .ED .deleteButton {
+  border-radius: 5px;
+  font-size: 18px;
+  width: 35px;
+  height: 35px;
+  background: #439272;
+  position: relative;
+}
+
+.editButton:hover {
+  background: white !important;
+  color: #439272;
+}
+
+.deleteButton:hover {
+  background: white !important;
+  color: #439272;
+}
+
+.editButton::after {
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity .3s, visibility .3s;
+  transition: opacity .3s, visibility .3s;
+  content: attr(data-tooltip);
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 40px;
+  height: 25px;
+  background: #212529;
+  font-size: 14px;
+  color: white;
+  bottom: -35px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.editButton::before {
+  -webkit-transition: opacity .3s, visibility .3s;
+  transition: opacity .3s, visibility .3s;
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  border: 8px solid transparent;
+  border-bottom-color: #212529;
+  top: 30px;
+}
+
+.editButton:hover::before,
+.editButton:hover::after {
+  visibility: visible;
+  opacity: 1;
+}
+
+.deleteButton::before {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  content: "";
+  width: 0;
+  height: 0;
+  border: 8px solid transparent;
+  border-bottom-color: #212529;
+  top: 30px;
+  position: absolute;
+  top: 30px;
+}
+
+.deleteButton::after {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  content: attr(data-tooltip);
+  border-radius: 5px;
+  color: #fff;
+  font-size: 14px;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50px;
+  height: 25px;
+  background: #212529;
+  bottom: -35px;
+}
+
+.deleteButton:hover::after,
+.deleteButton:hover::before {
+  opacity: 1;
+  visibility: visible;
+}
+
+.inboxChatProccess {
+  width: 100%;
+  height: 50rem;
+  position: relative;
+}
+
+.inboxChatProccess .sendMessage_div {
+  border-top: 2px solid #439272;
+  width: 100%;
+  background: #fff;
+  height: 125px;
+  position: absolute;
+  bottom: 0;
+}
+
+.contentMessages::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: #F5F5F5;
+}
+
+.contentMessages::-webkit-scrollbar {
+  width: 12px;
+  background-color: #F5F5F5;
+}
+
+.contentMessages::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #D62929;
+}
+
+.contentMessages::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #555;
+}
+
+.sendMessage_div {
+  height: 105px !important;
+}
+
+.sendMessage_div textarea {
+  resize: none;
+  width: 100%;
+  height: 55px;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-right: 2px solid #439272;
+  padding: 15px;
+  background: #F9F9F9;
+}
+
+.sendMessage_div textarea:focus {
+  outline: 0;
+}
+
+.sendMessage_div textarea::-webkit-scrollbar {
+  display: none;
+}
+
+.sendIcon {
+  font-size: 17px;
+  background: #439272;
+  color: white;
+  width: 100px;
+  height: 55px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  border: none;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+.sendIcon:hover {
+  background: white;
+  color: #439272;
+  border-right: 2px solid #439272;
+  border-top: 2px solid #439272;
+  border-bottom: 2px solid #439272;
+}
+
+.myMessage {
+  width: 100%;
+  background: white;
+  border-top: 2px solid #ccc;
+  cursor: pointer;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.myMessage .circleProfileMe {
+  width: 50px;
+  height: 50px;
+  background: url("/images/Profile1.jfif");
+  background-size: cover;
+  border-radius: 50px;
+  border: 2px solid #439272;
+  padding: 25px;
+}
+
+.myMessage .myNameTitle {
+  font-size: 19px;
+}
+
+.myMessage .timeDate {
+  font-size: 12px;
+  color: #7a7a7a;
+}
+
+.myMessage .message {
+  color: #494949;
+  font-size: 15px;
+}
+
+.myMessage:hover {
+  background: #f0f0f0;
+}
+
+.clientMessage {
+  width: 100%;
+  background: white;
+  border-top: 2px solid #ccc;
+  cursor: pointer;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.clientMessage .circleProfileClient {
+  width: 50px;
+  height: 50px;
+  background: url("/images/Profile3.jfif");
+  background-size: cover;
+  border-radius: 50px;
+  border: 2px solid #439272;
+  padding: 25px;
+}
+
+.clientMessage .myNameTitle {
+  font-size: 19px;
+}
+
+.clientMessage .timeDate {
+  font-size: 12px;
+  color: #7a7a7a;
+}
+
+.clientMessage .message {
+  color: #494949;
+  font-size: 15px;
+  width: 80%;
+}
+
+.clientMessage:hover {
+  background: #f0f0f0;
+}
+
+.chatBoxesFlex {
+  width: 100%;
+  min-width: 50%;
+  max-height: 45rem;
+  overflow: auto;
+}
+
+.chatBoxesFlex::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: #F5F5F5;
+}
+
+.chatBoxesFlex::-webkit-scrollbar {
+  width: 12px;
+  background-color: #F5F5F5;
+}
+
+.chatBoxesFlex::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #D62929;
+}
+
+.chatBoxesFlex::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #555;
+}
+
+.contentMessages {
+  width: 100%;
+  min-width: 50%;
+  max-height: 100%;
+  overflow: auto;
+}
+
+.modaChangeEmail {
+  position: fixed;
+  display: block;
+  z-index: 5;
+  background-color: #fff;
+  color: black !important;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.7);
+          box-shadow: 0 5px 20px rgba(0, 0, 0, 0.7);
+  max-height: 900px;
+  width: 600px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(0);
+          transform: translate(-50%, -50%) scale(0);
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+.modaChangeEmail.active {
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
+}
+
+.emailValue {
+  padding: 5px;
+  border-radius: 5px;
+  border: 2px solid #7a7a7a;
+}
+
+.emailValue.active {
+  -webkit-box-shadow: 0 2px 5px #ff5353;
+          box-shadow: 0 2px 5px #ff5353;
+  border: 2px solid #ff5353;
+}
+
+.errorInputEmail {
+  color: #fd3b3b;
+  display: none;
+}
+
+.modaVerifyEmail {
+  position: fixed;
+  display: block;
+  z-index: 5;
+  background-color: #fff;
+  color: black !important;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.7);
+          box-shadow: 0 5px 20px rgba(0, 0, 0, 0.7);
+  max-height: 900px;
+  width: 600px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(0);
+          transform: translate(-50%, -50%) scale(0);
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+.modaVerifyEmail .closeButton {
+  background: #439272;
+  color: white;
+  width: 70px;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.modaVerifyEmail.active {
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
+}
+
+.closeButton:hover {
+  background: white;
+  color: #439272;
+  border: 2px solid #439272;
+}
+
+.activeYellowStepDiv {
+  width: 100%;
+  height: 200px;
+  background: #DCF8CD;
+  border-radius: 5px;
+  border-right: 2px solid #80D651;
+  border-top: 2px solid #80D651;
+  border-bottom: 2px solid #80D651;
+  border-left: 10px solid #80D651;
+}
+
+.activeYellowStepDiv .fa-check-circle {
+  font-size: 20px;
+  color: #80D651;
+}
+
+section {
+  width: 100%;
+}
+
+.responsiveNavBar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100rem;
+  background: #FFFFFF;
+  z-index: 10;
+  -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.7);
+          box-shadow: 0 5px 20px rgba(0, 0, 0, 0.7);
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  -webkit-transform: translate(-110%) scale(1);
+          transform: translate(-110%) scale(1);
+}
+
+.responsiveNavBar .timesResponsive {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 20px;
+  cursor: pointer;
+  color: #6b6b6b;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.responsiveNavBar .timesResponsive:hover {
+  color: #414141;
+}
+
+.responsiveNavBar.active {
+  -webkit-transform: translate(0%) scale(1);
+          transform: translate(0%) scale(1);
+}
+
+.lineGray {
+  width: 100%;
+  height: 2px;
+  background: #ccc;
+}
+
+.updateEmailButton {
+  background: #4989ff;
+  color: white;
+}
+
+.updateEmailButton:hover {
+  background: white;
+  color: #4989ff;
+  border: 2px solid #4989ff;
+}
+
+.cancelButton {
+  background: #439272;
+  color: white;
+}
+
+.cancelButton:hover {
+  background: white;
+  color: #439272;
+  border: 2px solid #439272;
+}
+
+.circleProfilePicture {
+  padding: 25px;
+}
+
+.modalSuccessChangePassword {
+  position: fixed;
+  display: block;
+  z-index: 5;
+  background-color: #fff;
+  color: black !important;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.7);
+          box-shadow: 0 5px 20px rgba(0, 0, 0, 0.7);
+  max-height: 900px;
+  width: 600px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(0);
+          transform: translate(-50%, -50%) scale(0);
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+.modalSuccessChangePassword .fa-check-circle {
+  color: #80D651;
+  font-size: 80px;
+}
+
+.modalSuccessChangePassword .okButton {
+  background: #80D651;
+  color: white;
+  -webkit-box-shadow: 0 0px 3px rgba(0, 0, 0, 0.7);
+          box-shadow: 0 0px 3px rgba(0, 0, 0, 0.7);
+}
+
+.modalSuccessChangePassword .okButton:hover {
+  color: #80D651;
+  background: white;
+  border: 2px solid #80D651;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.modalSuccessChangePassword.active {
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
+}
+
+.modalChangePassword {
+  position: fixed;
+  display: block;
+  z-index: 5;
+  background-color: #fff;
+  color: black !important;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.7);
+          box-shadow: 0 5px 20px rgba(0, 0, 0, 0.7);
+  max-height: 900px;
+  width: 600px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(0);
+          transform: translate(-50%, -50%) scale(0);
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+.modalChangePassword input {
+  width: 100%;
+  border-radius: 5px;
+  border: 2px solid #ccc;
+  height: 35px;
+  padding: 10px;
+}
+
+.modalChangePassword .passwordOne.box,
+.modalChangePassword .passwordTwo.box {
+  -webkit-box-shadow: 0px 0px 3px 1px #ff4747;
+          box-shadow: 0px 0px 3px 1px #ff4747;
+}
+
+.modalChangePassword input:focus {
+  outline: none;
+}
+
+.modalChangePassword .errorPasswordText {
+  color: #fd3b3b;
+  display: none;
+}
+
+.modalChangePassword .buttons .updatePasswordButton {
+  background: #4989ff;
+  color: white;
+}
+
+.modalChangePassword .buttons .updatePasswordButton:hover {
+  background: white;
+  color: #4989ff;
+  border: 2px solid #4989ff;
+}
+
+.modalChangePassword .buttons .cancelPasswordButton {
+  background: #439272;
+  color: white;
+}
+
+.modalChangePassword .buttons .cancelPasswordButton:hover {
+  background: white;
+  color: #439272;
+  border: 2px solid #439272;
+}
+
+.privacy-section {
+  width: 100%;
+  height: 90px;
+  margin-top: 50px;
+}
+
+.privacy-section ul li {
+  padding: 15px 10px;
+}
+
+.button-two {
+  background: white;
+  color: #56A978;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.button-two:hover {
+  background: #56A978;
+  color: white;
+  border: 1px solid white;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+#footer {
+  border-top: 2px solid;
+  width: 100%;
+  height: 100%;
+  background: #39986F;
+  position: static;
+}
+
+#footer .container {
+  padding-top: 40px;
+}
+
+#footer .container #GradesContainer {
+  margin-left: 30px;
+  max-width: 100px;
+  display: none;
+}
+
+#footer .container #GradesContainer ul {
+  list-style: none;
+  font-size: 12px;
+  display: inline-block;
+  width: 120px;
+}
+
+#footer .container #GradesContainer ul li {
+  padding: 2.5px 0px;
+}
+
+#footer .container #arrow-down-grades {
+  display: none;
+}
+
+#footer .container #DisciplineContainer {
+  margin-left: 30px;
+  max-width: 100px;
+  display: none;
+}
+
+#footer .container #DisciplineContainer ul {
+  list-style: none;
+  font-size: 12px;
+  display: inline-block;
+  width: 120px;
+}
+
+#footer .container #DisciplineContainer ul li {
+  padding: 2.5px 0px;
+}
+
+#footer .container #arrow-down-discipline {
+  display: none;
+}
+
+#footer .container #arrow-down-institute {
+  display: none;
+}
+
+#footer .container #InstituteContainer {
+  margin-left: 30px;
+  max-width: 100px;
+  display: none;
+}
+
+#footer .container #InstituteContainer ul {
+  list-style: none;
+  font-size: 12px;
+  display: inline-block;
+  width: 120px;
+}
+
+#footer .container #InstituteContainer ul li {
+  padding: 2.5px 0px;
+}
+
+#footer .container #arrow-down-subject {
+  display: none;
+}
+
+#footer .container .row #arrow-down {
+  display: none;
+}
+
+#footer .container .row #SubjectContainer {
+  margin-left: 30px;
+  max-width: 100px;
+  display: none;
+}
+
+#footer .container .row #SubjectContainer ul {
+  list-style: none;
+  font-size: 12px;
+  display: inline-block;
+  width: 120px;
+}
+
+#footer .container .row #SubjectContainer ul li {
+  padding: 2.5px 0px;
+}
+
+#footer .container .row .City-pop-up #firstItems {
+  display: none;
+  margin-left: 32px;
+  max-width: 100px;
+}
+
+#footer .container .row .City-pop-up ul {
+  list-style: none;
+  font-size: 12px;
+  display: inline-block;
+  width: 120px;
+}
+
+#footer .container .row .City-pop-up ul li {
+  padding: 2.5px 0px;
+}
+
+#footer .container .row .unlistItem li {
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+#footer .container .row .unlistItem li:hover {
+  cursor: pointer;
+  color: #426858;
+  text-decoration: underline;
+}
+
+#footer .container .row .row-topics {
+  height: 30px;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+#footer .container .row .row-topics:hover {
+  cursor: pointer;
+  color: #426858;
+}
+
+#footer .container .row #buttonClick,
+#footer .container .row #buttonClickSubject,
+#footer .container .row #buttonClickInstitute,
+#footer .container .row #buttonClickDiscipline,
+#footer .container .row #buttonClickGrades {
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+#footer .container .row #buttonClick:hover,
+#footer .container .row #buttonClickSubject:hover,
+#footer .container .row #buttonClickInstitute:hover,
+#footer .container .row #buttonClickDiscipline:hover,
+#footer .container .row #buttonClickGrades:hover {
+  cursor: pointer;
+  color: #426858;
+  text-decoration: underline;
+}
+
+#footer .container .row .list-item {
+  width: 155px;
+}
+
+#footer .container .row .list-item .City {
+  margin-right: 4px;
+}
+
+#footer .container .row .list-item .Subjects {
+  padding-right: 7px;
+}
+
+#footer .container .row .list-item .Institute {
+  padding-right: 8px;
+}
+
+#footer .container .row .list-item .Grade {
+  padding-right: 20px;
+}
+
+#footer .container .row .list-item ul li {
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+#footer .container .row .list-item ul li:hover {
+  cursor: pointer;
+  color: #426858;
+  text-decoration: underline;
+}
+
+#footer .container .row ul {
+  list-style: none;
+  width: 125px;
+  padding-left: 0px;
+  font-size: 15px;
+  margin-right: auto;
+}
+
+#footer .container .row .fa-caret-right,
+#footer .container .row .fa-caret-down {
+  font-size: 10px;
+  padding: 5px 10px;
+}
+
+#footer .container .row .fa-business-time,
+#footer .container .row .fa-user-friends,
+#footer .container .row .fa-comment,
+#footer .container .row .fa-graduation-cap {
+  font-size: 20px;
+  padding: 0px 15px;
+}
+
+#footer .container .row .button-socials button {
+  text-decoration: none;
+  margin-top: 10px;
+  font-size: 13px;
+}
+
+.line-section {
+  background: white;
+  height: 1px !important;
+  width: 80%;
+  margin: 0 auto;
+}
+
+#last {
+  background: #39986F;
+}
+
+#last .ending-text .logo {
+  width: 50px;
+}
+
+.modalChangePassword.active {
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
+}
+
+@media screen and (max-width: 767px) {
+  .privacy-section strong {
+    display: none;
+  }
+  .privacy-section ul li {
+    margin-top: 12.5px;
+    font-size: 13px;
+    padding: 0px 5px;
+  }
+  #last p {
+    font-size: 13px !important;
+    padding-right: 5px;
+  }
+  #last h6 {
+    font-size: 13px;
+  }
+  .row-topics h5 {
+    font-size: 15px !important;
+  }
+  .button-socials button {
+    font-size: 10px !important;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .privacy-section br {
+    display: none;
+  }
+  .privacy-section ul li {
+    margin-top: 12.5px;
+    padding-top: 2px !important;
+    font-size: 12px !important;
+    padding: 0px 5px;
+  }
+  .button-socials button {
+    font-size: 5px !important;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .responsiveNavBar.active {
+    display: none;
+  }
+  .overlayNavBar.active {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1110px) {
+  .overlayChat {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .tuitionNav p {
+    width: 355px;
+  }
+  .modalContainer {
+    width: 600px;
+  }
+  .modalContainerSuccess {
+    width: 600px;
+  }
+  .tutor .button {
+    font-size: 12px !important;
+  }
+  .notVerifiedEmail {
+    height: 60px;
+  }
+  .inboxContainer {
+    display: none;
+  }
+  .chats {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 3;
+    height: 70rem;
+    max-height: 150rem;
+    -webkit-transform: translateX(100%) scale(0);
+            transform: translateX(100%) scale(0);
+    -webkit-transition: .3s ease;
+    transition: .3s ease;
+  }
+  .chats.active {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 3;
+    width: 15rem;
+    height: 91rem;
+    max-height: 150rem;
+    -webkit-transform: translateX(0%) scale(1);
+            transform: translateX(0%) scale(1);
+  }
+  .chatButtonResponsive {
+    display: block;
+  }
+  .titleTuition {
+    padding-bottom: 15px;
+  }
+  .titleTuition p {
+    display: none;
+  }
+  .courseNavBar h3 {
+    padding-bottom: 10px;
+  }
+  .courseNavBar p {
+    display: none;
+  }
+  .buttonPostTuition.active {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+  .navTitle p {
+    display: none !important;
+  }
+  .dashBoard {
+    display: block;
+    width: 170px;
+    height: 35px;
+    cursor: pointer;
+    padding-top: 15px;
+    padding-bottom: 35px;
+  }
+  .dashBoard .fa-bars {
+    display: block;
+    margin-top: 6px;
+    font-size: 20px;
+  }
+  .dashBoard h3 {
+    color: white;
+    display: block;
+  }
+  .dashBoard p {
+    display: block;
+    font-size: 23px;
+    color: white;
+    margin-top: 1px;
+  }
+  nav li i {
+    font-size: 13px !important;
+  }
+  nav .img-fluid-one {
+    width: 155px !important;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .sendMessage_div textarea {
+    font-size: 13px;
+  }
+  .chats {
+    width: 205px;
+  }
+  .chats .circleProfileChat {
+    padding: 25px;
+  }
+  .chats h5 {
+    font-size: 13px !important;
+  }
+  .chats p {
+    font-size: 12px;
+    width: 65px;
+  }
+  .modalContainerChanges {
+    width: 600px;
+  }
+  .modalDeleteTuitionContainer {
+    width: 600px;
+  }
+  .modalTuitionHasDeleted {
+    width: 600px;
+  }
+  .modalDeleteAccount {
+    width: 600px;
+  }
+  .modalTuitionHasDeleted {
+    width: 600px;
+  }
+  .modaChangeEmail {
+    width: 400px !important;
+  }
+  .modaVerifyEmail {
+    width: 400px !important;
+  }
+  .modalChangePassword {
+    width: 400px !important;
+  }
+  .modalSuccessChangePassword {
+    width: 400px !important;
+  }
+}
+
+@media screen and (max-width: 775px) {
+  .circleProfileChat {
+    display: block;
+    margin: 0 auto;
+  }
+  .paragraph p {
+    display: none;
+  }
+  .paragraph h5 {
+    margin-left: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 70px;
+    font-size: 13px;
+  }
+  .chats p {
+    width: 105px;
+    font-size: 11px !important;
+  }
+  .chats h5 {
+    font-size: 15px !important;
+  }
+  .inboxChatProccess .message {
+    font-size: 13px !important;
+  }
+  .inboxChatProccess .clientNameTitle {
+    font-size: 12px;
+  }
+  .inboxChatProccess .myNameTitle {
+    font-size: 13px;
+  }
+  .inboxChatProccess .timeDate {
+    font-size: 12px;
+  }
+  .notVerifiedEmail {
+    height: 80px;
+  }
+  .modalContainerChanges {
+    width: 400px;
+  }
+  .modalDeleteTuitionContainer {
+    width: 400px;
+  }
+  .modalTuitionHasDeleted {
+    width: 400px;
+  }
+  .modalTuitionHasDeleted {
+    width: 400px;
+  }
+  .modaChangeEmail {
+    width: 400px !important;
+  }
+  .modaVerifyEmail {
+    width: 400px !important;
+  }
+  .modalChangePassword {
+    width: 400px !important;
+  }
+  .modalSuccessChangePassword {
+    width: 400px !important;
+  }
+  .modalContainerSuccess {
+    width: 400px;
+  }
+  .modalDeleteAccount {
+    width: 400px;
+  }
+  .modalContainer {
+    width: 400px;
+  }
+  .modalContainer .textExclamation {
+    margin-top: 15px;
+    font-size: 13px;
+  }
+  .modalContainer button {
+    font-size: 12px;
+  }
+  .purple {
+    width: 335px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .containerThree {
+    width: 200px !important;
+  }
+  .containerThree h3 {
+    font-size: 15px;
+  }
+  .containerThree h4 {
+    display: none;
+  }
+  .containerThree strong {
+    display: none;
+  }
+  .changeSettings {
+    width: 200px !important;
+  }
+  .changeSettings p {
+    font-size: 10px;
+  }
+  .changeSettings button {
+    font-size: 12px;
+  }
+  .accountSettingsButton button {
+    font-size: 13px !important;
+  }
+  .accountSettingsButton strong {
+    display: none;
+  }
+  .mainContainerSettings h3 {
+    font-size: 18px;
+  }
+  .blockedUsersButtonDiv button {
+    font-size: 13px !important;
+  }
+  .inboxContainerMessages {
+    width: 100px;
+  }
+  .purple {
+    width: 300px;
+  }
+  .purple p {
+    font-size: 13px;
+  }
+  .sendMessage_div textarea {
+    font-size: 10px;
+  }
+  .tuitionSuccess {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 10px !important;
+  }
+  .tuitionSuccess .fa-plus {
+    display: block;
+  }
+  .tuitionSuccess strong {
+    display: none;
+  }
+  .notVerifiedEmail {
+    height: 80px;
+  }
+  .modalContainer {
+    width: 350px !important;
+  }
+  .modalContainerChanges {
+    width: 350px;
+  }
+  .modalDeleteTuitionContainer {
+    width: 350px;
+  }
+  .modalTuitionHasDeleted {
+    width: 350px;
+  }
+  .modalTuitionHasDeleted {
+    width: 350px;
+  }
+  .modaChangeEmail {
+    width: 350px !important;
+  }
+  .modaVerifyEmail {
+    width: 350px !important;
+  }
+  .modalChangePassword {
+    width: 350px !important;
+  }
+  .modalSuccessChangePassword {
+    width: 350px !important;
+  }
+  .modalContainerSuccess {
+    width: 350px;
+  }
+  .modalDeleteAccount {
+    width: 350px;
+  }
+  .sendIcon {
+    display: none;
+  }
+  #myTextArea {
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    font-size: 15px;
+  }
+  .modalContainer {
+    width: 400px;
+  }
+  .modalContainer .textExclamation {
+    margin-top: 15px;
+    font-size: 13px;
+  }
+  .modalContainer button {
+    font-size: 12px;
+  }
+  .chats {
+    width: 150px;
+  }
+  .chats p {
+    width: 50px;
+  }
+}
+/*# sourceMappingURL=profile.css.map */

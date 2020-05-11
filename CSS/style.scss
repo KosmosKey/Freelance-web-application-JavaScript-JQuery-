@@ -1,0 +1,1108 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
+
+// Instead of doing BODY i did *. To not select elements only in body, but for all the elements
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+// .nav-link is class for the a tag in the navbar
+.nav-link {
+    font-family: 'Nunito', sans-serif;
+}
+
+.navbar {
+    background: white !important;
+}
+
+// Style for the button (Log in) and (Sign up) 
+
+.button {
+    border-radius: 5px;
+    border: 2px solid white;
+    background: #439272;
+    color: white;
+    transition: .3s ease-in;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 5px 15px;
+}
+
+// Hover on the button for Log in and Sign up
+.button:hover {
+    background: black;
+    border: 2px solid white;
+}
+
+// List items and <a> style
+.navbar-nav {
+    li {
+        a {
+            color: black !important;
+            font-size: 1.2rem;
+        }
+    }
+}
+
+// .img-fluid is the logo in the navbar
+.img-fluid-one {
+    margin-right: 2rem;
+    width: 15rem;
+}
+
+
+// Bars in the hambuger toggler
+.fa-bars {
+    color: white;
+    font-size: 1.5rem;
+}
+
+// Responsive hamburger toggler style
+.navbar-toggler {
+    padding: .5rem 1rem;
+    border: 3px solid white;
+    background: #439272;
+    border: none;
+}
+
+// The small sentence for (Courses BETA)
+sup {
+    padding-left: 5px;
+}
+
+
+// Container home for the main home page
+
+.container-home {
+    background: white;
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .container-info {
+        height: 350px;
+        width: 100%;
+        text-align: center;
+        display: block;
+
+        .title-text {
+            color: black;
+            text-align: center;
+            font-size: 5rem;
+        }
+
+        .input-group {
+            margin: 0 auto;
+            width: 65%;
+        }
+
+        .dropdown-toggle {
+            border-radius: 0px;
+            background: white;
+        }
+    }
+}
+
+// Datalist to be opcity 100 always!
+input::-webkit-calendar-picker-indicator {
+    opacity: 100;
+}
+
+// Class for where all the input, labels and datalist's are
+.labels {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+// Label and input style
+label {
+    border: none;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+
+    input {
+        border: 0px solid;
+        width: 425px;
+        height: 35px;
+        padding: 0px 5px;
+        box-shadow: 0px 0px 5px 0px black;
+    }
+}
+
+// Sign up as a tutor and Sign up with Facebook small divs fix
+.circle {
+    width: 150px;
+}
+
+.clearfix {
+    clear: both;
+}
+
+
+.para {
+    font-size: 13px !important;
+}
+
+.button-one {
+    margin-right: 1rem;
+}
+
+
+
+// CSS for placeholder for input tag
+
+::placeholder {
+    color: #191936d5;
+    opacity: 1;
+    padding-left: .5rem;
+}
+
+// Option style forc the datalist
+option {
+    font-size: 200px;
+}
+
+// Section title for Join as a tutor
+.section-title {
+    width: 100rem;
+}
+
+// Field for button
+.button-field {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+    background: #459373;
+    color: white;
+    transition: .3s ease-in;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 5.5px 15px;
+    border: none;
+    box-shadow: 0px 0px 5px 0px black;
+}
+
+// Button hover
+.button-field:hover {
+    background: #459373;
+    color: #fff;
+}
+
+// The Scroll down button below (Let's find tutor)
+.scroll-down {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 225px;
+    background: #459373;
+    height: 45px;
+    border-radius: 50px;
+    border: 2px solid white;
+    position: absolute;
+    bottom: 10px;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+
+    .fa-arrow-down {
+        margin-left: 10px;
+        animation: moveUpandDown 1s ease infinite;
+        position: relative;
+    }
+}
+
+// Animation for the arrow
+@keyframes moveUpandDown {
+
+    0%,
+    100% {
+        bottom: -5px;
+    }
+
+    50% {
+        bottom: 5px;
+    }
+
+}
+
+// Button for Join Now
+.button-green {
+    width: 175px;
+    padding: 8px 0px;
+    border: none;
+    background: white;
+    color: #56A978;
+    border-radius: 50px !important;
+}
+
+// Button for Join Now (Hover)
+.button-green:hover {
+    color: white;
+    background: #56A978;
+    border: 2px solid white;
+
+    // Line undereath the Join Now Button
+    .line-join {
+        background: white;
+    }
+}
+
+// Arrow from Font Awesome (start)
+.fa-angle-double-right {
+    position: relative;
+    animation: moveLeftandRight 1s ease infinite;
+}
+
+// Move Left and Riht @keyframe animation
+@keyframes moveLeftandRight {
+
+    0%,
+    100% {
+        left: -5px;
+    }
+
+    50% {
+        left: 5px;
+    }
+
+}
+
+// The whole brand new section
+#banner {
+    height: 100%;
+    background: #39986F;
+}
+
+// Line underneath Join Now 
+.line-join {
+    background: #56A978;
+    width: 100px;
+    height: 2px;
+    margin: 3px auto 0px;
+}
+
+// Button for sign up as a tutor & Sign up with Facebook
+.button-two {
+    background: white;
+    color: #56A978;
+    border: none;
+    box-shadow: none;
+}
+
+// Button hover for .button-two
+.button-two:hover {
+    background: #56A978;
+    color: white;
+    border: 1px solid white;
+    box-shadow: none;
+}
+
+// Button for Sign up as a Tutor 
+.button-one {
+    background: white;
+    color: #56A978;
+    border: none;
+    box-shadow: none;
+}
+
+// A div line underneath Titles for Tutor skills containers
+.line-tutors {
+    width: 100%;
+    height: 1px;
+    margin: 3px auto;
+    background: white;
+}
+
+// Line Underneath the Top tutors text
+.line-tutors-section {
+    width: 80%;
+    height: 1px;
+    margin: 3px auto;
+    background: rgb(197, 197, 197);
+}
+
+// Buttone-one hover
+.button-one:hover {
+    background: #56A978;
+    color: white;
+    border: 1px solid white;
+    box-shadow: none;
+}
+
+// Width of the image for (Find tutor section)
+.line {
+    width: 75%;
+    height: 1px;
+    margin: 3px auto;
+    background: white;
+}
+
+// Div for whole items skills
+.skills {
+    width: 100%;
+    height: 125px;
+    overflow: hidden;
+}
+
+// Items skills small div containers inside .skills (For example maths and geography)
+.items {
+    margin-left: 5px;
+    display: inline-block;
+    vertical-align: baseline;
+    text-align: center;
+    border-radius: 5px;
+    max-width: 250px;
+    padding: .25em .6em;
+    padding-top: 0px;
+    overflow: hidden;
+    font-size: 11px !important;
+    height: 19px;
+    margin-top: 5px;
+    background: white;
+    max-height: 150px;
+    color: #39986F;
+    border: 1px solid rgb(95, 95, 95);
+    box-shadow: 3px 1px 3px 0px rgb(119, 119, 119);
+}
+
+// Sectopm for Top Tutors
+#tutors {
+    background: white;
+}
+
+// Container for the Tutors skills (There are four of them)
+.Tutor {
+    background: #39986F;
+    max-width: 300px;
+    margin: 0px auto;
+    border-radius: 10px;
+    height: 350px;
+    color: white;
+    padding: 15px;
+    position: relative;
+    box-shadow: 3px 3px 3px 0px rgb(141, 141, 141);
+
+    // Button all the way down below the tutors skill div
+    .button-profile {
+        box-shadow: none;
+        border: none;
+        color: #39986F;
+        background: white;
+        position: absolute;
+        left: 50%;
+        bottom: 20px;
+        border-radius: 50px;
+        transform: translateX(-50%);
+        transition: .4s ease;
+    }
+
+    // Button hover
+    .button-profile:hover {
+        border-radius: 5px;
+        box-shadow: none;
+        background: #39986F;
+        color: white;
+        border: 2px solid white;
+    }
+
+    // Paragraph tutor is the UNI or College paragraph
+    .paragraph-tutor {
+        max-height: 22px;
+        font-size: 14px !important;
+
+        // Paragraph inside .paragraph-tutor
+        p {
+            margin-left: 5px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 300px;
+        }
+    }
+
+    // Name of the Tutor
+    h5 {
+        padding-top: 4rem;
+    }
+
+    // Profile picture of the tutor
+    .circle {
+        border: 2px solid white;
+        height: 90px;
+        width: 90px;
+        border-radius: 50%;
+        position: absolute;
+        top: -35px;
+        left: 20px;
+    }
+
+    // Image for the 1st circle
+    .circle-one {
+        background: url("/images/Profile1.jfif");
+        background-size: cover;
+    }
+
+    // Image for the 2nd circle
+    .circle-two {
+        background: url("/images/Profile2.jfif");
+        background-size: cover;
+    }
+
+    // Image for the 3rd circle
+    .circle-three {
+        background: url("/images/Profile3.jfif");
+        background-size: cover;
+
+    }
+
+    // Image for the 4th circle
+    .circle-four {
+        background: url("/images/Profile4.jfif");
+        background-size: cover;
+    }
+
+}
+
+// Footer which is all the way down below the page
+#last {
+    background: #39986F;
+
+    // On the last footer of the page to the left side
+    .ending-text {
+
+        // Logo beside the ending text
+        .logo {
+            width: 50px;
+        }
+    }
+}
+
+// Ending text
+.ending-text {
+
+    // Changing margin-top of the ending text
+    h6 {
+        margin-top: 8px;
+    }
+}
+
+// Copyright paragraph for who made the web
+.copyright-paragraph {
+
+    // How big the paragraph should be (Font-size)
+    p {
+        margin-top: 15px;
+    }
+
+}
+
+// A div line in the footer between follow button and last footer items
+.line-section {
+    background: white;
+    height: 1px !important;
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+// Footer for About, Blog, Terms and Privacy
+.privacy-section {
+    width: 100%;
+    height: 90px;
+    margin-top: 50px;
+
+    // ul
+    ul {
+        li {
+            // Padding for li
+            padding: 15px 10px;
+        }
+    }
+}
+
+// Tutors testimonial
+#carousel {
+    background: #39986F;
+    padding: 30px 0px;
+}
+
+// Testimonial items inside the container (h3, h6, p and i )
+.testimonial-item {
+    padding: 20px 20px !important;
+    background: white;
+    border-radius: 10px;
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+
+    // Paragraph
+    p {
+        margin: 0 auto;
+        width: 75%;
+        line-height: 30px;
+    }
+
+    // H6
+    h6 {
+        color: #39986F;
+    }
+
+    // H7
+    h3 {
+        padding-top: 25px;
+    }
+
+    // Image
+    img {
+        margin: 0 auto;
+        border-radius: 50%;
+        width: 150px !important;
+        border: 3.5px solid rgb(88, 224, 165);
+    }
+}
+
+// Image 
+.image {
+    width: 200px;
+}
+
+// By city in the 2nd last footer of the page
+.list-item {
+
+    // A is the text for City
+    a {
+        font-size: 13px !important;
+    }
+
+    // Hover the a element
+    a:hover {
+        text-decoration: 2px solid white;
+    }
+}
+
+// Socials 
+.social {
+    i {
+        font-size: 15px !important;
+    }
+}
+
+// Id for the topics (Tutors, Tuitions, Courses and Discussions) In footer all the way down in the page
+#footer {
+    width: 100%;
+    height: 100%;
+    background: #39986F;
+    position: static;
+
+    // Container
+    .container {
+        padding-top: 40px;
+
+        // Container for Grade <a>
+        #GradesContainer {
+            margin-left: 30px;
+            max-width: 100px;
+            display: none;
+
+            // ul
+            ul {
+                list-style: none;
+                font-size: 12px;
+                display: inline-block;
+                width: 120px;
+
+                // li 
+                li {
+                    padding: 2.5px 0px;
+                }
+            }
+        }
+
+        // The arrow that toggles down dissapear
+        #arrow-down-grades {
+            display: none;
+        }
+
+        // Discipline container
+        #DisciplineContainer {
+            margin-left: 30px;
+            max-width: 100px;
+            display: none;
+
+            // ul
+            ul {
+                list-style: none;
+                font-size: 12px;
+                display: inline-block;
+                width: 120px;
+
+                // li
+                li {
+                    padding: 2.5px 0px;
+                }
+            }
+        }
+
+        // Arrow down for the discipline <a>
+        #arrow-down-discipline {
+            display: none;
+        }
+
+        // Arrow down for the institute part <a>
+        #arrow-down-institute {
+            display: none;
+        }
+
+        // Institute Container
+        #InstituteContainer {
+            margin-left: 30px;
+            max-width: 100px;
+            display: none;
+
+            // ul
+            ul {
+                list-style: none;
+                font-size: 12px;
+                display: inline-block;
+                width: 120px;
+
+                // li
+                li {
+                    padding: 2.5px 0px;
+                }
+            }
+        }
+
+        // Arrow down for subject
+        #arrow-down-subject {
+            display: none;
+        }
+
+
+        // Row
+        .row {
+
+            // Arrow down
+            #arrow-down {
+                display: none;
+            }
+
+            // Subject container
+            #SubjectContainer {
+                margin-left: 30px;
+                max-width: 100px;
+                display: none;
+
+                // ul
+                ul {
+                    list-style: none;
+                    font-size: 12px;
+                    display: inline-block;
+                    width: 120px;
+
+                    // li
+                    li {
+                        padding: 2.5px 0px;
+                    }
+                }
+            }
+
+            // Pop up when you click on the topics (By city , By Subjects and ect.)
+            .City-pop-up {
+
+                // FirstItems the pop up container 
+                #firstItems {
+                    display: none;
+                    margin-left: 32px;
+                    max-width: 100px;
+                }
+
+                // Ul
+
+                ul {
+                    list-style: none;
+                    font-size: 12px;
+                    display: inline-block;
+                    width: 120px;
+
+                    // li
+                    li {
+                        padding: 2.5px 0px;
+                    }
+                }
+            }
+
+            // About, Blog, Terms and Privacy
+            .unlistItem {
+                li {
+                    transition: .3s ease;
+                }
+            }
+
+            // Hover li 
+            .unlistItem {
+                li:hover {
+                    cursor: pointer;
+                    color: #426858;
+                    text-decoration: underline;
+                }
+            }
+
+            // .row-topics
+            .row-topics {
+                height: 30px;
+                transition: .3s ease;
+            }
+
+            // .row-topics hover
+            .row-topics:hover {
+                cursor: pointer;
+                color: #426858;
+            }
+
+            // Transition to the <a> that has been clicked 
+            #buttonClick,
+            #buttonClickSubject,
+            #buttonClickInstitute,
+            #buttonClickDiscipline,
+            #buttonClickGrades {
+                transition: .3s ease;
+            }
+
+            // Style to the <a> that has been clicked 
+
+            #buttonClick:hover,
+            #buttonClickSubject:hover,
+            #buttonClickInstitute:hover,
+            #buttonClickDiscipline:hover,
+            #buttonClickGrades:hover {
+                cursor: pointer;
+                color: #426858;
+                text-decoration: underline;
+            }
+
+            // List item and the subjects
+            .list-item {
+                width: 155px;
+
+                .City {
+                    margin-right: 4px;
+                }
+
+                .Subjects {
+                    padding-right: 7px;
+                }
+
+                .Institute {
+                    padding-right: 8px;
+                }
+
+                .Grade {
+                    padding-right: 20px;
+                }
+            }
+
+            .list-item {
+                ul {
+                    li {
+                        transition: .3s ease;
+                    }
+                }
+            }
+
+            // List item hover
+            .list-item {
+                ul {
+                    li:hover {
+                        cursor: pointer;
+                        color: #426858;
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+            // ul
+            ul {
+                list-style: none;
+                width: 125px;
+                padding-left: 0px;
+                font-size: 15px;
+                margin-right: auto;
+            }
+
+            // Line down and line right 
+            .fa-caret-right,
+            .fa-caret-down {
+                font-size: 10px;
+                padding: 5px 10px;
+            }
+
+            // FontAwesome icons
+            .fa-business-time,
+            .fa-user-friends,
+            .fa-comment,
+            .fa-graduation-cap {
+                font-size: 20px;
+                padding: 0px 15px;
+            }
+
+            // Button socials
+            .button-socials {
+                button {
+                    text-decoration: none;
+                    margin-top: 10px;
+                    font-size: 13px;
+                }
+
+            }
+        }
+    }
+}
+
+// Meia queries for the 991px
+@media screen and (max-width: 991px) {
+    .Tutor {
+        margin-top: 50px;
+    }
+}
+
+// Meia queries for the 400px
+@media screen and (max-width: 400px) {
+    .privacy-section {
+        br {
+            display: none;
+        }
+
+        ul {
+            li {
+                margin-top: 12.5px;
+                padding-top: 2px !important;
+                font-size: 12px !important;
+                padding: 0px 5px;
+            }
+        }
+    }
+
+    .button-socials {
+        button {
+            font-size: 5px !important;
+        }
+    }
+}
+
+// Meia queries for the 767px
+@media screen and (max-width: 767px) {
+    .privacy-section {
+        strong {
+            display: none;
+        }
+
+        ul {
+            li {
+                margin-top: 12.5px;
+                font-size: 13px;
+                padding: 0px 5px;
+            }
+        }
+    }
+
+    #last {
+        p {
+            font-size: 13px !important;
+            padding-right: 5px;
+        }
+
+        h6 {
+            font-size: 13px;
+        }
+    }
+
+    .row-topics {
+        h5 {
+            font-size: 15px !important;
+        }
+    }
+
+    .button-socials {
+        button {
+            font-size: 10px !important;
+        }
+    }
+}
+
+// Media query screen for width => 1200px
+@media screen and (max-width: 1200px) {
+    .other {
+        display: none;
+    }
+
+    .text-section {
+        text-align: center;
+    }
+}
+
+// Border radisu for the first input field
+.input-field-one {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+// Media query screen for width => 1200px
+
+@media screen and (max-width: 1200px) {
+    .container-info {
+        .title-text {
+            font-size: 15rem;
+        }
+
+        input {
+            width: 330px;
+        }
+    }
+
+    .section-title {
+        h1 {
+            font-size: 3rem;
+        }
+
+        width: 800px;
+        font-size: 1.2rem;
+    }
+}
+
+
+// Media query screen for width => 900px
+@media screen and (max-width: 900px) {
+    .container-home {
+        position: relative;
+        height: 80vh;
+    }
+
+    .scroll-down {
+        bottom: 25px;
+    }
+
+    .container-info {
+        input {
+            width: 250px;
+        }
+    }
+
+    .title-text {
+        font-size: 3.5rem !important;
+    }
+}
+
+// Media query screen for width => 700px
+@media screen and (max-width: 700px) {
+    .container-info {
+        input {
+            width: 150px !important;
+            font-size: 15px !important;
+
+        }
+
+        .button-field {
+            font-size: 15px;
+            height: 35px;
+        }
+    }
+}
+
+// Media query screen for width => 580px
+
+@media screen and (max-width: 580px) {
+    .title-text {
+        font-size: 45px !important;
+    }
+
+    label {
+        input {
+            width: 50px !important;
+        }
+    }
+
+    ::placeholder {
+        font-size: 15px !important;
+    }
+
+    .button-field {
+        font-size: 14.5px !important;
+    }
+
+    .section-title {
+        width: 70%;
+        font-size: 15px !important;
+
+        h1 {
+            font-size: 2rem;
+        }
+    }
+}
+
+// Meia queries for the 470px
+@media screen and (max-width: 470px) {
+    .container-home {
+        position: relative;
+        height: 60vh;
+    }
+
+    .container-info {
+        margin-top: 7rem;
+    }
+
+    .title-text {
+        font-size: 36px !important;
+    }
+
+    .button-field {
+        font-weight: bold !important;
+        font-size: 10px !important;
+    }
+
+    label {
+
+        .input-field-one {
+            width: 100px !important;
+        }
+
+        .input-field-two {
+            width: 100px !important;
+        }
+
+        input {
+            width: 2px !important;
+            font-size: 15px !important;
+        }
+    }
+
+    ::placeholder {
+        display: none !important;
+    }
+
+
+    .labels {
+        width: 100%;
+        display: block;
+
+        .button-field {
+            width: 126px;
+            text-align: center;
+            font-size: 10px !important;
+        }
+
+    }
+
+    .section-title {
+        width: 100%;
+        height: 25rem;
+    }
+}

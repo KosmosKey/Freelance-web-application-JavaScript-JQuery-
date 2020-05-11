@@ -1,0 +1,1772 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tuitions - Name</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/CSS/profile.css" />
+    <script
+      src="https://kit.fontawesome.com/3f8ff85d45.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/CSS/tagify.css" />
+  </head>
+  <body>
+    <div class="responsiveNavBar p-4">
+      <i class="fas fa-times timesResponsive"></i>
+      <div class="title">
+        <h3>Patrick Stian</h3>
+        <p>PatrickStian@gmail.com</p>
+      </div>
+
+      <div class="listItems">
+        <ul>
+          <div class="tabsNav text-white" id="nav-tab">
+            <div class="inboxProfileNav">
+              <button class="btn" href="#Inbox">
+                <i class="fas fa-inbox mr-2"></i>Inbox
+              </button>
+            </div>
+            <div class="inboxProfileNav my-2">
+              <button class="btn" href="#Posts">
+                <i class="fas fa-mail-bulk mr-2"></i>Tuitions Posted
+              </button>
+            </div>
+            <div class="inboxProfileNav my-2">
+              <button class="btn" href="#Course">
+                <i class="fas fa-business-time mr-2"></i>Courses<sup> Beta</sup>
+              </button>
+            </div>
+          </div>
+          <div class="tabsNav">
+            <p class="mt-4">ACCOUNT</p>
+            <div class="listItemsSettingProfile my-3">
+              <div class="inboxProfileNav">
+                <button class="btn">
+                  <i class="fas fa-cog mr-2"></i>Settings
+                </button>
+              </div>
+              <div class="my-2">
+                <button class="btn">
+                  <i class="fas fa-sign-out-alt mr-2"></i>Log out
+                </button>
+              </div>
+            </div>
+          </div>
+        </ul>
+      </div>
+    </div>
+    <!-- Navigationbar (Start) -->
+    <nav class="navbar navbar-expand-lg navbar navbar-dark bg-primary p-3">
+      <img src="/images/green.png" class="img-fluid-one" alt="" />
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <div class="conatiner">
+          <span class="fas fa-bars"></span>
+        </div>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link text-white" href="#"
+              ><i class="fas fa-user-friends p-1"></i>Tutors</a
+            >
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link text-white" href="#"
+              ><i class="fas fa-graduation-cap p-1"></i>Tuitions</a
+            >
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link text-white" href="#"
+              ><i class="fas fa-business-time p-1"></i>Courses<sup>Beta</sup></a
+            >
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0 mr-1 tutor">
+          <button class="btn mr-3 button">
+            <i class="fas fa-graduation-cap"></i>
+            Become a Tutor
+          </button>
+        </form>
+        <div class="dropdown pr-5">
+          <button
+            class="btn dropdown-toggle"
+            type="button"
+            id="dropdownMenuButton"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            <img
+              src="/images/Profile1.jfif"
+              class="profilePicture mr-2"
+              alt=""
+            />
+            <a href="">James</a>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item DRPIT" href="#"
+              ><i class="fas fa-inbox mr-2"></i>Inbox</a
+            >
+            <a class="dropdown-item DRPIT" href="#"
+              ><i class="fas fa-mail-bulk mr-2"></i>Tuitions Posts</a
+            >
+            <a class="dropdown-item DRPIT" href="#"
+              ><i class="fas fa-business-time mr-2"></i>Courses <sup>Beta</sup>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item DRPIT" href="#"
+              ><i class="fas fa-cog mr-2"></i>Settings</a
+            >
+            <a class="dropdown-item" href="#"
+              ><i class="fas fa-sign-out-alt mr-2"></i>Log out</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Navigationbar (End) -->
+
+    <!-- Email verification pop up (start) -->
+    <div class="notVerifiedEmail">
+      <div class="text text-center pt-2">
+        <p>
+          Email Verification: Your email address is not verified, please verify
+          by clicking the link in the verification email.
+          <a href="#" class="ml-2">Resend verification Link</a>
+        </p>
+      </div>
+    </div>
+    <!-- Email verification pop up (end) -->
+
+    <!--Modalcontainer for change email (start)-->
+    <div class="modaChangeEmail p-3">
+      <h4>Change email</h4>
+      <div class="lineGray"></div>
+      <p class="m-0 mb-2 mt-3">Enter your new email address.</p>
+      <form>
+        <input
+          id="email"
+          name="email"
+          placeholder="Email address"
+          class="m-0 emailValue"
+        />
+        <p class="errorInputEmail mt-2">Email format is not valid</p>
+      </form>
+      <div class="buttons mt-3">
+        <button class="btn p-1 updateEmailButton">Update</button>
+        <button class="btn p-1 ml-1 cancelButton" data-cancel-button>
+          Cancel
+        </button>
+      </div>
+    </div>
+    <!--Modalcontainer for change email (end)-->
+
+    <!--ModalContainer for changepassword (start)-->
+    <div class="modalChangePassword p-3">
+      <h4>Change password</h4>
+      <div class="lineGray mt-3"></div>
+      <p class="m-0 mt-3">Old password:</p>
+      <input
+        type="password"
+        class="mt-2 d-block"
+        placeholder="Current password"
+      />
+      <p class="m-0 mt-2">New password:</p>
+      <input
+        id="password1"
+        class="passwordOne PSW_Two"
+        type="password"
+        placeholder="New password"
+      />
+      <p class="m-0 mt-3">Confrim new password:</p>
+      <input
+        type="password"
+        id="password2"
+        class="mt-2 d-block passwordTwo PSW"
+        placeholder="Confirm new password"
+      />
+      <p class="errorPasswordText mt-2">Passwords do not match</p>
+      <div class="buttons mt-3">
+        <button class="btn p-1 updatePasswordButton">Update</button>
+        <button class="btn p-1 ml-1 cancelPasswordButton" data-cancel-button>
+          Cancel
+        </button>
+      </div>
+    </div>
+    <!--ModalContainer for changepassword (end)-->
+
+    <!-- ModalContainer for delete your account (start) -->
+    <div class="modalDeleteAccount p-3">
+      <h3>Delete your account</h3>
+      <div class="lineGray"></div>
+      <div class="inputDelete">
+        <p class="m-0 mt-2">Enter your password</p>
+        <input type="password" class="p-1 mt-3" placeholder="Password" />
+
+        <div class="buttonDelete p-3">
+          <button class="btn buttonCancel">Cancel</button>
+          <button class="btn deleteButtonAccount">Delete account</button>
+        </div>
+      </div>
+    </div>
+    <!-- ModalContainer for delete your account (end) -->
+
+    <!-- ModalContainer for password change account (start) -->
+    <div class="modalSuccessChangePassword text-center p-3">
+      <i class="fas fa-check-circle"></i>
+      <h3 class="mt-3">Password Changed!</h3>
+      <p>Your password has been changed successfully.</p>
+      <button class="btn ml-auto okButton">Done</button>
+    </div>
+
+    <div class="modaVerifyEmail p-3">
+      <h4>One more step!</h4>
+      <div class="lineGray mt-3 mb-3"></div>
+      <div class="activeYellowStepDiv p-3">
+        <div class="titleIcon d-flex align-items-center">
+          <i class="fas fa-check-circle mb-2"></i>
+          <h5 class="ml-2">Verify Email</h5>
+        </div>
+        <p>
+          A verification email has been sent to <a href="#">Example.com</a>.
+          Click on the link inside the email to verify your new email.
+        </p>
+        <p>
+          If the email doesn't appear in your inbox, please check the spam/junk
+          folder.
+        </p>
+      </div>
+      <button class="btn closeButton mt-3 p-1">Close</button>
+    </div>
+    <!-- ModalContainer for password change account (end) -->
+
+    <!-- ModalContainer after tuition has been saved (start) -->
+    <div class="modalContainerChanges p-5">
+      <i class="fas fa-check p-2"></i>
+      <div class="text mt-3">
+        <h4>Your tuition changes has been successfully saved!</h4>
+      </div>
+    </div>
+    <!-- ModalContainer after tuition has been saved (end) -->
+
+    <!-- ModalContainer for Delete Tuition (start) -->
+    <div class="modalDeleteTuitionContainer p-5">
+      <div class="iconDelete">
+        <i class="fas fa-exclamation-circle mb-4"></i>
+      </div>
+      <div class="deleteText">
+        <h4>Are you sure you want to delete this tuition?</h4>
+        <p>You will not be able to revert this tuition!</p>
+      </div>
+      <div class="buttons">
+        <button class="btn keepItButton">No, keep it</button>
+        <button class="btn deleteThisButton ml-2">Yes, delete it!</button>
+      </div>
+    </div>
+    <!-- ModalContainer for Delete Tuition (start) -->
+
+    <!-- Container after deleteing a tuition (start) -->
+    <div class="modalTuitionHasDeleted p-4">
+      <div class="icon">
+        <i class="fas fa-check"></i>
+      </div>
+      <h4 class="mt-3">Your tuition has successfully been deleted!</h4>
+    </div>
+    <!-- Container after deleteing a tuition (end) -->
+
+    <!-- Container after post a tuition (start) -->
+    <div class="modalContainerSuccess">
+      <div class="title ml-3 mt-3 d-flex align-items-center">
+        <h4>Tuition Saved</h4>
+        <i class="fas fa-save mb-2 ml-2"></i>
+      </div>
+      <div class="lineGrades m-0 mt-2"></div>
+      <div class="success p-3">
+        <div class="successYellow p-3">
+          <div class="titleSaved d-flex align-items-center">
+            <i class="fas fa-check-circle mb-2 mr-2"></i>
+            <h5>Tuition Saved</h5>
+          </div>
+          <div class="paragraphSuccess">
+            <p>
+              Your tuition has been saved and will become public once approved
+              by our staff.
+            </p>
+            <p>
+              You can browse your posted tuitions in your
+              <a href="#">dashboard.</a>
+            </p>
+          </div>
+          <button class="btn continueButton" data-close-success>
+            Click here to continue...
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Container after post a tuition (end) -->
+
+    <!-- Continaer pop up for POST A TUITION (start) -->
+    <div class="modalContainer" id="modal">
+      <!-- Posta tuition paragraph in the header (start) -->
+      <div class="modal-header">
+        <h4>Post a Tuition</h4>
+        <button data-close-button class="close-button">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <!-- Posta tuition paragraph in the header (end) -->
+
+      <!-- Header for the POST TUITION container (start) -->
+      <div class="modal-paragraph">
+        <div
+          class="numbersContainer d-flex justify-content-around align-items-center"
+        >
+          <button
+            data-change-color
+            class="numberText d-flex align-items-center"
+            data-tab-target
+            data-target-one
+          >
+            <div class="circleNumber" data-circle-one>1</div>
+            Subjects
+          </button>
+          <div class="horizontalLine"></div>
+          <button
+            data-change-color
+            class="numberText d-flex align-items-center"
+            data-tab-target
+            data-target-two
+          >
+            <div class="circleNumber" data-circle-two>2</div>
+            Location
+          </button>
+          <div class="horizontalLine"></div>
+          <button
+            data-change-color
+            class="numberText d-flex align-items-center"
+            data-tab-target
+            data-target-three
+          >
+            <div class="circleNumber" data-circle-three>3</div>
+            Area
+          </button>
+          <div class="horizontalLine"></div>
+          <button
+            data-change-color
+            class="numberText d-flex align-items-center"
+            data-tab-target
+            data-target-four
+          >
+            <div class="circleNumber" data-circle-four>4</div>
+            Other
+          </button>
+        </div>
+      </div>
+      <!-- Header circles in the POST TUITION container (end) -->
+
+      <!-- First step for the POST TUITION container (start) -->
+      <div
+        class="tabWrapTuition subjects p-3"
+        style="display: block;"
+        data-tab-one
+      >
+        <div class="Subjects">
+          <h4>Subjects</h4>
+          <p>Select the subject you want the tutor to teach</p>
+          <input
+            type="text"
+            id="textbox"
+            class="inputValue inputValueFirst values"
+            placeholder="Add subject"
+          />
+          <div class="errorField">
+            <p>You forgot to fill out the field !</p>
+          </div>
+        </div>
+        <div class="Grade">
+          <h4>Grades</h4>
+          <p>Select the class/grades that you want the tutor to teach to</p>
+          <input
+            type="text"
+            class="inputValueTwo values"
+            placeholder="Add grades"
+            data-target-inputs
+          />
+          <div class="errorFieldTwo">
+            <p>You forgot to fill out the field !</p>
+          </div>
+        </div>
+        <div class="lineGrades"></div>
+        <div class="button pt-5 mt-2">
+          <button class="btn nextButtonOne">
+            Next <i class="fas fa-angle-right"></i>
+          </button>
+        </div>
+      </div>
+      <!-- First step for the POST TUITION container (end) -->
+
+      <!-- Second step for the POST TUTION container (start)-->
+      <div
+        class="tabWrapTuition onlineClassesContainer p-3"
+        style="display: none;"
+        data-tab-two
+      >
+        <div class="Subjects">
+          <div class="iPhoneToggleLabel">
+            <div class="inputs d-flex align-items-center">
+              <input id="toggle" class="toggle-control" type="checkbox" />
+              <label for="toggle" class="lableChecked"></label>
+              <h5 class="ml-2">Online Classes</h5>
+            </div>
+            <p>
+              Select this option if you want the tutor to teach via an online
+              medium, such as Skype.
+            </p>
+          </div>
+          <div class="lableCheckedContainer">
+            <div class="inputContainer">
+              <p>Enter the location of where you want to be taught.</p>
+              <input
+                type="text"
+                class="inputValueThree values"
+                placeholder="Enter Area, eg. DHA, Model Town, Clifton"
+                data-target-inputs
+                id="area"
+              />
+              <div class="errorFieldThree">
+                <p>You forgot to fill out the field !</p>
+              </div>
+            </div>
+            <div class="SecondInput mb-1 mt-3">
+              <input
+                type="text"
+                class="inputValueFour values"
+                placeholder="Choose your city"
+                data-target-inputs
+                id="city"
+              />
+              <div class="errorFieldFour">
+                <p>You forgot to fill out the field !</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="lineGradesTwo"></div>
+        <div class="button">
+          <button class="btn nextButtonTwo mt-5">
+            Next <i class="fas fa-angle-right"></i>
+          </button>
+        </div>
+        <div class="lineGrades mb-3"></div>
+        <div class="backButton">
+          <button class="btn backButton backButtonOne">
+            <i class="fas fa-long-arrow-alt-left"></i> Back
+          </button>
+        </div>
+      </div>
+      <!-- Second step for the POST TUTION container (end)-->
+
+      <!-- Third step for the POST TUITION container (start) -->
+      <div
+        class="tabWrapTuition Students p-3"
+        style="display: none;"
+        data-tab-content
+      >
+        <h5>Alumni/Student of</h5>
+        <p>
+          Select an option if you want the tutor to be from a specific
+          university/college.
+        </p>
+        <input
+          type="text"
+          class="inputValueFive values"
+          placeholder="Enter Area, eg. DHA, Model Town, Clifton"
+          data-target-inputs
+        />
+        <div class="errorFieldFifth">
+          <p>You forgot to fill out the field !</p>
+        </div>
+        <div class="lineGrades"></div>
+        <h5 class="mt-4">Gender</h5>
+        <p>Choose if you want the tutor to be male or female.</p>
+        <div class="genderInputs d-flex">
+          <div class="male">
+            <label class="checkbox" for="myCheckboxId">
+              <input
+                class="checkbox__input radio area"
+                type="checkbox"
+                name="myCheckBoxName"
+                id="myCheckboxId"
+                checked
+              />
+              <div class="checkbox__box"></div>
+              Male
+            </label>
+          </div>
+          <div class="female ml-3">
+            <label class="checkboxFemale" for="myCheckbox">
+              <input
+                class="checkbox__inputFemale radio"
+                type="checkbox"
+                name="myCheckBoxName"
+                id="myCheckbox"
+              />
+              <div class="checkbox__boxFemale"></div>
+              Female
+            </label>
+          </div>
+          <div class="doesMatter ml-3">
+            <label class="checkboxMatter" for="myCheckboxMatter">
+              <input
+                class="checkbox__inputMatter radio"
+                type="checkbox"
+                name="myCheckBoxName"
+                id="myCheckboxMatter"
+              />
+              <div class="checkbox__boxMatter"></div>
+              Doesn't matter
+            </label>
+          </div>
+        </div>
+        <div class="errorFieldSix">
+          <p>You forgot to pick one of the options !</p>
+        </div>
+        <div class="button">
+          <button class="btn nextButtonTwo nextButtonThree mt-5">
+            Next <i class="fas fa-angle-right"></i>
+          </button>
+        </div>
+        <div class="lineGrades mb-3"></div>
+        <div class="backButton">
+          <button class="btn backButton backButtonThree">
+            <i class="fas fa-long-arrow-alt-left"></i> Back
+          </button>
+        </div>
+      </div>
+      <!-- Third step for the POST TUITION container (end) -->
+
+      <!-- Forth step for the POST TUITION container (start) -->
+      <div
+        class="tabWrapTuition jobDescContainer p-3"
+        style="display: none;"
+        data-tab-content
+      >
+        <div class="errorMessageContainer">
+          <div class="redContainer d-flex p-2">
+            <i class="fas fa-exclamation-circle"></i>
+            <p class="ml-1 textExclamation">
+              You did not fill out all the fields, please check again!
+            </p>
+          </div>
+          <div class="lineGrades"></div>
+        </div>
+
+        <div class="description mt-2">
+          <h5>Job Description</h5>
+          <p>A brief summary of what you are looking for</p>
+          <textarea
+            name="textarea"
+            class="p-2 textareaInput"
+            placeholder="Eg. I'm looking for a tutor who can teach A levels and B classes."
+          ></textarea>
+          <div class="lineGrades"></div>
+          <div class="inputs pt-4 d-flex align-items-center">
+            <input id="toggleID" class="toggle-verifed" type="checkbox" />
+            <label for="toggleID" class="lableChecked"></label>
+            <h5 class="ml-2">Verified Only</h5>
+          </div>
+          <p>
+            With this option, only the tutors who are verified by Studentpark
+            will be able to apply to your posting.
+          </p>
+          <div class="button buttonYellow">
+            <button class="btn nextButtonTwo submitButton submitTwo mt-5">
+              Submit <i class="fas fa-angle-right"></i>
+            </button>
+            <button class="btn nextButtonTwo submitButton ChangeButton mt-5">
+              Change <i class="fas fa-angle-right"></i>
+            </button>
+          </div>
+          <div class="lineGrades mb-3"></div>
+          <div class="backButton">
+            <button class="btn backButton backButtonFifth">
+              <i class="fas fa-long-arrow-alt-left"></i> Back
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Forth step for the POST TUITION container (end) -->
+
+    <!-- Continaer pop up for POST A TUITION (end) -->
+
+    <!-- Black overlay when click on buttons (start) -->
+    <div id="overlay" class="overlay"></div>
+    <!-- Black overlay when click on buttons (start) -->
+
+    <!--Black overlay for the responsive navbar part (start) -->
+    <div class="overlayNavBar"></div>
+    <!--Black overlay for the responsive navbar part (end) -->
+
+    <!--Overlay for responsive chatBox (start)-->
+    <div class="overlayChat"></div>
+    <!--Overlay for responsive chatBox (end)-->
+
+    <!-- Section for profile, Tuitions, Courses and Settings (start) -->
+    <section class="container-fluid">
+      <!-- Responsive navbar (start) -->
+      <div class="dashBoard d-flex mb-2">
+        <i class="fas fa-bars"></i>
+        <h3 class="ml-2">Dashboard</h3>
+      </div>
+      <div class="profile">
+        <div class="inboxContainer">
+          <div class="profileCircle"></div>
+          <div class="profileInformation mt-3">
+            <div class="fullName">
+              <h3 id="text" class="m-0">James Smith</h3>
+            </div>
+            <p class="mb-4 text-center">JamesSmith@gmail.com</p>
+          </div>
+          <div class="listItems">
+            <ul>
+              <div class="tabs text-white" id="nav-tab">
+                <div class="inboxProfile">
+                  <button class="btn" href="#Inbox">
+                    <i class="fas fa-inbox mr-2"></i>Inbox
+                  </button>
+                </div>
+                <div class="inboxProfile my-2">
+                  <button class="btn" href="#Posts">
+                    <i class="fas fa-mail-bulk mr-2"></i>Tuitions Posted
+                  </button>
+                </div>
+                <div class="inboxProfile my-2">
+                  <button class="btn" href="#Course">
+                    <i class="fas fa-business-time mr-2"></i>Courses<sup>
+                      Beta</sup
+                    >
+                  </button>
+                </div>
+              </div>
+              <div class="tabs">
+                <p class="mt-4">ACCOUNT</p>
+                <div class="listItemsSettingProfile my-3">
+                  <div class="inboxProfile">
+                    <button class="btn">
+                      <i class="fas fa-cog mr-2"></i>Settings
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="my-2">
+                <button class="btn">
+                  <i class="fas fa-sign-out-alt mr-2"></i>Log out
+                </button>
+              </div>
+            </ul>
+          </div>
+        </div>
+        <!-- Responsive navbar (end) -->
+
+        <div class="wrapper">
+          <div class="content navContent" id="inbox">
+            <!-- Container for INBOX (start) -->
+            <div class="tab-wrap" style="display: block;">
+              <nav class="pt-3 pl-3 inbox d-flex justify-content-between">
+                <div class="navTitle">
+                  <h3 class="m-0 d-flex align-items-center">Inbox</h3>
+                  <p>View or reply to messages from others.</p>
+                </div>
+
+                <div class="chatButtonResponsive pb-3 mr-2">
+                  <button class="btn chatBTN p-0">
+                    Chats<i class="fas fa-long-arrow-alt-right ml-2"></i>
+                  </button>
+                </div>
+              </nav>
+              <div class="messageContainer">
+                <!-- NO MESSAGES Text / Icon (start) -->
+                <div
+                  class="inboxContainerMessages d-flex"
+                  style="display: block;"
+                >
+                  <div class="inboxMessagesText text-center">
+                    <i class="fas fa-comment-alt"></i>
+                    <h3>No messages</h3>
+                    <p>
+                      Click one of the chat tabs to make your message appear
+                    </p>
+                  </div>
+                </div>
+                <!-- NO MESSAGES Text / Icon (end) -->
+
+                <!--Chatbox profile (start) -->
+                <div class="inboxChatProccess" style="display: none;">
+                  <div class="contentMessages">
+                    <!-- MyMessage is (ME) not client (start)-->
+                    <div class="myMessage d-flex p-3">
+                      <div class="circleProfileMe"></div>
+                      <div class="textMessages ml-3">
+                        <div class="dateAndTime d-flex">
+                          <p class="myNameTitle m-0">Me</p>
+                          <div class="timeDate d-flex ml-2 align-items-center">
+                            <p class="date m-0">Apr 08,</p>
+                            <p class="time m-0 ml-1">
+                              11:00 <strong>PM</strong>
+                            </p>
+                          </div>
+                        </div>
+                        <p class="message m-0">
+                          Lorem ips dolorum libero voluptatem.
+                        </p>
+                      </div>
+                    </div>
+                    <!-- MyMessage is (ME) not client (end)-->
+
+                    <!-- clientMessage is the other person (start) -->
+                    <div class="clientMessage d-flex p-3">
+                      <div class="circleProfileClient"></div>
+                      <div class="textMessages ml-3">
+                        <div class="dateAndTime d-flex">
+                          <p class="clientNameTitle m-0">James Alexander</p>
+                          <div class="timeDate d-flex ml-2 align-items-center">
+                            <p class="date m-0">Apr 08,</p>
+                            <p class="time m-0 ml-1">
+                              11:00 <strong>PM</strong>
+                            </p>
+                          </div>
+                        </div>
+                        <p class="message m-0">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Unde quidem magni temporibus quia impedit vero
+                          aliquid voluptatibus incidunt? Animi, quae sapiente id
+                          aliquid perferendis unde soluta aut vitae veniam
+                          blanditiis! Unde quidem magni temporibus quia impedit
+                          vero aliquid voluptatibus incidunt? Animi, quae
+                          sapiente id aliquid perferendis unde soluta aut vitae
+                          veniam blanditiis! Unde quidem magni temporibus quia
+                          impedit vero aliquid voluptatibus incidunt? Animi,
+                          quae sapiente id aliquid perferendis unde soluta aut
+                          vitae veniam blanditiis!
+                        </p>
+                      </div>
+                    </div>
+                    <!-- clientMessage is the other person (end) -->
+
+                    <!-- clientMessage is the other person (start) -->
+                    <div class="clientMessage d-flex p-3">
+                      <div class="circleProfileClient"></div>
+                      <div class="textMessages ml-3">
+                        <div class="dateAndTime d-flex">
+                          <p class="clientNameTitle m-0">James Alexander</p>
+                          <div class="timeDate d-flex ml-2 align-items-center">
+                            <p class="date m-0">Apr 08,</p>
+                            <p class="time m-0 ml-1">
+                              11:00 <strong>PM</strong>
+                            </p>
+                          </div>
+                        </div>
+                        <p class="message m-0">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Unde quidem magni temporibus quia impedit vero
+                          aliquid voluptatibus incidunt? Animi, quae sapiente id
+                          aliquid perferendis unde soluta aut vitae veniam
+                          blanditiis! Unde quidem magni temporibus quia impedit
+                          vero aliquid voluptatibus incidunt? Animi, quae
+                          sapiente id aliquid perferendis unde soluta aut vitae
+                          veniam blanditiis! Unde quidem magni temporibus quia
+                          impedit vero aliquid voluptatibus incidunt? Animi,
+                          quae sapiente id aliquid perferendis unde soluta aut
+                          vitae veniam blanditiis!
+                        </p>
+                      </div>
+                    </div>
+                    <!-- clientMessage is the other person (end) -->
+
+                    <!-- clientMessage is the other person (start) -->
+                    <div class="clientMessage d-flex p-3">
+                      <div class="circleProfileClient"></div>
+                      <div class="textMessages ml-3">
+                        <div class="dateAndTime d-flex">
+                          <p class="clientNameTitle m-0">James Alexander</p>
+                          <div class="timeDate d-flex ml-2 align-items-center">
+                            <p class="date m-0">Apr 08,</p>
+                            <p class="time m-0 ml-1">
+                              11:00 <strong>PM</strong>
+                            </p>
+                          </div>
+                        </div>
+                        <p class="message m-0">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Unde quidem magni temporibus quia impedit vero
+                          aliquid voluptatibus incidunt? Animi, quae sapiente id
+                          aliquid perferendis unde soluta aut vitae veniam
+                          blanditiis! Unde quidem magni temporibus quia impedit
+                          vero aliquid voluptatibus incidunt? Animi, quae
+                          sapiente id aliquid perferendis unde soluta aut vitae
+                          veniam blanditiis! Unde quidem magni temporibus quia
+                          impedit vero aliquid voluptatibus incidunt? Animi,
+                          quae sapiente id aliquid perferendis unde soluta aut
+                          vitae veniam blanditiis!
+                        </p>
+                      </div>
+                    </div>
+                    <!-- clientMessage is the other person (end) -->
+
+                    <!-- clientMessage is the other person (start) -->
+                    <div class="clientMessage d-flex p-3">
+                      <div class="circleProfileClient"></div>
+                      <div class="textMessages ml-3">
+                        <div class="dateAndTime d-flex">
+                          <p class="clientNameTitle m-0">James Alexander</p>
+                          <div class="timeDate d-flex ml-2 align-items-center">
+                            <p class="date m-0">Apr 08,</p>
+                            <p class="time m-0 ml-1">
+                              11:00 <strong>PM</strong>
+                            </p>
+                          </div>
+                        </div>
+                        <p class="message m-0">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Unde quidem magni temporibus quia impedit vero
+                          aliquid voluptatibus incidunt? Animi, quae sapiente id
+                          aliquid perferendis unde soluta aut vitae veniam
+                          blanditiis! Unde quidem magni temporibus quia impedit
+                          vero aliquid voluptatibus incidunt? Animi, quae
+                          sapiente id aliquid perferendis unde soluta aut vitae
+                          veniam blanditiis! Unde quidem magni temporibus quia
+                          impedit vero aliquid voluptatibus incidunt? Animi,
+                          quae sapiente id aliquid perferendis unde soluta aut
+                          vitae veniam blanditiis!
+                        </p>
+                      </div>
+                    </div>
+                    <!-- clientMessage is the other person (end) -->
+
+                    <!-- clientMessage is the other person (start) -->
+                    <div class="clientMessage d-flex p-3">
+                      <div class="circleProfileClient"></div>
+                      <div class="textMessages ml-3">
+                        <div class="dateAndTime d-flex">
+                          <p class="clientNameTitle m-0">James Alexander</p>
+                          <div class="timeDate d-flex ml-2 align-items-center">
+                            <p class="date m-0">Apr 08,</p>
+                            <p class="time m-0 ml-1">
+                              11:00 <strong>PM</strong>
+                            </p>
+                          </div>
+                        </div>
+                        <p class="message m-0">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Unde quidem magni temporibus quia impedit vero
+                          aliquid voluptatibus incidunt? Animi, quae sapiente id
+                          aliquid perferendis unde soluta aut vitae veniam
+                          blanditiis! Unde quidem magni temporibus quia impedit
+                          vero aliquid voluptatibus incidunt? Animi, quae
+                          sapiente id aliquid perferendis unde soluta aut vitae
+                          veniam blanditiis! Unde quidem magni temporibus quia
+                          impedit vero aliquid voluptatibus incidunt? Animi,
+                          quae sapiente id aliquid perferendis unde soluta aut
+                          vitae veniam blanditiis!
+                        </p>
+                      </div>
+                    </div>
+                    <!-- clientMessage is the other person (end) -->
+
+                    <!-- clientMessage is the other person (start) -->
+                    <div class="clientMessage d-flex p-3">
+                      <div class="circleProfileClient"></div>
+                      <div class="textMessages ml-3">
+                        <div class="dateAndTime d-flex">
+                          <p class="clientNameTitle m-0">James Alexander</p>
+                          <div class="timeDate d-flex ml-2 align-items-center">
+                            <p class="date m-0">Apr 08,</p>
+                            <p class="time m-0 ml-1">
+                              11:00 <strong>PM</strong>
+                            </p>
+                          </div>
+                        </div>
+                        <p class="message m-0">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Unde quidem magni temporibus quia impedit vero
+                          aliquid voluptatibus incidunt? Animi, quae sapiente id
+                          aliquid perferendis unde soluta aut vitae veniam
+                          blanditiis! Unde quidem magni temporibus quia impedit
+                          vero aliquid voluptatibus incidunt? Animi, quae
+                          sapiente id aliquid perferendis unde soluta aut vitae
+                          veniam blanditiis! Unde quidem magni temporibus quia
+                          impedit vero aliquid voluptatibus incidunt? Animi,
+                          quae sapiente id aliquid perferendis unde soluta aut
+                          vitae veniam blanditiis!
+                        </p>
+                      </div>
+                    </div>
+                    <!-- clientMessage is the other person (end) -->
+
+                    <!-- clientMessage is the other person (start) -->
+                    <div class="clientMessage d-flex p-3">
+                      <div class="circleProfileClient"></div>
+                      <div class="textMessages ml-3">
+                        <div class="dateAndTime d-flex">
+                          <p class="clientNameTitle m-0">James Alexander</p>
+                          <div class="timeDate d-flex ml-2 align-items-center">
+                            <p class="date m-0">Apr 08,</p>
+                            <p class="time m-0 ml-1">
+                              11:00 <strong>PM</strong>
+                            </p>
+                          </div>
+                        </div>
+                        <p class="message m-0">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Unde quidem magni temporibus quia impedit vero
+                          aliquid voluptatibus incidunt? Animi, quae sapiente id
+                          aliquid perferendis unde soluta aut vitae veniam
+                          blanditiis! Unde quidem magni temporibus quia impedit
+                          vero aliquid voluptatibus incidunt? Animi, quae
+                          sapiente id aliquid perferendis unde soluta aut vitae
+                          veniam blanditiis! Unde quidem magni temporibus quia
+                          impedit vero aliquid voluptatibus incidunt? Animi,
+                          quae sapiente id aliquid perferendis unde soluta aut
+                          vitae veniam blanditiis! Lorem ipsum dolor sit amet
+                          consectetur adipisicing elit. Unde quidem magni
+                          temporibus quia impedit vero aliquid voluptatibus
+                          incidunt? Animi, quae sapiente id aliquid perferendis
+                          unde soluta aut vitae veniam blanditiis! Unde quidem
+                          magni temporibus quia impedit vero aliquid
+                          voluptatibus incidunt? Animi, quae sapiente id aliquid
+                          perferendis unde soluta aut vitae veniam blanditiis!
+                          Unde quidem magni temporibus quia impedit vero aliquid
+                          voluptatibus incidunt? Animi, quae sapiente id aliquid
+                          perferendis unde soluta aut vitae veniam blanditiis!
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Unde quidem magni temporibus quia impedit vero
+                          aliquid voluptatibus incidunt? Animi, quae sapiente id
+                          aliquid perferendis unde soluta aut vitae veniam
+                          blanditiis! Unde quidem magni temporibus quia impedit
+                          vero aliquid voluptatibus incidunt? Animi, quae
+                          sapiente id aliquid perferendis unde soluta aut vitae
+                          veniam blanditiis! Unde quidem magni temporibus quia
+                          impedit vero aliquid voluptatibus incidunt? Animi,
+                          quae sapiente id aliquid perferendis unde soluta aut
+                          vitae veniam blanditiis!
+                        </p>
+                      </div>
+                    </div>
+                    <!-- clientMessage is the other person (end) -->
+                    <!-- MyMessage is (ME) not client (start)-->
+                    <div class="myMessage d-flex p-3">
+                      <div class="circleProfileMe"></div>
+                      <div class="textMessages ml-3">
+                        <div class="dateAndTime d-flex">
+                          <p class="myNameTitle m-0">Me</p>
+                          <div class="timeDate d-flex ml-2 align-items-center">
+                            <p class="date m-0">Apr 08,</p>
+                            <p class="time m-0 ml-1">
+                              11:00 <strong>PM</strong>
+                            </p>
+                          </div>
+                        </div>
+                        <p class="message m-0">
+                          Lorem ips dolorum libero voluptatem.
+                        </p>
+                      </div>
+                    </div>
+                    <!-- MyMessage is (ME) not client (end)-->
+
+                    <!-- MyMessage is (ME) not client (start)-->
+                    <div class="myMessage d-flex p-3">
+                      <div class="circleProfileMe"></div>
+                      <div class="textMessages ml-3">
+                        <div class="dateAndTime d-flex">
+                          <p class="myNameTitle m-0">Me</p>
+                          <div class="timeDate d-flex ml-2 align-items-center">
+                            <p class="date m-0">Apr 08,</p>
+                            <p class="time m-0 ml-1">
+                              11:00 <strong>PM</strong>
+                            </p>
+                          </div>
+                        </div>
+                        <p class="message m-0">
+                          Lorem ips dolorum libero voluptatem.
+                        </p>
+                      </div>
+                    </div>
+                    <!-- MyMessage is (ME) not client (end)-->
+
+                    <!-- MyMessage is (ME) not client (start)-->
+                    <div class="myMessage d-flex p-3">
+                      <div class="circleProfileMe"></div>
+                      <div class="textMessages ml-3">
+                        <div class="dateAndTime d-flex">
+                          <p class="myNameTitle m-0">Me</p>
+                          <div class="timeDate d-flex ml-2 align-items-center">
+                            <p class="date m-0">Apr 08,</p>
+                            <p class="time m-0 ml-1">
+                              11:00 <strong>PM</strong>
+                            </p>
+                          </div>
+                        </div>
+                        <p class="message m-0">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Voluptate a, ducimus dolore illo eligendi ipsum
+                          unde maxime quae molestiae modi hic alias magni porro
+                          impedit doloremque, deserunt amet inventore corrupti.
+                        </p>
+                      </div>
+                    </div>
+                    <!-- MyMessage is (ME) not client (end)-->
+
+                    <!-- MyMessage is (ME) not client (start)-->
+                    <div class="myMessage d-flex p-3">
+                      <div class="circleProfileMe"></div>
+                      <div class="textMessages ml-3">
+                        <div class="dateAndTime d-flex">
+                          <p class="myNameTitle m-0">Me</p>
+                          <div class="timeDate d-flex ml-2 align-items-center">
+                            <p class="date m-0">Apr 08,</p>
+                            <p class="time m-0 ml-1">
+                              11:00 <strong>PM</strong>
+                            </p>
+                          </div>
+                        </div>
+                        <p class="message m-0">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Voluptate a, ducimus dolore illo eligendi ipsum
+                          unde maxime quae molestiae modi hic alias magni porro
+                          impedit doloremque, deserunt amet inventore corrupti.
+                        </p>
+                      </div>
+                    </div>
+                    <!-- MyMessage is (ME) not client (end)-->
+
+                    <!-- MyMessage is (ME) not client (start)-->
+                    <div class="myMessage d-flex p-3">
+                      <div class="circleProfileMe"></div>
+                      <div class="textMessages ml-3">
+                        <div class="dateAndTime d-flex">
+                          <p class="myNameTitle m-0">Me</p>
+                          <div class="timeDate d-flex ml-2 align-items-center">
+                            <p class="date m-0">Apr 08,</p>
+                            <p class="time m-0 ml-1">
+                              11:00 <strong>PM</strong>
+                            </p>
+                          </div>
+                        </div>
+                        <p class="message m-0">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Voluptate a, ducimus dolore illo eligendi ipsum
+                          unde maxime quae molestiae modi hic alias magni porro
+                          impedit doloremque, deserunt amet inventore corrupti.
+                        </p>
+                      </div>
+                    </div>
+                    <!-- MyMessage is (ME) not client (end)-->
+                    <!-- MyMessage is (ME) not client (start)-->
+                    <div class="myMessage d-flex p-3">
+                      <div class="circleProfileMe"></div>
+                      <div class="textMessages ml-3">
+                        <div class="dateAndTime d-flex">
+                          <p class="myNameTitle m-0">Me</p>
+                          <div class="timeDate d-flex ml-2 align-items-center">
+                            <p class="date m-0">Apr 08,</p>
+                            <p class="time m-0 ml-1">
+                              11:00 <strong>PM</strong>
+                            </p>
+                          </div>
+                        </div>
+                        <p class="message m-0">
+                          Lorem ips dolorum libero voluptatem.
+                        </p>
+                      </div>
+                    </div>
+                    <!-- MyMessage is (ME) not client (end)-->
+
+                    <!-- MyMessage is (ME) not client (start)-->
+                    <div class="myMessage d-flex p-3">
+                      <div class="circleProfileMe"></div>
+                      <div class="textMessages ml-3">
+                        <div class="dateAndTime d-flex">
+                          <p class="myNameTitle m-0">Me</p>
+                          <div class="timeDate d-flex ml-2 align-items-center">
+                            <p class="date m-0">Apr 08,</p>
+                            <p class="time m-0 ml-1">
+                              11:00 <strong>PM</strong>
+                            </p>
+                          </div>
+                        </div>
+                        <p class="message m-0">
+                          Lorem ips dolorum libero voluptatem.
+                        </p>
+                      </div>
+                    </div>
+                    <!-- MyMessage is (ME) not client (end)-->
+
+                    <!-- MyMessage is (ME) not client (start)-->
+                    <div class="myMessage d-flex p-3">
+                      <div class="circleProfileMe"></div>
+                      <div class="textMessages ml-3">
+                        <div class="dateAndTime d-flex">
+                          <p class="myNameTitle m-0">Me</p>
+                          <div class="timeDate d-flex ml-2 align-items-center">
+                            <p class="date m-0">Apr 08,</p>
+                            <p class="time m-0 ml-1">
+                              11:00 <strong>PM</strong>
+                            </p>
+                          </div>
+                        </div>
+                        <p class="message m-0">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Voluptate a, ducimus dolore illo eligendi ipsum
+                          unde maxime quae molestiae modi hic alias magni porro
+                          impedit doloremque, deserunt amet inventore corrupti.
+                        </p>
+                      </div>
+                    </div>
+                    <!-- MyMessage is (ME) not client (end)-->
+
+                    <!-- MyMessage is (ME) not client (start)-->
+                    <div class="myMessage d-flex p-3">
+                      <div class="circleProfileMe"></div>
+                      <div class="textMessages ml-3">
+                        <div class="dateAndTime d-flex">
+                          <p class="myNameTitle m-0">Me</p>
+                          <div class="timeDate d-flex ml-2 align-items-center">
+                            <p class="date m-0">Apr 08,</p>
+                            <p class="time m-0 ml-1">
+                              11:00 <strong>PM</strong>
+                            </p>
+                          </div>
+                        </div>
+                        <p class="message m-0">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Voluptate a, ducimus dolore illo eligendi ipsum
+                          unde maxime quae molestiae modi hic alias magni porro
+                          impedit doloremque, deserunt amet inventore corrupti.
+                        </p>
+                      </div>
+                    </div>
+                    <!-- MyMessage is (ME) not client (end)-->
+
+                    <!-- MyMessage is (ME) not client (start)-->
+                    <div class="myMessage d-flex p-3">
+                      <div class="circleProfileMe"></div>
+                      <div class="textMessages ml-3">
+                        <div class="dateAndTime d-flex">
+                          <p class="myNameTitle m-0">Me</p>
+                          <div class="timeDate d-flex ml-2 align-items-center">
+                            <p class="date m-0">Apr 08,</p>
+                            <p class="time m-0 ml-1">
+                              11:00 <strong>PM</strong>
+                            </p>
+                          </div>
+                        </div>
+                        <p class="message m-0">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Voluptate a, ducimus dolore illo eligendi ipsum
+                          unde maxime quae molestiae modi hic alias magni porro
+                          impedit doloremque, deserunt amet inventore corrupti.
+                        </p>
+                      </div>
+                    </div>
+                    <!-- MyMessage is (ME) not client (end)-->
+                  </div>
+
+                  <!--Send message textArea (start) -->
+                  <div class="sendMessage_div d-flex p-3 align-items-center">
+                    <textarea
+                      id="myTextArea"
+                      placeholder="Write a message..."
+                    ></textarea>
+                    <div class="iconsSend d-flex">
+                      <div class="sendIcon ml-auto">
+                        Send<i class="fas fa-paper-plane ml-2"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <!--Send message textArea (end) -->
+                </div>
+                <!-- Container for INBOX (end) -->
+
+                <!-- Chat container which is on the right side (start) -->
+                <div class="chats">
+                  <div class="title-chat">
+                    <h4>Chats</h4>
+                  </div>
+                  <div class="chatBoxesFlex">
+                    <!--Chatbox (start)-->
+                    <div class="chat-boxes">
+                      <div class="circleProfileChat m-1">
+                        <div class="newMessageActiveCircle"></div>
+                      </div>
+                      <div class="paragraph">
+                        <h5 class="m-0">Patrick Stian</h5>
+                        <p class="m-0">
+                          Could you fix the container over there? fdasfsd
+                        </p>
+                      </div>
+                    </div>
+                    <!--Chatbox (end)-->
+
+                    <!--Chatbox (start)-->
+                    <div class="chat-boxes">
+                      <div class="circleProfileChat m-1">
+                        <div class="newMessageActiveCircle"></div>
+                      </div>
+                      <div class="paragraph">
+                        <h5 class="m-0">Patrick Stian</h5>
+                        <p class="m-0">
+                          Could you fix the container over there? fdasfsd
+                        </p>
+                      </div>
+                    </div>
+                    <!--Chatbox (end)-->
+
+                    <!--Chatbox (start)-->
+                    <div class="chat-boxes">
+                      <div class="circleProfileChat m-1">
+                        <div class="newMessageInactiveCircle"></div>
+                      </div>
+                      <div class="paragraph">
+                        <h5 class="m-0">Patrick Stian</h5>
+                        <p class="m-0">
+                          Could you fix the container over there? fdasfsd
+                        </p>
+                      </div>
+                    </div>
+                    <!--Chatbox (end)-->
+
+                    <!--Chatbox (start)-->
+                    <div class="chat-boxes">
+                      <div class="circleProfileChat m-1">
+                        <div class="newMessageActiveCircle"></div>
+                      </div>
+                      <div class="paragraph">
+                        <h5 class="m-0">Patrick Stian</h5>
+                        <p class="m-0">
+                          Could you fix the container over there? fdasfsd
+                        </p>
+                      </div>
+                    </div>
+                    <!--Chatbox (end)-->
+
+                    <!--Chatbox (start)-->
+                    <div class="chat-boxes">
+                      <div class="circleProfileChat m-1">
+                        <div class="newMessageActiveCircle"></div>
+                      </div>
+                      <div class="paragraph">
+                        <h5 class="m-0">Patrick Stian</h5>
+                        <p class="m-0">
+                          Could you fix the container over there? fdasfsd
+                        </p>
+                      </div>
+                    </div>
+                    <!--Chatbox (end)-->
+
+                    <!--Chatbox (start)-->
+                    <div class="chat-boxes">
+                      <div class="circleProfileChat m-1">
+                        <div class="newMessageActiveCircle"></div>
+                      </div>
+                      <div class="paragraph">
+                        <h5 class="m-0">Patrick Stian</h5>
+                        <p class="m-0">
+                          Could you fix the container over there? fdasfsd
+                        </p>
+                      </div>
+                    </div>
+                    <!--Chatbox (end)-->
+
+                    <!--Chatbox (start)-->
+                    <div class="chat-boxes">
+                      <div class="circleProfileChat m-1">
+                        <div class="newMessageActiveCircle"></div>
+                      </div>
+                      <div class="paragraph">
+                        <h5 class="m-0">Patrick Stian</h5>
+                        <p class="m-0">
+                          Could you fix the container over there? fdasfsd
+                        </p>
+                      </div>
+                    </div>
+                    <!--Chatbox (end)-->
+
+                    <!--Chatbox (start)-->
+                    <div class="chat-boxes">
+                      <div class="circleProfileChat m-1">
+                        <div class="newMessageInactiveCircle"></div>
+                      </div>
+                      <div class="paragraph">
+                        <h5 class="m-0">Patrick Stian</h5>
+                        <p class="m-0">
+                          Could you fix the container over there? fdasfsd
+                        </p>
+                      </div>
+                    </div>
+                    <!--Chatbox (end)-->
+
+                    <!--Chatbox (start)-->
+                    <div class="chat-boxes">
+                      <div class="circleProfileChat m-1">
+                        <div class="newMessageActiveCircle"></div>
+                      </div>
+                      <div class="paragraph">
+                        <h5 class="m-0">Patrick Stian</h5>
+                        <p class="m-0">
+                          Could you fix the container over there? fdasfsd
+                        </p>
+                      </div>
+                    </div>
+                    <!--Chatbox (end)-->
+
+                    <!--Chatbox (start)-->
+                    <div class="chat-boxes">
+                      <div class="circleProfileChat m-1">
+                        <div class="newMessageInactiveCircle"></div>
+                      </div>
+                      <div class="paragraph">
+                        <h5 class="m-0">Patrick Stian</h5>
+                        <p class="m-0">
+                          Could you fix the container over there? fdasfsd
+                        </p>
+                      </div>
+                    </div>
+                    <!--Chatbox (end)-->
+
+                    <!--Chatbox (start)-->
+                    <div class="chat-boxes">
+                      <div class="circleProfileChat m-1">
+                        <div class="newMessageActiveCircle"></div>
+                      </div>
+                      <div class="paragraph">
+                        <h5 class="m-0">Patrick Stian</h5>
+                        <p class="m-0">
+                          Could you fix the container over there? fdasfsd
+                        </p>
+                      </div>
+                    </div>
+                    <!--Chatbox (end)-->
+
+                    <!--Chatbox (start)-->
+                    <div class="chat-boxes">
+                      <div class="circleProfileChat m-1">
+                        <div class="newMessageInactiveCircle"></div>
+                      </div>
+                      <div class="paragraph">
+                        <h5 class="m-0">Patrick Stian</h5>
+                        <p class="m-0">
+                          Could you fix the container over there? fdasfsd
+                        </p>
+                      </div>
+                    </div>
+                    <!--Chatbox (end)-->
+
+                    <!--Chatbox (end)-->
+                    <div class="chat-boxes">
+                      <div class="circleProfileChat m-1">
+                        <div class="newMessageActiveCircle"></div>
+                      </div>
+                      <div class="paragraph">
+                        <h5 class="m-0">Patrick Stian</h5>
+                        <p class="m-0">
+                          Could you fix the container over there? fdasfsd
+                        </p>
+                      </div>
+                    </div>
+                    <!--Chatbox (end)-->
+                  </div>
+                </div>
+                <!-- Chat container which is on the right side (end) -->
+              </div>
+            </div>
+
+            <!-- tabWrap for Tuition POST (start) -->
+            <div class="tab-wrap tuitions" style="display: none;">
+              <div class="tuitionNavBar">
+                <nav
+                  class="pt-3 pl-3 d-flex justify-content-between tuitionNav"
+                >
+                  <div class="titleTuition">
+                    <h3 class="m-0">Tuitions Posted</h3>
+                    <p>
+                      View, accept or reject the tuitions you have posted as a
+                      student.
+                    </p>
+                  </div>
+                  <div class="buttonPostTuition">
+                    <button class="btn tuitionSuccess d-flex">
+                      <i class="fas fa-plus"></i>
+                      <strong>+ Post a tuition</strong>
+                    </button>
+                  </div>
+                </nav>
+              </div>
+              <div class="example">
+                <div
+                  class="resultTuition justify-content-between p-3 pt-3"
+                ></div>
+
+                <div class="noTuitionContainer text-center">
+                  <h2>No Tuitions</h2>
+                  <p class="m-0">You have not posted any tuitions yet.</p>
+                  <p class="m-0">
+                    Reach more tutors and hire quickly by posting a tuition.
+                  </p>
+                  <button class="btn mt-3" data-modal-target="#modal">
+                    + Post a tutition
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- tabWrap for Tuition POST (end) -->
+
+            <!-- tabWrap for COURSES BETA (start) -->
+            <div class="tab-wrap" style="display: none;">
+              <div class="courseNavBar">
+                <nav class="pt-3 pl-3">
+                  <h3>Courses<sup>Beta</sup></h3>
+                  <p>
+                    View the courses you are enrolled in.
+                  </p>
+                </nav>
+              </div>
+              <div
+                class="courseDiv d-flex justify-content-center align-items-center"
+              >
+                <div class="noCourseContainer text-center">
+                  <h2>No Enrolled Courses</h2>
+                  <p class="m-0">You are not enrolled in any courses.</p>
+                  <p class="m-0">
+                    Browse courses and enroll in the ones you like.
+                  </p>
+                  <button class="btn mt-3">Browse Courses</button>
+                </div>
+              </div>
+            </div>
+            <!-- tabWrap for COURSES BETA (end) -->
+
+            <!-- tabWrap for SETTINGS (start) -->
+            <div class="tab-wrap" style="display: none;">
+              <div class="courseNavBar">
+                <nav class="pt-3 pl-3">
+                  <h3 class="m-0">Settings</h3>
+                  <p>
+                    View, accept or reject the tuitions you have posted as a
+                    student.
+                  </p>
+                </nav>
+              </div>
+              <div class="settingsDiv d-flex justify-content-start">
+                <!-- Buttons for settings and blocked users (start) -->
+                <div class="AccountSettings pt-4 p-2">
+                  <div class="settingsButtons">
+                    <div class="accountSettingsButton p-2">
+                      <button class="btn">
+                        <strong>Account</strong> Settings
+                      </button>
+                    </div>
+                    <div class="blockedUsersButtonDiv mt-2 p-2">
+                      <button class="btn">Blocked users</button>
+                    </div>
+                  </div>
+                  <div class="lineUp"></div>
+                </div>
+                <!-- Buttons for settings and blocked users (end) -->
+
+                <!-- changeSettings tabContainer (start) -->
+                <div
+                  class="changeSettings wrapDiv"
+                  id="containerOne"
+                  style="display: block;"
+                >
+                  <div class="mainContainerSettings p-4">
+                    <div class="containerOne">
+                      <h3 class="m-0">Account settings</h3>
+                      <p class="m-0 mt-1">
+                        Change your primary email or password.
+                      </p>
+                      <p class="mt-2 m-0">
+                        Email: <strong>barcaboys2002@gmail.com</strong>
+                      </p>
+                      <button class="btn mt-2 changeButtonEmail">
+                        Change email
+                      </button>
+                      <button class="btn mt-2 changePSW">
+                        Change password
+                      </button>
+                    </div>
+                    <div class="line"></div>
+                    <div class="containerTwo mt-5" style="display: block;">
+                      <h3 class="m-0">Delete account</h3>
+                      <p class="m-0">
+                        Delete your Studentpark account and erase all data.
+                      </p>
+                      <p class="fatalText mt-2">
+                        This is an irreversable action. You will lose all your
+                        data, messages, quotes, discussions and courses.
+                      </p>
+                      <button class="btn fatalButton">Delete account</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- changeSettings tabContainer (end) -->
+
+                <!-- container for Blocked Users tab (start) -->
+                <div
+                  class="containerThree wrapDiv"
+                  id="containerTwo"
+                  style="display: none;"
+                >
+                  <div class="blockedUserTitle p-4">
+                    <h3 class="p-1 ml-2">Blocked users</h3>
+                    <div class="lineBlocked"></div>
+                  </div>
+                  <div class="blockedUserContainer mt-0">
+                    <div class="leftSide ml-5">
+                      <div class="circleProfilePicture mr-3"></div>
+                      <div class="textBlockedUser">
+                        <h4 class="m-0">Christina Alexis</h4>
+                        <strong class="m-0 ml-1">Blocked</strong>
+                      </div>
+                    </div>
+                    <div class="unblockButton mr-5">
+                      <button class="btn"><i class="fas fa-ban"></i></button>
+                    </div>
+                  </div>
+
+                  <div class="blockedUserContainer mt-4">
+                    <div class="leftSide ml-5">
+                      <div class="circleProfilePicture mr-3"></div>
+                      <div class="textBlockedUser">
+                        <h4 class="m-0">Christina Alexis</h4>
+                        <strong class="m-0 ml-1">Blocked</strong>
+                      </div>
+                    </div>
+                    <div class="unblockButton mr-5">
+                      <button class="btn"><i class="fas fa-ban"></i></button>
+                    </div>
+                  </div>
+
+                  <p class="text-center mt-5">
+                    You don't have anyone in your block list.
+                  </p>
+                </div>
+                <!-- container for Blocked Users tab (end) -->
+              </div>
+            </div>
+            <!-- tabWrap for SETTINGS (start) -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section for profile, Tuitions, Courses and Settings (end) -->
+
+    <!-- Footer information (start)-->
+    <section id="footer" class="text-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-sm-3">
+            <div class="text d-flex row-topics">
+              <i class="fas fa-user-friends"> </i>
+              <h5>Tutors</h5>
+            </div>
+
+            <!-- Container pop up for City (start)-->
+            <ul class="list-item">
+              <li class="Subjects">
+                <i class="fas fa-caret-right" id="arrow-right"></i
+                ><i class="fas fa-caret-down" id="arrow-down"></i
+                ><a id="buttonClick">By City</a>
+              </li>
+              <div class="City-pop-up" id="city">
+                <ul id="firstItems">
+                  <li>Lahore<sup>(2560)</sup></li>
+                  <li>Karachi<sup>(769)</sup></li>
+                  <li>Islamabad<sup>(321)</sup></li>
+                  <li>Lahore<sup>(156)</sup></li>
+                  <li>Lahore<sup>(356)</sup></li>
+                </ul>
+              </div>
+              <!-- Container pop up for City (end)-->
+
+              <!-- Container pop up for Subjects (start)-->
+              <li class="Subjects">
+                <i class="fas fa-caret-right" id="arrow-right-subject"></i
+                ><i class="fas fa-caret-down" id="arrow-down-subject"></i
+                ><a id="buttonClickSubject">By Subjects</a>
+              </li>
+              <div class="CitySubjectPop" id="SubjectContainer">
+                <ul id="SubjectItems">
+                  <li>Maths<sup>(3255)</sup></li>
+                  <li>Physics<sup>(2522)</sup></li>
+                  <li>Chemistry<sup>(2053)</sup></li>
+                  <li>Urdu<sup>(1373)</sup></li>
+                  <li>Biology<sup>(356)</sup></li>
+                </ul>
+              </div>
+              <!-- Container pop up for Subjects (end)-->
+
+              <!-- Container pop up for Institute (start)-->
+              <li class="Subjects">
+                <i class="fas fa-caret-right" id="arrow-right-institute"></i
+                ><i class="fas fa-caret-down" id="arrow-down-institute"></i
+                ><a id="buttonClickInstitute">By Institute</a>
+              </li>
+              <div class="CitySubjectPop" id="InstituteContainer">
+                <ul id="SubjectItems">
+                  <li>Lums<sup>(346)</sup></li>
+                  <li>Sciences<sup>(769)</sup></li>
+                  <li>School Systems<sup>(321)</sup></li>
+                  <li>Pakistan<sup>(156)</sup></li>
+                  <li>College<sup>(356)</sup></li>
+                </ul>
+              </div>
+              <!-- Container pop up for Institute (end)-->
+
+              <!-- Container pop up for Discipline (start)-->
+              <li class="Subjects">
+                <i class="fas fa-caret-right" id="arrow-right-discipline"></i
+                ><i class="fas fa-caret-down" id="arrow-down-discipline"></i
+                ><a id="buttonClickDiscipline">By Discipline</a>
+              </li>
+              <div class="CitySubjectPop" id="DisciplineContainer">
+                <ul id="SubjectItems">
+                  <li>Mathematics<sup>(243)</sup></li>
+                  <li>Science<sup>(169)</sup></li>
+                  <li>Gym<sup>(21)</sup></li>
+                  <li>ICT<sup>(1345)</sup></li>
+                  <li>Languages<sup>(356)</sup></li>
+                </ul>
+              </div>
+              <!-- Container pop up for Discipline (end)-->
+
+              <!-- Container pop up for Discipline (start)-->
+              <li class="Subjects">
+                <i class="fas fa-caret-right" id="arrow-right-grades"></i
+                ><i class="fas fa-caret-down" id="arrow-down-grades"></i
+                ><a id="buttonClickGrades">By Grades</a>
+              </li>
+              <div class="CitySubjectPop" id="GradesContainer">
+                <ul id="SubjectItems">
+                  <li>Class A<sup>(2560)</sup></li>
+                  <li>Matric<sup>(769)</sup></li>
+                  <li>Class 1 to 6<sup>(321)</sup></li>
+                  <li>Classs B<sup>(156)</sup></li>
+                  <li>CSS<sup>(356)</sup></li>
+                </ul>
+              </div>
+              <!-- Container pop up for Discipline (end)-->
+            </ul>
+          </div>
+
+          <!-- Container Tuitions text (start) -->
+          <div class="col-lg-3 col-sm-3 d-flex row-topics">
+            <i class="fas fa-graduation-cap"> </i>
+            <h5>Tuitions</h5>
+          </div>
+          <!-- Container Tuitions text (end) -->
+          <!-- Container Courses Beta text (start) -->
+          <div class="col-lg-3 col-sm-3 d-flex row-topics">
+            <i class="fas fa-business-time"> </i>
+            <h5>Courses<sup>Beta</sup></h5>
+          </div>
+          <!-- Container Courses Beta text (end) -->
+          <!-- Container Discussions (start) -->
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 d-flex row-topics">
+            <i class="fas fa-comment"> </i>
+            <h5>Discussions</h5>
+          </div>
+          <!-- Container Discussions (end) -->
+        </div>
+      </div>
+      <!-- Footer section inforation (start) -->
+      <div class="container privacy-section">
+        <div class="row d-flex justify-content-end">
+          <!-- Footers list items (start) -->
+          <ul class="unlistItem d-flex">
+            <li>About</li>
+            <li>Blog</li>
+            <li>Terms</li>
+            <li>Privacy</li>
+          </ul>
+          <!-- Footers list items (end) -->
+          <!-- Like, Share and follow twitter section (start)-->
+          <div class="button-socials">
+            <button type="button" class="btn button-two">
+              <i class="fas fa-thumbs-up pr-1"></i> Like
+            </button>
+            <button type="button" class="btn button-two">
+              <i class="fas fa-share-alt pr-2"></i>Share
+            </button>
+            <button type="button" class="btn button-two">
+              <i class="fab fa-twitter pr-1"></i> Follow
+              <strong>@thestudentpark</strong>
+            </button>
+          </div>
+          <!-- Like, Share and follow twitter section (end)-->
+        </div>
+      </div>
+      <!-- Footer section inforation (end) -->
+      <!-- Just a line (start) -->
+      <div class="line"></div>
+      <!-- Just a line (end) -->
+    </section>
+    <!-- Footer information (start)-->
+    <div class="line-section"></div>
+    <!-- Last section all the way down below the page (start) -->
+    <section id="last">
+      <div class="container text-white">
+        <div class="row d-flex justify-content-between pt-2">
+          <div
+            class="ending-text d-flex align-items-center justify-content-between"
+          >
+            <img src="/images/Logo.png" class="img-fluid logo" alt="" />
+            <h6>Teach. Learn. Earn.™</h6>
+          </div>
+          <div
+            class="copyright-paragraph d-flex align-items-center justify-content-between"
+          >
+            <p>Magomed Khamidov &copy; 2020</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Last section all the way down below the page (end) -->
+
+    <script src="/JavaScript/tagify.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="/JavaScript/profile.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

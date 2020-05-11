@@ -1,0 +1,3129 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    background: #439272;
+    min-height: 100% !important;
+    height: 100%;
+}
+
+// .nav-link is class for the a tag in the navbar
+.nav-link {
+    font-family: 'Nunito', sans-serif;
+}
+
+.navbar {
+    background: white !important;
+    border-bottom: 1px solid #ccc;
+}
+
+// Style for the button (Log in) and (Sign up) 
+
+.tutor {
+    button {
+        border-radius: 50px;
+        background: #439272;
+        color: white;
+        transition: .3s ease-in;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        padding: 5px 15px;
+        box-shadow: none;
+    }
+
+    // Hover on the button for become a tutor
+    button:hover {
+        border: 2px solid #439272;
+        background: white;
+        color: #439272;
+        box-shadow: none;
+    }
+}
+
+// List items and <a> style
+.navbar-nav {
+    li {
+        a {
+            color: black !important;
+            font-size: 1.2rem;
+        }
+    }
+}
+
+// .img-fluid is the logo in the navbar
+.img-fluid-one {
+    margin-right: 2rem;
+    width: 15rem;
+}
+
+
+// Bars in the hambuger toggler
+.fa-bars {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.chatButtonResponsive {
+    display: none;
+
+    .chatBTN {
+        background: #4989ff;
+        color: white;
+        padding: 5px !important;
+        transition: .3s ease;
+    }
+}
+
+.chatBTN:hover {
+    background: white;
+    color: #4989ff;
+    border: 2px solid #4989ff;
+}
+
+// Responsive hamburger toggler style
+
+.navbar-toggler {
+    padding: .5rem 1rem;
+    border: 3px solid white;
+    background: #439272;
+    border: none;
+}
+
+// The small sentence for (Courses BETA)
+sup {
+    padding-left: 5px;
+}
+
+.dashBoard {
+    display: none;
+    width: 170px;
+    height: 35px;
+    cursor: pointer;
+    transition: .5s ease;
+
+
+    .fa-bars {
+        display: none;
+        font-size: 20px;
+    }
+
+    h3 {
+        display: none;
+    }
+
+    p {
+        display: none;
+        font-size: 23px;
+        color: white;
+        margin-top: 1px;
+    }
+}
+
+.dashBoard:hover {
+    color: rgb(235, 235, 235);
+
+    p {
+        color: rgb(235, 235, 235);
+    }
+
+    h3 {
+        text-decoration: underline;
+        color: rgb(235, 235, 235);
+    }
+
+    .fa-bars {
+        color: rgb(235, 235, 235);
+    }
+}
+
+.firstName,
+.lastName {
+    color: white;
+}
+
+.firstName:hover,
+.lastName:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.profilePicture {
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+}
+
+.dropdown {
+    background: white !important;
+}
+
+.profile {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.inboxContainer {
+    padding: 0px 30px;
+    text-align: center;
+    width: 230px;
+    max-width: 255px;
+    background: #fff;
+    border-right: 1px solid #ccc;
+    border-left: 1px solid rgb(104, 104, 104);
+    border-top: 1px solid rgb(104, 104, 104);
+    border-bottom: 1px solid rgb(104, 104, 104);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+    .profileInformation {
+        h3 {
+            font-size: 22px;
+        }
+
+        p {
+            font-size: 15px;
+        }
+    }
+
+    .profileCircle {
+        margin: 0 auto;
+        margin-top: 15px;
+        border-radius: 50%;
+        width: 140px;
+        height: 140px;
+        border: 3px solid #439272;
+        background: url("/images/Profile1.jfif");
+        background-size: cover;
+    }
+
+    .listItems {
+        text-align: left;
+    }
+}
+
+.inputValueThree,
+.inputValueFour,
+.inputValueFive {
+    border-radius: 5px;
+}
+
+.wrapper {
+    background: white;
+    width: 100%;
+
+    nav {
+        background: white;
+        width: 100%;
+        padding: 2px 0px;
+        position: relative;
+        z-index: 1;
+        box-shadow: 0 2px 2px rgba(0, 0, 0, .1);
+        border: 1px solid #ccc;
+        border-left: 0px;
+    }
+
+}
+
+.messageContainer {
+    display: flex;
+    background: white;
+    height: 100%;
+}
+
+.inboxContainerMessages {
+    justify-content: center;
+    align-items: center;
+    width: 100% !important;
+    background: white;
+    min-height: 50rem;
+    max-height: 150rem
+}
+
+.chats {
+    width: 400px;
+    margin-left: auto;
+    background: white;
+    border-left: 1px solid #ccc;
+}
+
+.inboxMessagesText {
+    color: #6d6c6c;
+
+    .fa-comment-alt {
+        color: #6d6c6c !important;
+        font-size: 5rem;
+        padding-bottom: 25px;
+    }
+}
+
+.title-chat {
+    width: 100%;
+    background: white;
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+
+    h4 {
+        padding: 5px 10px;
+        margin-top: 10px;
+    }
+}
+
+.chat-boxes {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: white;
+    padding: 10px 8px;
+    margin-top: 0px;
+    border-top: 1px solid #ccc;
+    cursor: pointer;
+
+
+    .circleProfileChat {
+        position: relative;
+        width: 46px;
+        height: 46px;
+        background: url("/images/Profile1.jfif");
+        background-size: cover;
+        border-bottom-right-radius: 5px;
+        border: 2px solid #DEDEDE;
+
+
+    }
+
+    .paragraph {
+        margin-left: 5px;
+
+        h5 {
+            font-size: 20px;
+        }
+
+        p {
+            margin-left: 5px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 200px;
+            font-size: 13px;
+        }
+    }
+
+    .newMessageActiveCircle {
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        border-radius: 50%;
+        width: 10px;
+        height: 10px;
+        margin-left: auto;
+        background: rgb(105, 221, 121);
+        border: 1px solid white;
+    }
+
+    .newMessageInactiveCircle {
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        border-radius: 50%;
+        width: 10px;
+        height: 10px;
+        margin-left: auto;
+        background: rgb(134, 134, 134);
+        border: 1px solid white;
+    }
+}
+
+.chat-boxes:hover {
+    background: #e4e4e4;
+}
+
+.notVerifiedEmail {
+    background: #FCF8E3;
+    width: 100%;
+    height: 40px;
+
+    h1 {
+        font-size: 20px !important;
+    }
+}
+
+.tuitions {
+    width: 100%;
+    min-height: 55rem;
+    max-height: 150rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .example {
+        width: 100%;
+        min-height: 50rem;
+        max-height: 150rem;
+        background: white;
+        position: relative;
+    }
+
+}
+
+.courseNavBar {
+    nav {
+        background: #FFC0CB;
+    }
+}
+
+.courseDiv {
+    width: 100%;
+    min-height: 50rem;
+    max-height: 150rem;
+    background: white;
+}
+
+.settingsDiv {
+    width: 100%;
+    min-height: 50rem;
+    max-height: 150rem;
+    background: white;
+}
+
+.AccountSettings {
+    background: white;
+    min-height: 50rem;
+    max-height: 150rem;
+    width: 225px;
+}
+
+.changeSettings {
+    background: white;
+    width: 100%;
+    min-height: 50rem;
+    max-height: 150rem;
+}
+
+.listItems {
+    button {
+        text-align: left;
+        background: #439272;
+        color: white;
+        font-size: 15px;
+        width: 100%;
+        border-radius: 5px;
+        transition: .3s ease;
+    }
+
+    button:hover {
+        background: white;
+        border: 2px solid #439272;
+        color: #439272;
+    }
+}
+
+.tuitions {
+    nav {
+        border: 1px solid #ccc;
+        border-left: 0;
+    }
+}
+
+.noTuitionContainer {
+
+    button {
+        background: #439272;
+        color: white;
+        font-size: 15px;
+        border-radius: 5px;
+        transition: .3s ease;
+    }
+
+    button:hover {
+        background: white;
+        border: 2px solid #439272;
+        color: #439272;
+    }
+}
+
+.courseNavBar {
+    nav {
+        background: white;
+        border: 1px solid #ccc;
+        border-left: 0;
+    }
+}
+
+.noCourseContainer {
+    button {
+        background: #439272;
+        color: white;
+        font-size: 15px;
+        border-radius: 5px;
+        transition: .3s ease;
+    }
+
+    button:hover {
+        background: white;
+        border: 2px solid #439272;
+        color: #439272;
+    }
+}
+
+.containerThree {
+    width: 100%;
+    background: white;
+}
+
+.AccountSettings {
+    .accountSettingsButton {
+        width: 100%;
+    }
+
+    button {
+        background: #439272;
+        color: white;
+        font-size: 15px;
+        border-radius: 5px;
+        transition: .3s ease;
+    }
+
+    button:hover {
+        background: white;
+        border: 2px solid #439272;
+        color: #439272;
+    }
+
+    .blockedUsersButtonDiv {
+        width: 100%;
+
+        button {
+            background: #439272;
+            color: white;
+            font-size: 15px;
+            border-radius: 5px;
+            transition: .3s ease;
+        }
+
+        button:hover {
+            background: white;
+            border: 2px solid #439272;
+            color: #439272;
+        }
+    }
+}
+
+.AccountSettings {
+    position: relative;
+
+    .lineUp {
+        width: 1px;
+        height: 25rem;
+        background: #ccc;
+        position: absolute;
+        top: 10px;
+        right: 0;
+    }
+}
+
+.containerOne {
+    button {
+        background: #439272;
+        color: white;
+        font-size: 15px;
+        border-radius: 5px;
+        transition: .3s ease;
+    }
+
+    button:hover {
+        background: white;
+        border: 2px solid #439272;
+        color: #439272;
+    }
+}
+
+.containerTwo {
+    .fatalText {
+        color: rgb(218, 44, 62);
+    }
+
+    button {
+        background: rgb(240, 57, 75);
+        color: white;
+    }
+
+    button:hover {
+        background: white;
+        color: rgb(240, 57, 75);
+        border: 2px solid rgb(240, 57, 75);
+    }
+}
+
+.lineBlocked {
+    height: 1px;
+    width: 97%;
+    margin: 0 auto;
+    background: #ccc;
+}
+
+.blockedUserContainer {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+
+    .leftSide {
+        display: flex;
+    }
+
+    .circleProfilePicture {
+        width: 55px;
+        height: 55px;
+        border-radius: 50px;
+        background: url("/images/Profile2.jfif");
+        background-size: cover;
+        border: 2px solid #439272;
+    }
+
+    .unblockButton {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        button {
+            background: #439272;
+            color: white;
+            border-radius: 50px;
+
+        }
+
+        button:hover {
+            background: white;
+            color: rgb(240, 57, 75);
+            border: 2px solid rgb(240, 57, 75);
+        }
+    }
+}
+
+.editButton::after {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .3s, visibility .3s;
+    content: attr(data-tooltip);
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 25px;
+    background: #212529;
+    font-size: 14px;
+    color: white;
+    bottom: -35px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.editButton::before {
+    transition: opacity .3s, visibility .3s;
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border: 8px solid transparent;
+    border-bottom-color: #212529;
+    top: 30px;
+}
+
+.unblockButton::after {
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s ease;
+    content: "Unblock";
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 65px;
+    height: 25px;
+    background: #212529;
+    font-size: 14px;
+    color: white;
+    bottom: -35px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.unblockButton::before {
+    content: "";
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s ease;
+    position: absolute;
+    bottom: -11px;
+    width: 0;
+    height: 0;
+    border: 8px solid transparent;
+    border-bottom-color: #212529;
+    bottom: -10px;
+}
+
+.unblockButton:hover::before,
+.unblockButton:hover::after {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.dropdown:hover .dropdown-menu,
+.btn-group:hover .dropdown-menu {
+    display: block;
+}
+
+.buttonPostTuition {
+    position: absolute;
+    top: 30px;
+    right: 35px;
+    transform: scale(0);
+}
+
+.buttonPostTuition.active {
+    transform: scale(1);
+}
+
+.tuitionSuccess {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    line-height: 3px;
+    background: #439272;
+    color: white;
+    transition: .2s ease;
+
+    .fa-plus {
+        display: none;
+    }
+}
+
+
+.tuitionSuccess:hover {
+    color: #439272;
+    background: white;
+    border: 2px solid #439272;
+}
+
+.modalDeleteAccount {
+    position: fixed;
+    display: block;
+    text-align: center;
+    z-index: 5;
+    background-color: #fff;
+    color: black !important;
+    border-radius: 5px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.7);
+    max-height: 900px;
+    border: 3px solid #F8665E;
+    width: 700px;
+    top: 50%;
+    left: 50%;
+    transition: .3s ease;
+    transform: translate(-50%, -50%) scale(0);
+    transition: .5s ease-in-out;
+
+    input {
+        border-radius: 5px;
+        border: 2px solid #ccc;
+        box-shadow: 0 0px 2px rgba(0, 0, 0, 0.7);
+    }
+
+    .buttonCancel {
+        background: #4989ff;
+        color: #fff;
+    }
+
+    .deleteButtonAccount {
+        background: #F8665E;
+        color: #fff;
+    }
+
+    .deleteButtonAccount:hover {
+        background: white;
+        color: #F8665E;
+        border: 2px solid #F8665E;
+    }
+
+    .buttonCancel:hover {
+        background: white;
+        color: #4989ff;
+        border: 2px solid #4989ff;
+    }
+}
+
+.modalDeleteAccount.active {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.modalTuitionHasDeleted {
+    position: fixed;
+    display: block;
+    text-align: center;
+    z-index: 5;
+    background-color: #fff;
+    color: black !important;
+    border-radius: 5px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.7);
+    max-height: 900px;
+    border: 3px solid #80D651;
+    width: 700px;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%) scale(0);
+    transition: .5s ease-in-out;
+
+    .fa-check {
+        font-size: 75px;
+        color: #80D651;
+    }
+}
+
+.modalTuitionHasDeleted.active {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.ChangeButton {
+    display: none;
+}
+
+.postTution {
+    display: none;
+}
+
+.modalDeleteTuitionContainer {
+    position: fixed;
+    display: block;
+    text-align: center;
+    z-index: 5;
+    background-color: #fff;
+    color: black !important;
+    border-radius: 5px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.7);
+    max-height: 900px;
+    border: 3px solid #F8665E;
+    width: 700px;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%) scale(0);
+    transition: .5s ease-in-out;
+
+    .buttons {
+        .keepItButton {
+            background: rgb(116, 199, 71);
+            color: white;
+            border: 2px solid rgb(255, 255, 255);
+
+        }
+
+        .keepItButton:hover {
+            background: #fff;
+            color: rgb(116, 199, 71);
+            border: 2px solid rgb(116, 199, 71);
+        }
+
+        .deleteThisButton {
+            background: #F8665E;
+            color: white;
+            border: 1px solid rgb(255, 255, 255);
+        }
+
+        .deleteThisButton:hover {
+            color: #F8665E;
+            background: #fff;
+            border: 2px solid #F8665E;
+        }
+    }
+
+    .fa-exclamation-circle {
+        font-size: 75px;
+    }
+}
+
+.modalDeleteTuitionContainer.active {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.modalContainerChanges {
+    position: fixed;
+    display: block;
+    text-align: center;
+    z-index: 5;
+    background: rgb(231, 252, 219);
+    color: black !important;
+    border-radius: 5px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.7);
+    max-height: 900px;
+    border: 3px solid #80D651;
+    width: 700px;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%) scale(0);
+    transition: .5s ease-in-out;
+
+    .fa-check {
+        color: white;
+        font-size: 50px;
+        border: 2px solid white;
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.7);
+        background: #80D651;
+        border-radius: 50px;
+    }
+}
+
+.modalContainerChanges.active {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.modalContainerSuccess {
+    position: fixed;
+    z-index: 5;
+    background-color: white;
+    color: black !important;
+    border-radius: 5px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.7);
+    max-height: 900px;
+    border: 3px solid #80D651;
+    width: 700px;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%) scale(0);
+    transition: .5s ease-in-out;
+
+    .continueButton {
+        font-size: 15px;
+        background: #4989ff;
+        cursor: pointer;
+        transition: .2s ease;
+        color: #fff;
+        border: 2px solid #fff;
+    }
+
+    .continueButton:hover {
+        color: #4989ff;
+        border: 2px solid #4989ff;
+        background: white;
+    }
+
+    .fa-save {
+        font-size: 15px;
+        width: 30px;
+        height: 30px;
+        background: #80D651;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+    }
+
+    .fa-check-circle {
+        font-size: 23px;
+        color: #80D651;
+    }
+}
+
+.successYellow {
+    border-radius: 5px;
+    border-top: 1px solid #80D651;
+    border-bottom: 1px solid #80D651;
+    border-right: 1px solid #80D651;
+    border-left: 10px solid #80D651;
+    width: 100%;
+    background: rgb(220, 248, 205);
+}
+
+.modalContainerSuccess.active {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.modalContainer {
+    position: fixed;
+    z-index: 5;
+    background-color: white;
+    color: black !important;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .5);
+    max-height: 900px;
+    width: 700px;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%) scale(0);
+    transition: .5s ease-in-out;
+}
+
+.modalContainer.active {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+#overlay {
+    opacity: 0;
+    z-index: 3;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, .5);
+    pointer-events: none;
+    transition: .5s ease-in-out;
+}
+
+.overlayChat {
+    opacity: 0;
+    z-index: 3;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, .5);
+    pointer-events: none;
+    transition: .5s ease-in-out;
+}
+
+.overlayChat.active {
+    pointer-events: all;
+    opacity: 1;
+}
+
+#overlay.active {
+    pointer-events: all;
+    opacity: 1;
+}
+
+.overlayNavBar {
+    opacity: 0;
+    z-index: 3;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, .5);
+    pointer-events: none;
+    transition: .5s ease-in-out;
+}
+
+.overlayNavBar.active {
+    pointer-events: all;
+    opacity: 1;
+}
+
+.modal-header {
+    border-bottom: 1px solid #ccc;
+    padding: 20px;
+
+    button {
+        background: transparent;
+        border: 0em;
+        color: rgb(156, 156, 156);
+        font-size: 20px;
+    }
+
+
+}
+
+button.active {
+    color: #4989ff;
+}
+
+button:hover {
+    color: #4989ff;
+}
+
+#overlay.active {
+    pointer-events: all;
+    opacity: 1;
+}
+
+.numbersContainer {
+    padding: 14px;
+    border-bottom: 1px solid #ccc;
+
+    .horizontalLine {
+        width: 25px;
+        height: 1px;
+        background: #ccc;
+    }
+
+    .numberText {
+        background: transparent;
+        border: 0;
+        padding: 5px;
+        box-shadow: none !important;
+
+    }
+}
+
+
+
+.numberText:hover {
+    background: rgb(228, 228, 228);
+}
+
+.numberText.active {
+    background: rgb(228, 228, 228);
+    border-radius: 5px;
+    background-image: radial-gradient(circle, transparent 1%, rgb(228, 228, 228));
+    background-position: center;
+    transition: background 0.8s;
+    background-size: 1600%;
+}
+
+.numberText:active {
+    transition: background 0s;
+    background-color: #dbdbdb;
+    background-size: 100%;
+}
+
+.circleNumber {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    border-radius: 50%;
+    text-align: center;
+    width: 25px;
+    height: 25px;
+    background: #439272;
+    color: white;
+    pointer-events: none;
+}
+
+.circleNumber.active {
+    border: 2px solid white;
+    background: #00bcd4;
+}
+
+
+
+.inputValue {
+    border-radius: 5px;
+    width: 100%;
+}
+
+.inputValueTwo {
+    border-radius: 5px;
+    width: 80%;
+}
+
+.button {
+    .nextButtonOne {
+        background: #439272;
+        color: white;
+        position: absolute;
+        right: 12px;
+        bottom: 12px;
+        transition: .3s ease;
+    }
+}
+
+.nextButtonOne:hover {
+    background: white;
+    color: #439272;
+    border: 2px solid #439272;
+
+}
+
+.Grade {
+    padding-top: 20px;
+}
+
+.lineGrades {
+    margin-top: 20px;
+    width: 100%;
+    height: 1px;
+    background: #ccc;
+}
+
+.inputValueTwo {
+    width: 100%;
+}
+
+.button {
+    .nextButtonTwo {
+        background: #439272;
+        color: white;
+        position: absolute;
+        right: 12px;
+        bottom: 12px;
+        transition: .3s ease;
+    }
+}
+
+.nextButtonTwo:hover {
+    background: white;
+    color: #439272;
+    border: 2px solid #439272;
+}
+
+.inputValueThree,
+.inputValueFour {
+    width: 100%;
+}
+
+.toggle-control {
+    display: none;
+}
+
+input.toggle-control+label {
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 25px;
+    background: #ddd;
+    border-radius: 60px;
+
+    cursor: pointer;
+    outline: none;
+    user-select: none;
+}
+
+input.toggle-control+label::before,
+input.toggle-control+label::after {
+    display: block;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    bottom: 1px;
+    right: 1px;
+
+    content: '';
+    transition: all 0.4s;
+}
+
+input.toggle-control+label::before {
+    background: #ccc;
+    border-radius: 60px;
+}
+
+input.toggle-control+label::after {
+    width: 23px;
+    background: #fff;
+    border-radius: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+input.toggle-control:checked+label::before {
+    background: #4989ff;
+}
+
+input.toggle-control:checked+label::after {
+    margin-left: 25px;
+}
+
+.inputs {
+    .toggle-verifed {
+        display: none;
+    }
+
+    input.toggle-verifed+label {
+        position: relative;
+        display: block;
+        width: 50px;
+        height: 25px;
+        background: #ddd;
+        border-radius: 60px;
+
+        cursor: pointer;
+        outline: none;
+        user-select: none;
+    }
+
+    input.toggle-verifed+label::before,
+    input.toggle-verifed+label::after {
+        display: block;
+        position: absolute;
+        top: 1px;
+        left: 1px;
+        bottom: 1px;
+        right: 1px;
+
+        content: '';
+        transition: all 0.4s;
+    }
+
+    input.toggle-verifed+label::before {
+        background: #ccc;
+        border-radius: 60px;
+    }
+
+    input.toggle-verifed+label::after {
+        width: 23px;
+        background: #fff;
+        border-radius: 100%;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    input.toggle-verifed:checked+label::before {
+        background: #4989ff;
+    }
+
+    input.toggle-verifed:checked+label::after {
+        margin-left: 25px;
+    }
+}
+
+.checkbox {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.checkbox__input {
+    display: none;
+}
+
+
+.checkbox__box {
+    width: 25px;
+    height: 25px;
+    border: 2px solid black;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    flex-shrink: 0;
+    transition: .2s ease;
+}
+
+.checkbox {
+    font-size: 18px;
+}
+
+.checkbox__box::after {
+    content: "";
+    height: 11px;
+    width: 11px;
+    border-radius: 50%;
+    background: #4989ff;
+    opacity: 0;
+}
+
+.checkbox__input:checked+.checkbox__box {
+    background: #fff;
+    border: 2px solid #4989ff;
+}
+
+.checkbox__input:checked+.checkbox__box::after {
+    opacity: 1;
+}
+
+
+
+
+.checkboxFemale {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.checkbox__inputFemale {
+    display: none;
+}
+
+
+.checkbox__boxFemale {
+    width: 25px;
+    height: 25px;
+    border: 2px solid black;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    flex-shrink: 0;
+    transition: .2s ease;
+}
+
+
+.checkbox__boxFemale::after {
+    content: "";
+    height: 11px;
+    width: 11px;
+    border-radius: 50%;
+    background: #4989ff;
+    opacity: 0;
+}
+
+.checkbox__inputFemale:checked+.checkbox__boxFemale {
+    background: #fff;
+    border: 2px solid #4989ff;
+}
+
+.checkbox__inputFemale:checked+.checkbox__boxFemale::after {
+    opacity: 1;
+}
+
+.checkboxMatter {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.checkbox__inputMatter {
+    display: none;
+}
+
+
+.checkbox__boxMatter {
+    width: 25px;
+    height: 25px;
+    border: 2px solid black;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    flex-shrink: 0;
+    transition: .2s ease;
+}
+
+
+.checkbox__boxMatter::after {
+    content: "";
+    height: 11px;
+    width: 11px;
+    border-radius: 50%;
+    background: #4989ff;
+    opacity: 0;
+}
+
+.checkbox__inputMatter:checked+.checkbox__boxMatter {
+    background: #fff;
+    border: 2px solid #4989ff;
+}
+
+.checkbox__inputMatter:checked+.checkbox__boxMatter::after {
+    opacity: 1;
+}
+
+textarea {
+    border-radius: 5px;
+    width: 100%;
+    height: 100px;
+}
+
+.buttonYellow {
+    .nextButtonTwo {
+        background: #06B41C;
+        color: white;
+    }
+
+    .nextButtonTwo:hover {
+        border: 2px solid #06B41C;
+        background: #fff;
+        color: #06B41C;
+    }
+}
+
+.errorMessageContainer {
+    display: none;
+
+    .redContainer {
+        border-radius: 5px;
+        border-left: 10px solid #da4142;
+        border-right: 2px solid #da4142;
+        border-bottom: 2px solid #da4142;
+        border-top: 2px solid #da4142;
+        width: 100%;
+        height: 50px;
+        background: rgb(236, 229, 216);
+
+        .textExclamation {
+            margin-top: 1px;
+        }
+
+        .fa-exclamation-circle {
+            margin-top: 5px;
+        }
+    }
+}
+
+
+.errorField {
+    display: none;
+
+    p {
+        margin-top: 5px;
+        color: rgb(255, 51, 51);
+        font-size: 17px;
+    }
+}
+
+.errorFieldTwo {
+    display: none;
+
+    p {
+        margin-top: 5px;
+        color: rgb(255, 51, 51);
+        font-size: 17px;
+    }
+}
+
+.errorFieldThree {
+    display: none;
+
+    p {
+        margin-top: 5px;
+        color: rgb(255, 51, 51);
+        font-size: 17px;
+    }
+}
+
+.errorFieldFour {
+    display: none;
+
+    p {
+        margin-top: 5px;
+        color: rgb(255, 51, 51);
+        font-size: 17px;
+    }
+}
+
+.errorFieldFifth {
+    display: none;
+
+    p {
+        margin-top: 5px;
+        color: rgb(255, 51, 51);
+        font-size: 17px;
+    }
+}
+
+.errorFieldSix {
+    display: none;
+
+    p {
+        margin-top: 5px;
+        color: rgb(255, 51, 51);
+        font-size: 17px;
+    }
+}
+
+.example {
+    position: relative;
+}
+
+.noTuitionContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.red {
+    width: 300px;
+    height: 220px;
+    background: red;
+}
+
+.blue {
+    width: 300px;
+    height: 220px;
+    background: pink;
+}
+
+.resultTuition {
+    background: white;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.purple {
+    margin-bottom: 1em;
+    margin-right: 15px;
+    width: 400px;
+    background: white;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, .5);
+
+    .textMessage {
+        p {
+            font-size: 14px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 350px;
+        }
+    }
+
+
+}
+
+.degree {
+    font-size: 11px;
+    width: 150px;
+    background: red;
+
+}
+
+.locationDiv {
+    h5 {
+        text-decoration: underline;
+        font-size: 17px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+}
+
+.example {
+    .fa-hourglass-half {
+        font-size: 35px;
+    }
+
+    .lineExample {
+        width: 100%;
+        height: 1px;
+        background: #ccc;
+    }
+
+    .time {
+        height: 55px;
+    }
+
+    .pendingApproval {
+        .timeClock {
+            p {
+                font-size: 14px;
+            }
+
+            h5 {
+                font-size: 18px;
+            }
+        }
+
+    }
+
+
+    .subjectDiv {
+        h5 {
+            font-size: 17px;
+            text-decoration: underline;
+        }
+
+        p {
+            font-size: 14px;
+        }
+
+        .college {
+            font-size: 11.5px;
+        }
+    }
+
+    .inboxProfileMesssages {
+        padding: 7px;
+
+        h5 {
+            font-size: 17px;
+            text-decoration: underline;
+        }
+
+        .textMessage {
+            p {
+                font-size: 14px;
+                margin-left: 5px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                max-width: 350px;
+            }
+        }
+    }
+
+    .ED {
+        padding: 10px;
+        cursor: pointer;
+
+        .editButton {
+            border-radius: 5px;
+            font-size: 18px;
+            width: 35px;
+            height: 35px;
+            background: #439272;
+            position: relative;
+            transition: 300ms ease;
+        }
+
+        .deleteButton {
+            border-radius: 5px;
+            font-size: 18px;
+            width: 35px;
+            height: 35px;
+            background: #439272;
+            position: relative;
+        }
+    }
+}
+
+.editButton:hover {
+    background: white !important;
+    color: #439272;
+}
+
+.deleteButton:hover {
+    background: white !important;
+    color: #439272;
+}
+
+.editButton::after {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .3s, visibility .3s;
+    content: attr(data-tooltip);
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 25px;
+    background: #212529;
+    font-size: 14px;
+    color: white;
+    bottom: -35px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.editButton::before {
+    transition: opacity .3s, visibility .3s;
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border: 8px solid transparent;
+    border-bottom-color: #212529;
+    top: 30px;
+}
+
+.editButton:hover::before,
+.editButton:hover::after {
+    visibility: visible;
+    opacity: 1;
+}
+
+.deleteButton::before {
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s;
+    content: "";
+    width: 0;
+    height: 0;
+    border: 8px solid transparent;
+    border-bottom-color: #212529;
+    top: 30px;
+    position: absolute;
+    top: 30px;
+}
+
+
+.deleteButton::after {
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s;
+    content: attr(data-tooltip);
+    border-radius: 5px;
+    color: #fff;
+    font-size: 14px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 25px;
+    background: #212529;
+    bottom: -35px;
+
+}
+
+.deleteButton:hover::after,
+.deleteButton:hover::before {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.inboxChatProccess {
+    width: 100%;
+    height: 50rem;
+    position: relative;
+
+    .sendMessage_div {
+        border-top: 2px solid #439272;
+        width: 100%;
+        background: #fff;
+        height: 125px;
+        position: absolute;
+        bottom: 0;
+    }
+}
+
+.contentMessages::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+
+.contentMessages::-webkit-scrollbar {
+    width: 12px;
+    background-color: #F5F5F5;
+}
+
+.contentMessages::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #D62929;
+}
+
+
+.contentMessages::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #555;
+}
+
+
+
+
+.sendMessage_div {
+    height: 105px !important;
+
+    textarea {
+        resize: none;
+        width: 100%;
+        height: 55px;
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+        border-right: 2px solid #439272;
+        padding: 15px;
+        background: #F9F9F9;
+    }
+
+    textarea:focus {
+        outline: 0;
+    }
+
+    textarea::-webkit-scrollbar {
+        display: none;
+    }
+
+}
+
+.sendIcon {
+    font-size: 17px;
+    background: #439272;
+    color: white;
+    width: 100px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: .3s ease;
+    border: none;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.sendIcon:hover {
+    background: white;
+    color: #439272;
+    border-right: 2px solid #439272;
+    border-top: 2px solid #439272;
+    border-bottom: 2px solid #439272;
+
+}
+
+.myMessage {
+    width: 100%;
+    background: white;
+    border-top: 2px solid #ccc;
+    cursor: pointer;
+    transition: .3s ease;
+
+    .circleProfileMe {
+        width: 50px;
+        height: 50px;
+        background: url("/images/Profile1.jfif");
+        background-size: cover;
+        border-radius: 50px;
+        border: 2px solid #439272;
+        padding: 25px;
+    }
+
+    .myNameTitle {
+        font-size: 19px;
+    }
+
+    .timeDate {
+        font-size: 12px;
+        color: rgb(122, 122, 122);
+    }
+
+    .message {
+        color: rgb(73, 73, 73);
+        font-size: 15px;
+    }
+}
+
+
+
+.myMessage:hover {
+    background: rgb(240, 240, 240);
+}
+
+.clientMessage {
+    width: 100%;
+    background: white;
+    border-top: 2px solid #ccc;
+    cursor: pointer;
+    transition: .3s ease;
+
+
+    .circleProfileClient {
+        width: 50px;
+        height: 50px;
+        background: url("/images/Profile3.jfif");
+        background-size: cover;
+        border-radius: 50px;
+        border: 2px solid #439272;
+        padding: 25px;
+    }
+
+    .myNameTitle {
+        font-size: 19px;
+    }
+
+    .timeDate {
+        font-size: 12px;
+        color: rgb(122, 122, 122);
+    }
+
+    .message {
+        color: rgb(73, 73, 73);
+        font-size: 15px;
+        width: 80%;
+    }
+}
+
+.clientMessage:hover {
+    background: rgb(240, 240, 240);
+}
+
+.chatBoxesFlex {
+    width: 100%;
+    min-width: 50%;
+    max-height: 45rem;
+    overflow: auto;
+}
+
+.chatBoxesFlex::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+
+.chatBoxesFlex::-webkit-scrollbar {
+    width: 12px;
+    background-color: #F5F5F5;
+}
+
+.chatBoxesFlex::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #D62929;
+}
+
+
+.chatBoxesFlex::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #555;
+}
+
+
+
+.contentMessages {
+    width: 100%;
+    min-width: 50%;
+    max-height: 100%;
+    overflow: auto;
+}
+
+
+.modaChangeEmail {
+    position: fixed;
+    display: block;
+    z-index: 5;
+    background-color: #fff;
+    color: black !important;
+    border-radius: 5px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.7);
+    max-height: 900px;
+    width: 600px;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%) scale(0);
+    transition: .5s ease-in-out;
+}
+
+.modaChangeEmail.active {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.emailValue {
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid rgb(122, 122, 122);
+}
+
+.emailValue.active {
+    box-shadow: 0 2px 5px rgb(255, 83, 83);
+    border: 2px solid rgb(255, 83, 83);
+}
+
+.errorInputEmail {
+    color: rgb(253, 59, 59);
+    display: none;
+}
+
+.modaVerifyEmail {
+    position: fixed;
+    display: block;
+    z-index: 5;
+    background-color: #fff;
+    color: black !important;
+    border-radius: 5px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.7);
+    max-height: 900px;
+    width: 600px;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%) scale(0);
+    transition: .5s ease-in-out;
+
+    .closeButton {
+        background: #439272;
+        color: white;
+        width: 70px;
+        transition: .3s ease;
+    }
+}
+
+.modaVerifyEmail.active {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.closeButton:hover {
+    background: white;
+    color: #439272;
+    border: 2px solid #439272;
+}
+
+.activeYellowStepDiv {
+    width: 100%;
+    height: 200px;
+    background: #DCF8CD;
+    border-radius: 5px;
+    border-right: 2px solid #80D651;
+    border-top: 2px solid #80D651;
+    border-bottom: 2px solid #80D651;
+    border-left: 10px solid #80D651;
+
+    .fa-check-circle {
+        font-size: 20px;
+        color: #80D651;
+    }
+
+}
+
+section {
+    width: 100%;
+}
+
+.responsiveNavBar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100rem;
+    background: #FFFFFF;
+    z-index: 10;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.7);
+    transition: .3s ease;
+    transform: translate(-110%) scale(1);
+
+    .timesResponsive {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        font-size: 20px;
+        cursor: pointer;
+        color: rgb(107, 107, 107);
+        transition: .3s ease;
+    }
+
+    .timesResponsive:hover {
+        color: rgb(65, 65, 65);
+    }
+}
+
+.responsiveNavBar.active {
+    transform: translate(0%) scale(1);
+}
+
+.lineGray {
+    width: 100%;
+    height: 2px;
+    background: #ccc;
+}
+
+.updateEmailButton {
+    background: #4989ff;
+    color: white;
+}
+
+.updateEmailButton:hover {
+    background: white;
+    color: #4989ff;
+    border: 2px solid #4989ff;
+}
+
+.cancelButton {
+    background: #439272;
+    color: white;
+}
+
+.cancelButton:hover {
+    background: white;
+    color: #439272;
+    border: 2px solid #439272;
+}
+
+.circleProfilePicture {
+    padding: 25px;
+}
+
+.modalSuccessChangePassword {
+    position: fixed;
+    display: block;
+    z-index: 5;
+    background-color: #fff;
+    color: black !important;
+    border-radius: 5px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.7);
+    max-height: 900px;
+    width: 600px;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%) scale(0);
+    transition: .5s ease-in-out;
+
+    .fa-check-circle {
+        color: #80D651;
+        font-size: 80px;
+    }
+
+    .okButton {
+        background: #80D651;
+        color: white;
+        box-shadow: 0 0px 3px rgba(0, 0, 0, 0.7);
+    }
+
+    .okButton:hover {
+        color: #80D651;
+        background: white;
+        border: 2px solid #80D651;
+        box-shadow: none;
+    }
+}
+
+.modalSuccessChangePassword.active {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+
+
+.modalChangePassword {
+    position: fixed;
+    display: block;
+    z-index: 5;
+    background-color: #fff;
+    color: black !important;
+    border-radius: 5px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.7);
+    max-height: 900px;
+    width: 600px;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%) scale(0);
+    transition: .5s ease-in-out;
+
+    input {
+        width: 100%;
+        border-radius: 5px;
+        border: 2px solid #ccc;
+        height: 35px;
+        padding: 10px;
+    }
+
+    .passwordOne.box,
+    .passwordTwo.box {
+        box-shadow: 0px 0px 3px 1px rgb(255, 71, 71);
+    }
+
+    input:focus {
+        outline: none;
+    }
+
+    .errorPasswordText {
+        color: rgb(253, 59, 59);
+        display: none;
+    }
+
+    .buttons {
+        .updatePasswordButton {
+            background: #4989ff;
+            color: white;
+        }
+
+        .updatePasswordButton:hover {
+            background: white;
+            color: #4989ff;
+            border: 2px solid #4989ff;
+        }
+
+        .cancelPasswordButton {
+            background: #439272;
+            color: white;
+        }
+
+        .cancelPasswordButton:hover {
+            background: white;
+            color: #439272;
+            border: 2px solid #439272;
+        }
+    }
+}
+
+// Footer for About, Blog, Terms and Privacy
+.privacy-section {
+    width: 100%;
+    height: 90px;
+    margin-top: 50px;
+
+    // ul
+    ul {
+        li {
+            // Padding for li
+            padding: 15px 10px;
+        }
+    }
+}
+
+// Button for sign up as a tutor & Sign up with Facebook
+.button-two {
+    background: white;
+    color: #56A978;
+    border: none;
+    box-shadow: none;
+}
+
+// Button hover for .button-two
+.button-two:hover {
+    background: #56A978;
+    color: white;
+    border: 1px solid white;
+    box-shadow: none;
+}
+
+// Id for the topics (Tutors, Tuitions, Courses and Discussions) In footer all the way down in the page
+#footer {
+    border-top: 2px solid;
+    width: 100%;
+    height: 100%;
+    background: #39986F;
+    position: static;
+
+    // Container
+    .container {
+        padding-top: 40px;
+
+        // Container for Grade <a>
+        #GradesContainer {
+            margin-left: 30px;
+            max-width: 100px;
+            display: none;
+
+            // ul
+            ul {
+                list-style: none;
+                font-size: 12px;
+                display: inline-block;
+                width: 120px;
+
+                // li 
+                li {
+                    padding: 2.5px 0px;
+                }
+            }
+        }
+
+        // The arrow that toggles down dissapear
+        #arrow-down-grades {
+            display: none;
+        }
+
+        // Discipline container
+        #DisciplineContainer {
+            margin-left: 30px;
+            max-width: 100px;
+            display: none;
+
+            // ul
+            ul {
+                list-style: none;
+                font-size: 12px;
+                display: inline-block;
+                width: 120px;
+
+                // li
+                li {
+                    padding: 2.5px 0px;
+                }
+            }
+        }
+
+        // Arrow down for the discipline <a>
+        #arrow-down-discipline {
+            display: none;
+        }
+
+        // Arrow down for the institute part <a>
+        #arrow-down-institute {
+            display: none;
+        }
+
+        // Institute Container
+        #InstituteContainer {
+            margin-left: 30px;
+            max-width: 100px;
+            display: none;
+
+            // ul
+            ul {
+                list-style: none;
+                font-size: 12px;
+                display: inline-block;
+                width: 120px;
+
+                // li
+                li {
+                    padding: 2.5px 0px;
+                }
+            }
+        }
+
+        // Arrow down for subject
+        #arrow-down-subject {
+            display: none;
+        }
+
+
+        // Row
+        .row {
+
+            // Arrow down
+            #arrow-down {
+                display: none;
+            }
+
+            // Subject container
+            #SubjectContainer {
+                margin-left: 30px;
+                max-width: 100px;
+                display: none;
+
+                // ul
+                ul {
+                    list-style: none;
+                    font-size: 12px;
+                    display: inline-block;
+                    width: 120px;
+
+                    // li
+                    li {
+                        padding: 2.5px 0px;
+                    }
+                }
+            }
+
+            // Pop up when you click on the topics (By city , By Subjects and ect.)
+            .City-pop-up {
+
+                // FirstItems the pop up container 
+                #firstItems {
+                    display: none;
+                    margin-left: 32px;
+                    max-width: 100px;
+                }
+
+                // Ul
+
+                ul {
+                    list-style: none;
+                    font-size: 12px;
+                    display: inline-block;
+                    width: 120px;
+
+                    // li
+                    li {
+                        padding: 2.5px 0px;
+                    }
+                }
+            }
+
+            // About, Blog, Terms and Privacy
+            .unlistItem {
+                li {
+                    transition: .3s ease;
+                }
+            }
+
+            // Hover li 
+            .unlistItem {
+                li:hover {
+                    cursor: pointer;
+                    color: #426858;
+                    text-decoration: underline;
+                }
+            }
+
+            // .row-topics
+            .row-topics {
+                height: 30px;
+                transition: .3s ease;
+            }
+
+            // .row-topics hover
+            .row-topics:hover {
+                cursor: pointer;
+                color: #426858;
+            }
+
+            // Transition to the <a> that has been clicked 
+            #buttonClick,
+            #buttonClickSubject,
+            #buttonClickInstitute,
+            #buttonClickDiscipline,
+            #buttonClickGrades {
+                transition: .3s ease;
+            }
+
+            // Style to the <a> that has been clicked 
+
+            #buttonClick:hover,
+            #buttonClickSubject:hover,
+            #buttonClickInstitute:hover,
+            #buttonClickDiscipline:hover,
+            #buttonClickGrades:hover {
+                cursor: pointer;
+                color: #426858;
+                text-decoration: underline;
+            }
+
+            // List item and the subjects
+            .list-item {
+                width: 155px;
+
+                .City {
+                    margin-right: 4px;
+                }
+
+                .Subjects {
+                    padding-right: 7px;
+                }
+
+                .Institute {
+                    padding-right: 8px;
+                }
+
+                .Grade {
+                    padding-right: 20px;
+                }
+            }
+
+            .list-item {
+                ul {
+                    li {
+                        transition: .3s ease;
+                    }
+                }
+            }
+
+            // List item hover
+            .list-item {
+                ul {
+                    li:hover {
+                        cursor: pointer;
+                        color: #426858;
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+            // ul
+            ul {
+                list-style: none;
+                width: 125px;
+                padding-left: 0px;
+                font-size: 15px;
+                margin-right: auto;
+            }
+
+            // Line down and line right 
+            .fa-caret-right,
+            .fa-caret-down {
+                font-size: 10px;
+                padding: 5px 10px;
+            }
+
+            // FontAwesome icons
+            .fa-business-time,
+            .fa-user-friends,
+            .fa-comment,
+            .fa-graduation-cap {
+                font-size: 20px;
+                padding: 0px 15px;
+            }
+
+            // Button socials
+            .button-socials {
+                button {
+                    text-decoration: none;
+                    margin-top: 10px;
+                    font-size: 13px;
+                }
+
+            }
+        }
+    }
+}
+
+.line-section {
+    background: white;
+    height: 1px !important;
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+// Footer which is all the way down below the page
+#last {
+    background: #39986F;
+
+    // On the last footer of the page to the left side
+    .ending-text {
+
+        // Logo beside the ending text
+        .logo {
+            width: 50px;
+        }
+    }
+}
+
+
+.modalChangePassword.active {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+
+// Meia queries for the 767px
+@media screen and (max-width: 767px) {
+    .privacy-section {
+        strong {
+            display: none;
+        }
+
+        ul {
+            li {
+                margin-top: 12.5px;
+                font-size: 13px;
+                padding: 0px 5px;
+            }
+        }
+    }
+
+    #last {
+        p {
+            font-size: 13px !important;
+            padding-right: 5px;
+        }
+
+        h6 {
+            font-size: 13px;
+        }
+    }
+
+    .row-topics {
+        h5 {
+            font-size: 15px !important;
+        }
+    }
+
+    .button-socials {
+        button {
+            font-size: 10px !important;
+        }
+    }
+}
+
+// Meia queries for the 400px
+@media screen and (max-width: 400px) {
+    .privacy-section {
+        br {
+            display: none;
+        }
+
+        ul {
+            li {
+                margin-top: 12.5px;
+                padding-top: 2px !important;
+                font-size: 12px !important;
+                padding: 0px 5px;
+            }
+        }
+    }
+
+    .button-socials {
+        button {
+            font-size: 5px !important;
+        }
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+    .responsiveNavBar.active {
+        display: none;
+    }
+
+    .overlayNavBar.active {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1110px) {
+    .overlayChat {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+
+    .tuitionNav {
+        p {
+            width: 355px;
+        }
+    }
+
+
+    .modalContainer {
+        width: 600px;
+    }
+
+    .modalContainerSuccess {
+        width: 600px;
+    }
+
+    .tutor {
+        .button {
+            font-size: 12px !important;
+        }
+    }
+
+    .notVerifiedEmail {
+        height: 60px;
+    }
+
+    .inboxContainer {
+        display: none;
+    }
+
+    .chats {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 3;
+        height: 70rem;
+        max-height: 150rem;
+        transform: translateX(100%) scale(0);
+        transition: .3s ease;
+    }
+
+    .chats.active {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 3;
+        width: 15rem;
+
+        height: 91rem;
+        max-height: 150rem;
+        transform: translateX(0%) scale(1);
+    }
+
+    .chatButtonResponsive {
+        display: block;
+    }
+
+    .titleTuition {
+        padding-bottom: 15px;
+
+        p {
+            display: none;
+        }
+    }
+
+    .courseNavBar {
+        h3 {
+            padding-bottom: 10px;
+        }
+
+        p {
+            display: none;
+        }
+    }
+
+
+    .buttonPostTuition.active {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+    }
+
+    .navTitle {
+        p {
+            display: none !important;
+        }
+    }
+
+    .dashBoard {
+        display: block;
+        width: 170px;
+        height: 35px;
+        cursor: pointer;
+        padding-top: 15px;
+        padding-bottom: 35px;
+
+        .fa-bars {
+            display: block;
+            margin-top: 6px;
+            font-size: 20px;
+        }
+
+        h3 {
+            color: white;
+            display: block;
+        }
+
+        p {
+            display: block;
+
+            font-size: 23px;
+            color: white;
+            margin-top: 1px;
+        }
+    }
+
+    nav {
+        li {
+            i {
+                font-size: 13px !important;
+            }
+        }
+
+        .img-fluid-one {
+            width: 155px !important;
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .sendMessage_div {
+        textarea {
+            font-size: 13px;
+        }
+    }
+
+    .chats {
+        .circleProfileChat {
+            padding: 25px;
+        }
+
+        h5 {
+            font-size: 13px !important;
+        }
+
+        p {
+            font-size: 12px;
+            width: 65px;
+        }
+
+        width: 205px;
+    }
+
+    .modalContainerChanges {
+        width: 600px;
+    }
+
+    .modalDeleteTuitionContainer {
+        width: 600px;
+    }
+
+    .modalTuitionHasDeleted {
+        width: 600px;
+    }
+
+    .modalDeleteAccount {
+        width: 600px;
+    }
+
+    .modalTuitionHasDeleted {
+        width: 600px;
+    }
+
+    .modaChangeEmail {
+        width: 400px !important;
+    }
+
+    .modaVerifyEmail {
+        width: 400px !important;
+    }
+
+    .modalChangePassword {
+        width: 400px !important;
+    }
+
+    .modalSuccessChangePassword {
+        width: 400px !important;
+    }
+
+
+}
+
+
+@media screen and (max-width: 775px) {
+
+    .circleProfileChat {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .paragraph {
+        p {
+            display: none;
+        }
+
+        h5 {
+            margin-left: 5px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 70px;
+            font-size: 13px;
+        }
+    }
+
+    .chats {
+        p {
+            width: 105px;
+            font-size: 11px !important;
+        }
+
+        h5 {
+            font-size: 15px !important;
+        }
+    }
+
+    .inboxChatProccess {
+
+        .message {
+            font-size: 13px !important;
+        }
+
+        .clientNameTitle {
+            font-size: 12px;
+        }
+
+        .myNameTitle {
+            font-size: 13px;
+        }
+
+        .timeDate {
+            font-size: 12px;
+        }
+    }
+
+    .notVerifiedEmail {
+        height: 80px;
+    }
+
+    .modalContainerChanges {
+        width: 400px;
+    }
+
+    .modalDeleteTuitionContainer {
+        width: 400px;
+    }
+
+    .modalTuitionHasDeleted {
+        width: 400px;
+    }
+
+    .modalTuitionHasDeleted {
+        width: 400px;
+    }
+
+    .modaChangeEmail {
+        width: 400px !important;
+    }
+
+    .modaVerifyEmail {
+        width: 400px !important;
+    }
+
+    .modalChangePassword {
+        width: 400px !important;
+    }
+
+    .modalSuccessChangePassword {
+        width: 400px !important;
+    }
+
+    .modalContainerSuccess {
+        width: 400px;
+    }
+
+    .modalDeleteAccount {
+        width: 400px;
+    }
+
+    .modalContainer {
+        width: 400px;
+
+        .textExclamation {
+            margin-top: 15px;
+            font-size: 13px;
+        }
+
+        button {
+            font-size: 12px;
+        }
+    }
+
+    .purple {
+        width: 335px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .containerThree {
+        width: 200px !important;
+
+        h3 {
+            font-size: 15px;
+        }
+
+        h4 {
+            display: none;
+        }
+
+        strong {
+            display: none;
+        }
+    }
+
+    .changeSettings {
+        width: 200px !important;
+
+        p {
+            font-size: 10px;
+        }
+
+        button {
+            font-size: 12px;
+        }
+
+
+    }
+
+    .accountSettingsButton {
+        button {
+            font-size: 13px !important;
+        }
+
+        strong {
+            display: none;
+        }
+    }
+
+    .mainContainerSettings {
+        h3 {
+            font-size: 18px;
+        }
+    }
+
+    .blockedUsersButtonDiv {
+        button {
+            font-size: 13px !important;
+        }
+    }
+
+    .inboxContainerMessages {
+        width: 100px;
+    }
+
+    .purple {
+        width: 300px;
+
+        p {
+            font-size: 13px;
+        }
+    }
+
+    .sendMessage_div {
+        textarea {
+            font-size: 10px;
+        }
+    }
+
+    .tuitionSuccess {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 10px !important;
+
+        .fa-plus {
+            display: block;
+        }
+
+        strong {
+            display: none;
+        }
+    }
+
+    .notVerifiedEmail {
+        height: 80px;
+    }
+
+    .modalContainer {
+        width: 350px !important;
+    }
+
+    .modalContainerChanges {
+        width: 350px;
+    }
+
+    .modalDeleteTuitionContainer {
+        width: 350px;
+    }
+
+    .modalTuitionHasDeleted {
+        width: 350px;
+    }
+
+    .modalTuitionHasDeleted {
+        width: 350px;
+    }
+
+    .modaChangeEmail {
+        width: 350px !important;
+    }
+
+    .modaVerifyEmail {
+        width: 350px !important;
+    }
+
+    .modalChangePassword {
+        width: 350px !important;
+    }
+
+    .modalSuccessChangePassword {
+        width: 350px !important;
+    }
+
+    .modalContainerSuccess {
+        width: 350px;
+    }
+
+    .modalDeleteAccount {
+        width: 350px;
+    }
+
+    .sendIcon {
+        display: none;
+    }
+
+    #myTextArea {
+        border-radius: 5px;
+        border: 2px solid #ccc;
+        font-size: 15px;
+    }
+
+    .modalContainer {
+        width: 400px;
+
+        .textExclamation {
+            margin-top: 15px;
+            font-size: 13px;
+        }
+
+        button {
+            font-size: 12px;
+        }
+    }
+
+    .chats {
+        width: 150px;
+
+        p {
+            width: 50px;
+        }
+    }
+}

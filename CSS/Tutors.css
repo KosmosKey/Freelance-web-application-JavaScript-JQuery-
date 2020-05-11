@@ -1,0 +1,699 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+}
+
+body {
+  background: #F5F5F5 !important;
+}
+
+.nav-link {
+  font-family: 'Nunito', sans-serif;
+}
+
+.navbar {
+  background: white !important;
+}
+
+.button {
+  border-radius: 5px !important;
+  border: 2px solid white !important;
+  background: #439272 !important;
+  color: white !important;
+  -webkit-transition: .3s ease-in;
+  transition: .3s ease-in;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 5px 15px;
+}
+
+.button:hover {
+  background: black !important;
+  border: 2px solid white !important;
+}
+
+.navbar-nav li a {
+  color: black !important;
+  font-size: 1.2rem;
+}
+
+.img-fluid-one {
+  margin-right: 2rem;
+  width: 15rem;
+}
+
+.fa-bars {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.navbar-toggler {
+  padding: .5rem 1rem;
+  border: 3px solid white;
+  background: #439272 !important;
+  border: none;
+}
+
+sup {
+  padding-left: 5px;
+}
+
+#overlay {
+  background: transparent;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
+#overlay.active {
+  pointer-events: all;
+  opacity: 1;
+}
+
+.exploreTutorField {
+  width: 100%;
+  background: #fff;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 6px, rgba(0, 0, 0, 0.12) 0px 1px 4px;
+          box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 6px, rgba(0, 0, 0, 0.12) 0px 1px 4px;
+  text-align: center;
+}
+
+.exploreTutorField h5 {
+  margin-top: 25px !important;
+  text-align: left;
+}
+
+.exploreTutorField p {
+  font-size: 13px;
+}
+
+.TutorField {
+  color: black;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.paragraphSort {
+  margin-top: 1px;
+}
+
+.datalist {
+  width: 100%;
+}
+
+.datalist input {
+  margin-top: 20px;
+  border: 1px solid #c0bebe;
+  -webkit-box-shadow: 0 2px 1px rgba(0, 0, 0, 0.3), 0 0 1px rgba(0, 0, 0, 0.75);
+          box-shadow: 0 2px 1px rgba(0, 0, 0, 0.3), 0 0 1px rgba(0, 0, 0, 0.75);
+}
+
+.datalist input::-webkit-calendar-picker-indicator {
+  opacity: 100;
+}
+
+.buttonTutor {
+  position: relative;
+  z-index: 3;
+}
+
+.buttonTutor .listItemContainer {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  position: absolute;
+  right: 0;
+  width: 150px;
+  height: 130px;
+  background: white;
+  z-index: 100;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 6px, rgba(0, 0, 0, 0.12) 0px 1px 4px;
+          box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 6px, rgba(0, 0, 0, 0.12) 0px 1px 4px;
+  border: 1px solid #c0bebe;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.buttonTutor li {
+  list-style: none;
+  cursor: pointer;
+}
+
+.buttonTutor li:hover {
+  background: #f1f0f0;
+}
+
+.buttonTutor .listItemContainer.active {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.listItemContainer ul li.active {
+  background: #f1f0f0;
+  color: #439272;
+}
+
+.profileTutorsContainer .degree p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 200px;
+}
+
+.profileTutorsContainer .paragraphInformation {
+  border-left: 1px solid #c0bebe;
+}
+
+.profileTutorsContainer .paragraphInformation p {
+  text-overflow: ellipsis;
+  max-width: 800px;
+}
+
+.profileTutorsContainer .skillSet {
+  border-left: 1px solid #c0bebe;
+  max-width: 200px;
+  max-height: 160px;
+  overflow: hidden;
+}
+
+.profileTutorsContainer .skillSet .items {
+  margin-left: 5px;
+  display: inline-block;
+  vertical-align: baseline;
+  text-align: center;
+  border-radius: 5px;
+  max-width: 250px;
+  padding: .25em .6em;
+  padding-top: 0px;
+  overflow: hidden;
+  font-size: 11px !important;
+  height: 19px;
+  margin-top: 5px;
+  background: white;
+  max-height: 150px;
+  color: #39986F;
+  border: 1px solid #5f5f5f;
+  -webkit-box-shadow: 3px 1px 3px 0px #777777;
+          box-shadow: 3px 1px 3px 0px #777777;
+}
+
+.profileTutorsContainer .profile_div {
+  width: 100%;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 6px, rgba(0, 0, 0, 0.12) 0px 1px 4px;
+          box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 6px, rgba(0, 0, 0, 0.12) 0px 1px 4px;
+}
+
+.profileTutorsContainer .profile_div .profilePicture_div {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: url("/images/Profile3.jfif");
+  background-size: cover;
+  padding: 75px;
+  border: 3px solid #c0bebe;
+}
+
+.degree i,
+.location i {
+  color: #7098d8;
+}
+
+.teach i {
+  color: #80D651 !important;
+}
+
+.paginationDiv {
+  width: 100% !important;
+  text-align: center;
+}
+
+.paginationDiv ul {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding-left: 0;
+  margin: 22px 0;
+  border-radius: 4px;
+  list-style: none;
+  font-size: 20px;
+}
+
+.paginationDiv ul .firstChild,
+.paginationDiv ul .lastChild {
+  border: none !important;
+  background: rgba(0, 0, 0, 0) !important;
+  position: relative;
+  float: left;
+  padding: 6px 12px;
+  margin-left: -1px;
+  line-height: 1.42857;
+  color: #337ab7;
+  text-decoration: none;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  margin-left: 5px;
+  margin-right: 5px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.paginationDiv ul .lastChild.active {
+  border: none !important;
+  background: rgba(0, 0, 0, 0) !important;
+}
+
+.paginationDiv ul .disabled span {
+  position: relative;
+  float: left;
+  padding: 6px 12px;
+  margin-left: -1px;
+  line-height: 1.42857;
+  color: #337ab7;
+  text-decoration: none;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+.paginationDiv a {
+  position: relative;
+  float: left;
+  padding: 6px 12px;
+  margin-left: -1px;
+  line-height: 1.42857;
+  color: #337ab7;
+  text-decoration: none;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  margin-left: 5px;
+  margin-right: 5px;
+  border-radius: 3px;
+}
+
+.paginationDiv a.active {
+  background: #337ab7;
+  color: white;
+}
+
+#footer {
+  border-top: 2px solid;
+  width: 100%;
+  height: 100%;
+  background: #39986F;
+  position: static;
+}
+
+#footer .container {
+  padding-top: 40px;
+}
+
+#footer .container #GradesContainer {
+  margin-left: 30px;
+  max-width: 100px;
+  display: none;
+}
+
+#footer .container #GradesContainer ul {
+  list-style: none;
+  font-size: 12px;
+  display: inline-block;
+  width: 120px;
+}
+
+#footer .container #GradesContainer ul li {
+  padding: 2.5px 0px;
+}
+
+#footer .container #arrow-down-grades {
+  display: none;
+}
+
+#footer .container #DisciplineContainer {
+  margin-left: 30px;
+  max-width: 100px;
+  display: none;
+}
+
+#footer .container #DisciplineContainer ul {
+  list-style: none;
+  font-size: 12px;
+  display: inline-block;
+  width: 120px;
+}
+
+#footer .container #DisciplineContainer ul li {
+  padding: 2.5px 0px;
+}
+
+#footer .container #arrow-down-discipline {
+  display: none;
+}
+
+#footer .container #arrow-down-institute {
+  display: none;
+}
+
+#footer .container #InstituteContainer {
+  margin-left: 30px;
+  max-width: 100px;
+  display: none;
+}
+
+#footer .container #InstituteContainer ul {
+  list-style: none;
+  font-size: 12px;
+  display: inline-block;
+  width: 120px;
+}
+
+#footer .container #InstituteContainer ul li {
+  padding: 2.5px 0px;
+}
+
+#footer .container #arrow-down-subject {
+  display: none;
+}
+
+#footer .container .Subjects {
+  color: white;
+}
+
+#footer .container .row #arrow-down {
+  display: none;
+}
+
+#footer .container .row #SubjectContainer {
+  margin-left: 30px;
+  max-width: 100px;
+  display: none;
+}
+
+#footer .container .row #SubjectContainer ul {
+  list-style: none;
+  font-size: 12px;
+  display: inline-block;
+  width: 120px;
+}
+
+#footer .container .row #SubjectContainer ul li {
+  padding: 2.5px 0px;
+}
+
+#footer .container .row .City-pop-up #firstItems {
+  display: none;
+  margin-left: 32px;
+  max-width: 100px;
+}
+
+#footer .container .row .City-pop-up ul {
+  list-style: none;
+  font-size: 12px;
+  display: inline-block;
+  width: 120px;
+}
+
+#footer .container .row .City-pop-up ul li {
+  color: white;
+  padding: 2.5px 0px;
+}
+
+#footer .container .row .unlistItem li {
+  color: white;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+#footer .container .row .unlistItem li:hover {
+  cursor: pointer;
+  color: #426858;
+  text-decoration: underline;
+}
+
+#footer .container .row .row-topics {
+  height: 30px;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+#footer .container .row .row-topics:hover {
+  cursor: pointer;
+  color: #426858;
+}
+
+#footer .container .row #buttonClick,
+#footer .container .row #buttonClickSubject,
+#footer .container .row #buttonClickInstitute,
+#footer .container .row #buttonClickDiscipline,
+#footer .container .row #buttonClickGrades {
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+#footer .container .row #buttonClick:hover,
+#footer .container .row #buttonClickSubject:hover,
+#footer .container .row #buttonClickInstitute:hover,
+#footer .container .row #buttonClickDiscipline:hover,
+#footer .container .row #buttonClickGrades:hover {
+  cursor: pointer;
+  color: #426858;
+  text-decoration: underline;
+}
+
+#footer .container .row .list-item {
+  width: 155px;
+}
+
+#footer .container .row .list-item .City {
+  margin-right: 4px;
+}
+
+#footer .container .row .list-item .Subjects {
+  padding-right: 7px;
+}
+
+#footer .container .row .list-item .Institute {
+  padding-right: 8px;
+}
+
+#footer .container .row .list-item .Grade {
+  padding-right: 20px;
+}
+
+#footer .container .row .list-item ul li {
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+#footer .container .row .list-item ul li:hover {
+  cursor: pointer;
+  color: #426858;
+  text-decoration: underline;
+}
+
+#footer .container .row ul {
+  list-style: none;
+  width: 125px;
+  padding-left: 0px;
+  font-size: 15px;
+  margin-right: auto;
+}
+
+#footer .container .row .fa-caret-right,
+#footer .container .row .fa-caret-down {
+  font-size: 10px;
+  padding: 5px 10px;
+}
+
+#footer .container .row .fa-business-time,
+#footer .container .row .fa-user-friends,
+#footer .container .row .fa-comment,
+#footer .container .row .fa-graduation-cap {
+  font-size: 20px;
+  padding: 0px 15px;
+}
+
+#footer .container .row .button-socials button {
+  text-decoration: none;
+  margin-top: 10px;
+  font-size: 13px;
+}
+
+.button-socials button {
+  background: white !important;
+  color: #56A978 !important;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.button-socials button:hover {
+  background: #56A978 !important;
+  color: white !important;
+  border: 1px solid white;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+#SubjectItems li {
+  color: white;
+}
+
+.line {
+  width: 75%;
+  height: 1px;
+  margin: 0 auto;
+  background: white;
+}
+
+#last {
+  background: #39986F;
+}
+
+#last .ending-text .logo {
+  width: 50px;
+}
+
+.unlistItem li {
+  color: white;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  margin-top: 10px;
+  padding: 0px 10px;
+}
+
+.unlistItem li:hover {
+  cursor: pointer;
+  color: #426858;
+  text-decoration: underline;
+}
+
+.privacy-section {
+  width: 100%;
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 991px) {
+  .profile_div {
+    display: block !important;
+  }
+  .paginationDiv ul {
+    display: inline-block;
+  }
+  .degree {
+    margin-bottom: 15px;
+  }
+  .paragraphInformation {
+    padding-top: 15px;
+    border-left: none !important;
+    border-top: 1px solid #c0bebe;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .socialIcons {
+    display: block !important;
+  }
+  .buttonFacebook .btn {
+    margin-top: 5px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .universitySimilar {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 150px !important;
+  }
+  .student {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 150px !important;
+  }
+}
+
+@media screen and (max-width: 995px) {
+  .similarTutors {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .universitySimilar {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 250px !important;
+  }
+  .student {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 250px !important;
+  }
+  .col-sm-4 {
+    margin-top: 20px;
+  }
+  .socialIcons {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+  .similarTutors {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .ending-text h6 {
+    font-size: 13px;
+  }
+  .copyright-paragraph {
+    font-size: 13px;
+    margin-right: 5px;
+    margin-top: 5px;
+  }
+  .privacy-section br {
+    display: none;
+  }
+  .privacy-section ul li {
+    margin-top: 12.5px;
+    padding-top: 2px !important;
+    font-size: 12px !important;
+    padding: 0px 5px;
+  }
+  .button-socials button {
+    font-size: 8px !important;
+  }
+  .ending-text .logo {
+    width: 10px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .stars p {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .button-socials strong {
+    display: none !important;
+  }
+  .button-two {
+    font-size: 10px !important;
+  }
+}
+/*# sourceMappingURL=Tutors.css.map */
